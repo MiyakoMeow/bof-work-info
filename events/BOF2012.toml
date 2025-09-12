@@ -1766,10 +1766,7 @@ no = "208"
 name = "H.U.T GiGAR"
 title = "Jump'n'basS"
 size = "29696 KB"
-addr = [
-    "http://dg-life.net/bms/Jump",
-    "'n'basS.rar",
-]
+addr = ["http://dg-life.net/bms/Jump'n'basS.rar"]
 
 [[entries]]
 no = "209"
@@ -2273,10 +2270,7 @@ no = "270"
 name = "Stem"
 title = "Summer's gone"
 size = "38591 KB"
-addr = [
-    "http://dl.dropbox.com/u/87404131/Summer",
-    "'s%20gone-Stem.zip",
-]
+addr = ["http://dl.dropbox.com/u/87404131/Summer's%20gone-Stem.zip"]
 
 [[entries]]
 no = "271"
