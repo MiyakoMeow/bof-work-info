@@ -88,14 +88,6 @@ jobs:
             echo "has-changes=true" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Rebase on main branch
-        if: steps.check-changes.outputs.has-changes == 'true'
-        run: |
-          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git fetch origin main
-          git rebase origin/main
-
       - name: Create Pull Request
         if: steps.check-changes.outputs.has-changes == 'true'
         id: cpr
