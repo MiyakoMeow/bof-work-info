@@ -41,7 +41,6 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
-      max-parallel: 1  # 限制并发执行，避免合并冲突
       matrix:
         event_key: ${{ fromJSON(needs.prepare-matrix.outputs.keys) }}
     steps:
