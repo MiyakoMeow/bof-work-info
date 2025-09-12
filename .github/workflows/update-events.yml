@@ -1,0 +1,90 @@
+name: Update BMS Events
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 3 * * *'
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  prepare-matrix:
+    name: Prepare event matrix
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.build-matrix.outputs.result }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build matrix from events.json
+        id: build-matrix
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const path = 'events.json';
+            if (!fs.existsSync(path)) {
+              core.setFailed('events.json not found at repo root');
+            }
+            const data = JSON.parse(fs.readFileSync(path, 'utf8'));
+            const include = (data.events || []).map(e => ({ key: e.key, url: e.url }));
+            if (!include.length) {
+              core.setFailed('No events defined in events.json');
+            }
+            return JSON.stringify({ include });
+
+  update-event:
+    name: Update ${{ matrix.key }}
+    needs: prepare-matrix
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix: ${{ fromJson(needs.prepare-matrix.outputs.matrix) }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Rust
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Build
+        run: cargo build --release
+
+      - name: Fetch event data
+        run: |
+          mkdir -p events
+          echo "${{ matrix.url }}" | cargo run --release -- --stdin --output "events/${{ matrix.key }}.toml" --log-level info
+
+      - name: Create Pull Request
+        id: cpr
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.AUTOMERGE_TOKEN }}
+          commit-message: "chore(events): update ${{ matrix.key }} data"
+          branch: "chore/update-${{ matrix.key }}"
+          title: "chore(events): update ${{ matrix.key }} data"
+          body: |
+            Automated update for `${{ matrix.key }}`
+            Source: `${{ matrix.url }}`
+          add-paths: |
+            events/${{ matrix.key }}.toml
+          labels: |
+            automated
+            event:${{ matrix.key }}
+          delete-branch: true
+          signoff: false
+          committer: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+          author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+
+      - name: Enable auto-merge
+        if: steps.cpr.outputs.pull-request-number
+        uses: peter-evans/enable-pull-request-automerge@v3
+        with:
+          token: ${{ secrets.AUTOMERGE_TOKEN }}
+          pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
+          merge-method: squash
+
+
