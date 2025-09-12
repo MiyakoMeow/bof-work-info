@@ -229,8 +229,8 @@ fn extract_urls_and_text(input: &str) -> Vec<String> {
     let cleaned_input = clean_html_content(input);
     // 改进的正则表达式：只匹配URL中允许出现的字符（基于RFC 3986标准）
     // 安全字符：字母数字、连字符、下划线、点号、波浪线
-    // 保留字符：冒号、斜杠、问号、井号、等号、与号、百分号
-    let url_regex = Regex::new(r"https?://[a-zA-Z0-9\-._~':/?#=&%]+").unwrap();
+    // 保留字符：冒号、斜杠、问号、井号、等号、与号、百分号、感叹号
+    let url_regex = Regex::new(r"https?://[a-zA-Z0-9\-._~':/?#=&%!]+").unwrap();
     let mut result = Vec::new();
     let mut last_end = 0;
 
