@@ -87,10 +87,14 @@ jobs:
           mkdir -p events
           echo "${{ steps.resolve.outputs.url }}" | cargo run --release -- --stdin --output "events/${{ matrix.event_key }}.toml" --log-level info
 
+      - name: Add files to git index
+        run: |
+          git add events/${{ matrix.event_key }}.toml
+
       - name: Check for changes
         id: check-changes
         run: |
-          if git diff --quiet; then
+          if git diff --cached --quiet; then
             echo "No changes detected for ${{ matrix.event_key }}"
             echo "has-changes=false" >> "$GITHUB_OUTPUT"
           else
