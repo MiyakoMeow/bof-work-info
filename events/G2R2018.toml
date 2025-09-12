@@ -90,10 +90,7 @@ name = "Nakaith"
 team = "けもしょたズ"
 title = "Emulator"
 size = "72448 KB"
-addr = [
-    "https://mega.nz/#F",
-    "!IP4iTAyI!jkwvNbkccH-EUATbGI4SWg",
-]
+addr = ["https://mega.nz/#F!IP4iTAyI!jkwvNbkccH-EUATbGI4SWg"]
 
 [[entries]]
 no = "10"
@@ -306,14 +303,12 @@ addr = [
     "ogg版",
     "https://drive.google.com/file/d/1I4-oslXSVh0gyMExkC6i5bUGZPutupHf/view?usp=sharing",
     "ogg版(ﾐﾗｰ)",
-    "https://1drv.ms/u/s",
-    "!Aqk2A3eTaAV2lng7TCo3R_Z9jDvj",
+    "https://1drv.ms/u/s!Aqk2A3eTaAV2lng7TCo3R_Z9jDvj",
     "(Please use URL by copy & paste.)",
     "wav版",
     "https://drive.google.com/file/d/1pt0k9tz0u4oSPk__zbX9lZ4Sw3uT5_dx/view?usp=sharing",
     "wav版(ﾐﾗｰ)",
-    "https://1drv.ms/u/s",
-    "!Aqk2A3eTaAV2lnnbh24dJrgYfOUW",
+    "https://1drv.ms/u/s!Aqk2A3eTaAV2lnnbh24dJrgYfOUW",
     "(Please use URL by copy & paste.)",
 ]
 
@@ -414,10 +409,7 @@ name = "xuxuezique"
 team = "Schizophrenic patients"
 title = "ophthalmomyiasis"
 size = "50000 KB"
-addr = [
-    "https://1drv.ms/u/s",
-    "!AiYirzLq3j_3aVlnu8ow90G6Uuw",
-]
+addr = ["https://1drv.ms/u/s!AiYirzLq3j_3aVlnu8ow90G6Uuw"]
 
 [[entries]]
 no = "39"
@@ -509,8 +501,7 @@ title = "Galassia"
 size = "52540 KB"
 addr = [
     "https://www.dropbox.com/s/f26jw9esm9k31wf/38k_Galassia.zip?dl=0",
-    "https://1drv.ms/u/s",
-    "!AvJ4Ftc7ueeJiCiMBlJMzvQetnum",
+    "https://1drv.ms/u/s!AvJ4Ftc7ueeJiCiMBlJMzvQetnum",
 ]
 
 [[entries]]
@@ -519,10 +510,7 @@ name = "snowsphere"
 team = "PLANET-B"
 title = "hello_world"
 size = "28900 KB"
-addr = [
-    "https://1drv.ms/u/s",
-    "!AqATGDVnNM-_gVSk9v560GsbDss_",
-]
+addr = ["https://1drv.ms/u/s!AqATGDVnNM-_gVSk9v560GsbDss_"]
 
 [[entries]]
 no = "49"
@@ -556,10 +544,7 @@ name = "tokiru_iwata"
 team = "麻雀打ちたい"
 title = "moor"
 size = "75000 KB"
-addr = [
-    "https://1drv.ms/u/s",
-    "!AiYirzLq3j_3apwxpXEGCnP29Os",
-]
+addr = ["https://1drv.ms/u/s!AiYirzLq3j_3apwxpXEGCnP29Os"]
 
 [[entries]]
 no = "52"
@@ -706,10 +691,7 @@ name = "akom"
 team = "PLANET-B"
 title = "Holy Code"
 size = "33700 KB"
-addr = [
-    "https://1drv.ms/u/s",
-    "!AqATGDVnNM-_gVIWL4_eo_GWxp0J",
-]
+addr = ["https://1drv.ms/u/s!AqATGDVnNM-_gVIWL4_eo_GWxp0J"]
 
 [[entries]]
 no = "67"
@@ -753,10 +735,7 @@ name = "maki"
 team = "PLANET-B"
 title = "namasute"
 size = "55300 KB"
-addr = [
-    "https://1drv.ms/u/s",
-    "!AqATGDVnNM-_gVNHCS8VfmD9PJD_",
-]
+addr = ["https://1drv.ms/u/s!AqATGDVnNM-_gVNHCS8VfmD9PJD_"]
 
 [[entries]]
 no = "72"
@@ -777,10 +756,7 @@ name = "koorijake"
 team = "凍結済みアカウント"
 title = "Bluish mood"
 size = "89827 KB"
-addr = [
-    "https://mega.nz/#F",
-    "!IP4iTAyI!jkwvNbkccH-EUATbGI4SWg",
-]
+addr = ["https://mega.nz/#F!IP4iTAyI!jkwvNbkccH-EUATbGI4SWg"]
 
 [[entries]]
 no = "74"
@@ -821,8 +797,8 @@ team = "えながのしっぽ"
 title = "サカサマの空に在ったのは"
 size = "36000 KB"
 addr = [
-    "https://1drv.ms/u/s",
-    "!AiYirzLq3j_3bA0pOxFqfbjrl8c (BGA同梱版に変更いたしました。)",
+    "https://1drv.ms/u/s!AiYirzLq3j_3bA0pOxFqfbjrl8c",
+    "(BGA同梱版に変更いたしました。)",
 ]
 
 [[entries]]
@@ -1055,8 +1031,7 @@ title = "I've Been Waiting For You"
 size = "35038 KB"
 addr = [
     "OneDrive",
-    "https://1drv.ms/u/s",
-    "!Askxx7eTyP4Axmb9HuPgfiyUC8ui",
+    "https://1drv.ms/u/s!Askxx7eTyP4Axmb9HuPgfiyUC8ui",
 ]
 
 [[entries]]
@@ -1296,8 +1271,7 @@ addr = [
     "google drive :",
     "http://drive.google.com/file/d/1_U8aERaCiUfiZA4O_qzTdYT4ugtXlEdz/view?usp=sharing",
     "onedrive :",
-    "http://1drv.ms/u/s",
-    "!AjAC-0amif7JgdJN5YpgHAnj8TDPYg",
+    "http://1drv.ms/u/s!AjAC-0amif7JgdJN5YpgHAnj8TDPYg",
 ]
 
 [[entries]]
@@ -1899,8 +1873,7 @@ size = "42385 KB"
 addr = [
     "https://drive.google.com/open?id=1wg6YM48VU5ycTSbQG3A8wjhj7NjFS8pS",
     "https://www.dropbox.com/s/skvrxbxdi5qrg6x/Nameless%20%28Animozity%20feat.%20Project-G%29.zip?dl=1",
-    "https://mega.nz/#",
-    "!jBtCxSYC!cr0S2xPkdda3VjW3ad08AazeBXTvVXbOQp5cOdjor8g",
+    "https://mega.nz/#!jBtCxSYC!cr0S2xPkdda3VjW3ad08AazeBXTvVXbOQp5cOdjor8g",
 ]
 
 [[entries]]
@@ -2944,11 +2917,9 @@ title = "a doll"
 size = "26259 KB"
 addr = [
     "ogg/",
-    "https://1drv.ms/u/s",
-    "!AsoWtzMCDotgg01xwZnWuDjbC2Ws",
+    "https://1drv.ms/u/s!AsoWtzMCDotgg01xwZnWuDjbC2Ws",
     "wav/",
-    "https://1drv.ms/u/s",
-    "!AsoWtzMCDotgg052uY0Pbi7Z_7ek",
+    "https://1drv.ms/u/s!AsoWtzMCDotgg052uY0Pbi7Z_7ek",
 ]
 
 [[entries]]
@@ -3227,8 +3198,7 @@ size = "19862 KB"
 addr = [
     "https://drive.google.com/open?id=136Z7V0zR_c7J79hvCDQnR627Z-ByKgCY",
     "https://www.dropbox.com/s/12tnqs77n99uxar/Faltering%20%28Star%29.zip?dl=1",
-    "https://mega.nz/#",
-    "!6JFnjaZA!ChnmpjzL2ZwYbRAI-2XoV07yyIxRUH-gqoA26aCJHnQ",
+    "https://mega.nz/#!6JFnjaZA!ChnmpjzL2ZwYbRAI-2XoV07yyIxRUH-gqoA26aCJHnQ",
     "2019. 02. 05 / ADDED SP ANOTHER by AZVW_2 (BMS file only) link",
     "https://drive.google.com/open?id=1XQre7Um3EedHatWrfcYTSw9SFSVHJTi9",
 ]
@@ -3515,11 +3485,9 @@ team = "ふたりはケモショタ マックスハート"
 title = "Save-To-Hope (6MX6Z7 6M2O5)"
 size = "61710 KB"
 addr = [
-    "https://1drv.ms/u/s",
-    "!AgqfFd7wACD2g4pRS3neg86gsRzd_Q",
+    "https://1drv.ms/u/s!AgqfFd7wACD2g4pRS3neg86gsRzd_Q",
     "11/13 上記サイトのフォルダ構成では解凍できないというご指摘をいただいたので急遽修正したものを用意しました。",
-    "https://1drv.ms/f/s",
-    "!AgqfFd7wACD2kg2MZLsxO3d9VkW8",
+    "https://1drv.ms/f/s!AgqfFd7wACD2kg2MZLsxO3d9VkW8",
     "https://drive.google.com/open?id=1eVteYkG8LqkDEKLBBWgt3-BWEhQBooPW",
 ]
 
@@ -3549,8 +3517,7 @@ addr = [
     "ogg：",
     "http://docs.google.com/uc?id=1NQ9WTDXaJu6K1JWHzELo2sQr1Zuz6TuI&export=download",
     "ogg(Mirror)：",
-    "https://1drv.ms/u/s",
-    "!AkHILFwfHSyzh3QzOEuB58v9ISZu",
+    "https://1drv.ms/u/s!AkHILFwfHSyzh3QzOEuB58v9ISZu",
 ]
 
 [[entries]]
@@ -3826,10 +3793,7 @@ name = "malgenicdrug"
 team = "IneffectiveDrugs"
 title = "Flambée"
 size = "13010 KB"
-addr = [
-    "https://1drv.ms/u/s",
-    "!AjmAX0eSpgx6iRw9sLK_gCUtzXqX",
-]
+addr = ["https://1drv.ms/u/s!AjmAX0eSpgx6iRw9sLK_gCUtzXqX"]
 
 [[entries]]
 no = "374"
@@ -4129,10 +4093,7 @@ name = "Acht"
 team = "虚無"
 title = "Omegatische Liebe"
 size = "33500 KB"
-addr = [
-    "https://1drv.ms/u/s",
-    "!Ai2eh6vHKKKauQSmZsLjT4_Lu8Qs",
-]
+addr = ["https://1drv.ms/u/s!Ai2eh6vHKKKauQSmZsLjT4_Lu8Qs"]
 
 [[entries]]
 no = "404"
