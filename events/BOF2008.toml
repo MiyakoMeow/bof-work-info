@@ -53,11 +53,9 @@ title = "Canon (blazing summer mix)"
 size = "53546 KB"
 addr = [
     "[HQ-WAV:52.2MB]",
-    "http://nekokan.dyndns.info/~anonymous/bof2008/uta",
-    "'s/uta's_canon_r.rar",
+    "http://nekokan.dyndns.info/~anonymous/bof2008/uta's/uta's_canon_r.rar",
     "[HQ-OGG:22.5MB]",
-    "http://nekokan.dyndns.info/~anonymous/bof2008/uta",
-    "'s/uta's_canon_r_ogg.rar",
+    "http://nekokan.dyndns.info/~anonymous/bof2008/uta's/uta's_canon_r_ogg.rar",
 ]
 
 [[entries]]
@@ -219,11 +217,9 @@ title = "旧地獄街道を行く ～反逆のパルスィ～"
 size = "48758 KB"
 addr = [
     "[HQ-WAV:47.6MB]",
-    "http://nekokan.dyndns.info/~anonymous/bof2008/uta",
-    "'s/uta's_parsee.rar",
+    "http://nekokan.dyndns.info/~anonymous/bof2008/uta's/uta's_parsee.rar",
     "[HQ-OGG:19.5MB]",
-    "http://nekokan.dyndns.info/~anonymous/bof2008/uta",
-    "'s/uta's_parsee_ogg.rar",
+    "http://nekokan.dyndns.info/~anonymous/bof2008/uta's/uta's_parsee_ogg.rar",
 ]
 
 [[entries]]
@@ -457,11 +453,9 @@ title = "月童 - Awaking!!神奈"
 size = "37940 KB"
 addr = [
     "[HQ-WAV:37.0MB]",
-    "http://nekokan.dyndns.info/~anonymous/bof2008/uta",
-    "'s/uta's_warabe.rar",
+    "http://nekokan.dyndns.info/~anonymous/bof2008/uta's/uta's_warabe.rar",
     "[HQ-OGG:15.9MB]",
-    "http://nekokan.dyndns.info/~anonymous/bof2008/uta",
-    "'s/uta's_warabe_ogg.rar",
+    "http://nekokan.dyndns.info/~anonymous/bof2008/uta's/uta's_warabe_ogg.rar",
 ]
 
 [[entries]]
@@ -801,10 +795,7 @@ no = "83"
 name = "mommy"
 title = "I'll forget you, you'll never forget me."
 size = "24080 KB"
-addr = [
-    "http://mommy16807.up.seesaa.net/image/I",
-    "'ll_forget_you_you'll_never_forget_me.zip",
-]
+addr = ["http://mommy16807.up.seesaa.net/image/I'll_forget_you_you'll_never_forget_me.zip"]
 
 [[entries]]
 no = "84"
