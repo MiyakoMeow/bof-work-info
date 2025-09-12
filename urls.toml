@@ -1,0 +1,8 @@
+# URL配置文件示例
+# 包含要抓取的BMS表格URL列表
+
+urls = [
+    "https://manbow.nothing.sh/event/event.cgi?action=URLList&event=14&end=999",
+    # 可以添加更多URL
+    # "https://example.com/another-bms-table",
+]
