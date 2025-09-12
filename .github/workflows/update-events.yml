@@ -41,6 +41,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
+      max-parallel: 1  # 限制并发执行，避免合并冲突
       matrix:
         event_key: ${{ fromJSON(needs.prepare-matrix.outputs.keys) }}
     steps:
@@ -110,10 +111,13 @@ jobs:
           committer: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
           author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
 
-      - name: Enable auto-merge
+      - name: Enable auto-merge with retry
         if: steps.check-changes.outputs.has-changes == 'true' && steps.cpr.outputs.pull-request-number
+        id: enable-automerge
         uses: peter-evans/enable-pull-request-automerge@v3
         with:
           token: ${{ secrets.AUTOMERGE_TOKEN }}
           pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
           merge-method: merge
+          retry-count: 10
+          retry-wait-seconds: 5
