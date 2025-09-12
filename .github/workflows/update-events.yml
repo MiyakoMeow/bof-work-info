@@ -14,7 +14,7 @@ jobs:
     name: Prepare event matrix
     runs-on: ubuntu-latest
     outputs:
-      matrix: ${{ steps.build-matrix.outputs.result }}
+      events: ${{ steps.build-matrix.outputs.result }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -30,11 +30,11 @@ jobs:
               core.setFailed('events.json not found at repo root');
             }
             const data = JSON.parse(fs.readFileSync(path, 'utf8'));
-            const event = (data.events || []).map(e => ({ key: e.key, url: e.url }));
-            if (!event.length) {
+            const events = (data.events || []).map(e => ({ key: e.key, url: e.url }));
+            if (!events.length) {
               core.setFailed('No events defined in events.json');
             }
-            return JSON.stringify({ event });
+            return JSON.stringify(events);
 
   update-event:
     name: Update ${{ matrix.event.key }}
@@ -42,7 +42,8 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
-      matrix: ${{ fromJSON(needs.prepare-matrix.outputs.matrix) }}
+      matrix:
+        event: ${{ fromJSON(needs.prepare-matrix.outputs.events) }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
