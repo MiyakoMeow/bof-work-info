@@ -77,7 +77,19 @@ jobs:
           mkdir -p events
           echo "${{ steps.resolve.outputs.url }}" | cargo run --release -- --stdin --output "events/${{ matrix.event_key }}.toml" --log-level info
 
+      - name: Check for changes
+        id: check-changes
+        run: |
+          if git diff --quiet; then
+            echo "No changes detected for ${{ matrix.event_key }}"
+            echo "has-changes=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "Changes detected for ${{ matrix.event_key }}"
+            echo "has-changes=true" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Rebase on main branch
+        if: steps.check-changes.outputs.has-changes == 'true'
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
@@ -85,6 +97,7 @@ jobs:
           git rebase origin/main
 
       - name: Create Pull Request
+        if: steps.check-changes.outputs.has-changes == 'true'
         id: cpr
         uses: peter-evans/create-pull-request@v6
         with:
@@ -106,7 +119,7 @@ jobs:
           author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
 
       - name: Enable auto-merge
-        if: ${{ steps.cpr.outputs.pull-request-number }}
+        if: steps.check-changes.outputs.has-changes == 'true' && steps.cpr.outputs.pull-request-number
         uses: peter-evans/enable-pull-request-automerge@v3
         with:
           token: ${{ secrets.AUTOMERGE_TOKEN }}
