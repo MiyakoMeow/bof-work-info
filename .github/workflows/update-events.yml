@@ -150,18 +150,40 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Check if PR artifact exists
+        id: check-artifact
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const artifacts = await github.rest.actions.listWorkflowRunArtifacts({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              run_id: context.runId,
+            });
+            
+            const artifactName = `pr-number-${{ matrix.event_key }}`;
+            const artifact = artifacts.data.artifacts.find(a => a.name === artifactName);
+            
+            if (artifact) {
+              console.log(`Found artifact: ${artifactName}`);
+              core.setOutput('exists', 'true');
+            } else {
+              console.log(`Artifact not found: ${artifactName}`);
+              core.setOutput('exists', 'false');
+            }
+
       - name: Download PR number artifact
         id: download
+        if: steps.check-artifact.outputs.exists == 'true'
         uses: actions/download-artifact@v4
         with:
           name: pr-number-${{ matrix.event_key }}
           path: .
           merge-multiple: false
-        continue-on-error: true
 
       - name: Read PR number
         id: read-pr
-        if: steps.download.outcome == 'success'
+        if: steps.check-artifact.outputs.exists == 'true'
         shell: bash
         run: |
           set -euo pipefail
