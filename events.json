@@ -1,12 +1,80 @@
 {
   "events": [
     {
-      "key": "BOFTT",
-      "url": "https://manbow.nothing.sh/event/event.cgi?action=URLList&event=146&end=999"
+      "key": "BOF2005",
+      "url": "https://manbow.nothing.sh/event/event.cgi?action=URLList&end=999&event=22"
+    },
+    {
+      "key": "BOF2006",
+      "url": "https://manbow.nothing.sh/event/event.cgi?action=URLList&end=999&event=36"
+    },
+    {
+      "key": "BOF2008",
+      "url": "https://manbow.nothing.sh/event/event.cgi?action=URLList&end=999&event=54"
+    },
+    {
+      "key": "BOF2009",
+      "url": "https://manbow.nothing.sh/event/event.cgi?action=URLList&end=999&event=60"
+    },
+    {
+      "key": "BOF2010",
+      "url": "https://manbow.nothing.sh/event/event.cgi?action=URLList&end=999&event=65"
+    },
+    {
+      "key": "BOF2011",
+      "url": "https://manbow.nothing.sh/event/event.cgi?action=URLList&end=999&event=74"
+    },
+    {
+      "key": "BOF2012",
+      "url": "https://manbow.nothing.sh/event/event.cgi?action=URLList&end=999&event=83"
+    },
+    {
+      "key": "BOF2013",
+      "url": "https://manbow.nothing.sh/event/event.cgi?action=URLList&end=999&event=88"
+    },
+    {
+      "key": "G2R2014",
+      "url": "https://manbow.nothing.sh/event/event.cgi?action=URLList&end=999&event=96"
+    },
+    {
+      "key": "BOFU2015",
+      "url": "https://manbow.nothing.sh/event/event.cgi?action=URLList&end=999&event=104"
+    },
+    {
+      "key": "BOFU2016",
+      "url": "https://manbow.nothing.sh/event/event.cgi?action=URLList&end=999&event=110"
+    },
+    {
+      "key": "BOFU2017",
+      "url": "https://manbow.nothing.sh/event/event.cgi?action=URLList&end=999&event=116"
+    },
+    {
+      "key": "G2R2018",
+      "url": "https://manbow.nothing.sh/event/event.cgi?action=URLList&end=999&event=123"
+    },
+    {
+      "key": "BOFXV",
+      "url": "https://manbow.nothing.sh/event/event.cgi?action=URLList&end=999&event=127"
+    },
+    {
+      "key": "BOFXVI",
+      "url": "https://manbow.nothing.sh/event/event.cgi?action=URLList&end=999&event=133"
+    },
+    {
+      "key": "BOFXVII",
+      "url": "https://manbow.nothing.sh/event/event.cgi?action=URLList&end=999&event=137"
+    },
+    {
+      "key": "BOFET",
+      "url": "https://manbow.nothing.sh/event/event.cgi?action=URLList&end=999&event=140"
     },
     {
       "key": "BOFNT",
-      "url": "https://manbow.nothing.sh/event/event.cgi?action=URLList&event=142&end=999"
+      "url": "https://manbow.nothing.sh/event/event.cgi?action=URLList&end=999&event=142"
+    },
+    {
+      "key": "BOFTT",
+      "url": "https://manbow.nothing.sh/event/event.cgi?action=URLList&end=999&event=146"
     }
   ]
 }
