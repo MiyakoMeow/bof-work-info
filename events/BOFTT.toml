@@ -1238,16 +1238,14 @@ addr = [
     "-",
     "https://drive.google.com/file/d/1Jk7zcnC4i7lysGeSunzt9t9zfX_kQ6aV/view?usp=sharing",
     "-",
-    "https://1drv.ms/u/s",
-    "!AodogG7jJNek9Hgwu6jajRV0MdeW?e=v6G5oE",
+    "https://1drv.ms/u/s!AodogG7jJNek9Hgwu6jajRV0MdeW?e=v6G5oE",
     "Most up-to-date package for beatoraja/beatoraja用最新パッケージ/Bản cập nhật mới nhất dành cho beatoraja",
     "All SABUN charts included/差分全て含む/Đã bao gồm SABUN",
     "Archive size/アーカイブサイズ/Kích cỡ file giải nén: 158526 KB",
     "-",
     "https://drive.google.com/file/d/159l18tLvk3_YU3nrEGR0kUZH-ib_bya2/view?usp=sharing",
     "-",
-    "https://1drv.ms/u/s",
-    "!AodogG7jJNek9Hm2rT-pQEAyAmL5?e=3UcmRG",
+    "https://1drv.ms/u/s!AodogG7jJNek9Hm2rT-pQEAyAmL5?e=3UcmRG",
     "Update 4 (For package before October 18/10月18日以前のパッケージのため/Dành cho bản cập nhật trước ngày 18 tháng 10)",
     "Archive size/アーカイブサイズ/Kích cỡ file giải nén: 160 KB",
     "-",
@@ -1680,8 +1678,7 @@ team = "THE 3 REJOICERS"
 title = "THE UPHEAVAL LOCUS Feat. 初音ミク"
 size = "84987 KB"
 addr = [
-    "https://1drv.ms/u/s",
-    "!AtmLfKulJbptjN4HzcOARB0F0CQRJQ?e=bjhkUg",
+    "https://1drv.ms/u/s!AtmLfKulJbptjN4HzcOARB0F0CQRJQ?e=bjhkUg",
     "https://drive.google.com/file/d/1oiSDs1SfPlMzmXO2mAjyPUUYACkteRGp/view?usp=sharing",
 ]
 
@@ -1918,10 +1915,7 @@ name = "QFPYX"
 team = "mixTure"
 title = "Sunset Glow"
 size = "134872 KB"
-addr = [
-    "https://1drv.ms/u/s",
-    "!AkUUv8rQUe5ZgW28BUo7X-H2q0zb?e=wLHtBT",
-]
+addr = ["https://1drv.ms/u/s!AkUUv8rQUe5ZgW28BUo7X-H2q0zb?e=wLHtBT"]
 
 [[entries]]
 no = "173"
@@ -1929,10 +1923,7 @@ name = "QFPYX + Cabbage Ball"
 team = "mixTure"
 title = "Genetics_9331"
 size = "65457 KB"
-addr = [
-    "https://1drv.ms/u/s",
-    "!AkUUv8rQUe5ZgWzRJ8W3MiU9KOMO?e=KfpO3x",
-]
+addr = ["https://1drv.ms/u/s!AkUUv8rQUe5ZgWzRJ8W3MiU9KOMO?e=KfpO3x"]
 
 [[entries]]
 no = "174"
