@@ -30,19 +30,19 @@ jobs:
               core.setFailed('events.json not found at repo root');
             }
             const data = JSON.parse(fs.readFileSync(path, 'utf8'));
-            const include = (data.events || []).map(e => ({ key: e.key, url: e.url }));
-            if (!include.length) {
+            const event = (data.events || []).map(e => ({ key: e.key, url: e.url }));
+            if (!event.length) {
               core.setFailed('No events defined in events.json');
             }
-            return JSON.stringify({ include });
+            return JSON.stringify({ event });
 
   update-event:
-    name: Update ${{ matrix.key }}
+    name: Update ${{ matrix.event.key }}
     needs: prepare-matrix
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
-      matrix: ${{ fromJson(needs.prepare-matrix.outputs.matrix) }}
+      matrix: ${{ fromJSON(needs.prepare-matrix.outputs.matrix) }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -56,31 +56,31 @@ jobs:
       - name: Fetch event data
         run: |
           mkdir -p events
-          echo "${{ matrix.url }}" | cargo run --release -- --stdin --output "events/${{ matrix.key }}.toml" --log-level info
+          echo "${{ matrix.event.url }}" | cargo run --release -- --stdin --output "events/${{ matrix.event.key }}.toml" --log-level info
 
       - name: Create Pull Request
         id: cpr
         uses: peter-evans/create-pull-request@v6
         with:
           token: ${{ secrets.AUTOMERGE_TOKEN }}
-          commit-message: "chore(events): update ${{ matrix.key }} data"
-          branch: "chore/update-${{ matrix.key }}"
-          title: "chore(events): update ${{ matrix.key }} data"
+          commit-message: "chore(events): update ${{ matrix.event.key }} data"
+          branch: "chore/update-${{ matrix.event.key }}"
+          title: "chore(events): update ${{ matrix.event.key }} data"
           body: |
-            Automated update for `${{ matrix.key }}`
-            Source: `${{ matrix.url }}`
+            Automated update for `${{ matrix.event.key }}`
+            Source: `${{ matrix.event.url }}`
           add-paths: |
-            events/${{ matrix.key }}.toml
+            events/${{ matrix.event.key }}.toml
           labels: |
             automated
-            event:${{ matrix.key }}
+            event:${{ matrix.event.key }}
           delete-branch: true
           signoff: false
           committer: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
           author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
 
       - name: Enable auto-merge
-        if: steps.cpr.outputs.pull-request-number
+        if: ${{ steps.cpr.outputs.pull-request-number }}
         uses: peter-evans/enable-pull-request-automerge@v3
         with:
           token: ${{ secrets.AUTOMERGE_TOKEN }}
