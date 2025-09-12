@@ -77,6 +77,13 @@ jobs:
           mkdir -p events
           echo "${{ steps.resolve.outputs.url }}" | cargo run --release -- --stdin --output "events/${{ matrix.event_key }}.toml" --log-level info
 
+      - name: Rebase on main branch
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git fetch origin main
+          git rebase origin/main
+
       - name: Create Pull Request
         id: cpr
         uses: peter-evans/create-pull-request@v6
