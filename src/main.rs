@@ -11,6 +11,7 @@ use log::{debug, error, info};
 use regex::Regex;
 use scraper::{ElementRef, Html, Selector};
 use serde::{Deserialize, Serialize};
+use serde_json;
 use surf;
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -34,6 +35,20 @@ struct UrlConfig {
     urls: Vec<String>,
 }
 
+#[derive(Debug, Serialize, Deserialize)]
+struct EventConfig {
+    key: String,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    event_id: Option<String>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    url: Option<String>,
+}
+
+#[derive(Debug, Serialize, Deserialize)]
+struct EventsConfig {
+    events: Vec<EventConfig>,
+}
+
 #[derive(Parser, Debug)]
 #[command(author, version, about, long_about = None)]
 struct Args {
@@ -48,6 +63,10 @@ struct Args {
     /// 从stdin读取URL列表（每行一个URL）
     #[arg(long)]
     stdin: bool,
+
+    /// 从events.json读取事件配置
+    #[arg(long)]
+    events: bool,
 
     /// 日志级别 (trace, debug, info, warn, error)
     #[arg(long, default_value = "info")]
@@ -480,6 +499,33 @@ fn read_urls_from_file(path: &PathBuf) -> Result<Vec<String>> {
     Ok(config.urls)
 }
 
+fn read_events_from_file(path: &PathBuf) -> Result<Vec<String>> {
+    debug!("从events.json读取事件配置: {:?}", path);
+    let content = std::fs::read_to_string(path)?;
+    let config: EventsConfig = serde_json::from_str(&content)?;
+
+    let mut urls = Vec::new();
+    for event in config.events {
+        let url = if let Some(event_id) = event.event_id {
+            // 使用 event_id 构建 URL
+            format!(
+                "https://manbow.nothing.sh/event/event.cgi?action=URLList&end=999&event={}",
+                event_id
+            )
+        } else if let Some(url) = event.url {
+            // 使用现有的 url 字段（向后兼容）
+            url
+        } else {
+            error!("事件 {} 既没有 event_id 也没有 url 字段", event.key);
+            continue;
+        };
+        urls.push(url);
+    }
+
+    debug!("从events.json读取到 {} 个URL", urls.len());
+    Ok(urls)
+}
+
 fn write_output(content: &str, output_path: &Option<PathBuf>) -> Result<()> {
     match output_path {
         Some(path) => {
@@ -517,6 +563,10 @@ async fn async_main(args: Args) -> Result<()> {
     // 获取URL列表
     let urls = if args.stdin {
         read_urls_from_stdin()?
+    } else if args.events {
+        // 从 events.json 读取事件配置
+        let events_path = PathBuf::from("events.json");
+        read_events_from_file(&events_path)?
     } else if let Some(input_path) = &args.input {
         read_urls_from_file(input_path)?
     } else {

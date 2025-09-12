@@ -52,9 +52,19 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
+          # 首先尝试获取 event_id，如果不存在则尝试获取 url
+          event_id=$(jq -r --arg KEY "${{ matrix.event_key }}" '.events[] | select(.key==$KEY) | .event_id' events.json)
           url=$(jq -r --arg KEY "${{ matrix.event_key }}" '.events[] | select(.key==$KEY) | .url' events.json)
-          if [ -z "$url" ] || [ "$url" = "null" ]; then
-            echo "URL not found for key=${{ matrix.event_key }}" >&2
+          
+          if [ "$event_id" != "null" ] && [ -n "$event_id" ]; then
+            # 使用 event_id 构建 URL
+            url="https://manbow.nothing.sh/event/event.cgi?action=URLList&end=999&event=$event_id"
+            echo "Using event_id: $event_id" >&2
+          elif [ "$url" != "null" ] && [ -n "$url" ]; then
+            # 使用现有的 url 字段（向后兼容）
+            echo "Using existing URL: $url" >&2
+          else
+            echo "Neither event_id nor url found for key=${{ matrix.event_key }}" >&2
             exit 1
           fi
           echo "url=$url" >> "$GITHUB_OUTPUT"
