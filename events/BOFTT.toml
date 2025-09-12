@@ -183,7 +183,8 @@ size = "1277000 KB"
 addr = [
     "https://drive.google.com/file/d/1oEKRdSNixpZ4_T0ZdVt3IPk6flx2XDfc/view?usp=sharing",
     "（oraja用 HQ）",
-    "https://drive.google.com/file/d/1fZFWd3JRUZYymqaYbP3IaG0Z0cVpm3u_/view?usp=sharing（LQ)",
+    "https://drive.google.com/file/d/1fZFWd3JRUZYymqaYbP3IaG0Z0cVpm3u_/view?usp=sharing",
+    "（LQ)",
 ]
 
 [[entries]]
@@ -599,7 +600,8 @@ addr = [
     "(BGA全部入り 98000KB)",
     "https://drive.google.com/file/d/1DdgF2L_0M02dSXocjkr_jBry2pSzh6cv/view?usp=sharing",
     "(LR2用wmvのみ 33000KB)",
-    "https://drive.google.com/file/d/1mSQzDCvkcoyhODhfUCHg6G1QYIBUUTrm/view?usp=sharing（軽量版・パッケージからDLした方はこちらのANOTHER譜面に差し替えてください。）",
+    "https://drive.google.com/file/d/1mSQzDCvkcoyhODhfUCHg6G1QYIBUUTrm/view?usp=sharing",
+    "（軽量版・パッケージからDLした方はこちらのANOTHER譜面に差し替えてください。）",
 ]
 
 [[entries]]
@@ -1125,7 +1127,10 @@ name = "cromo remix by Mister.Himi"
 team = "THE 3 REJOICERS"
 title = "ホーリー・スノウの夜に -Revolutionary.Himix-"
 size = "28157 KB"
-addr = ["https://nekokan.dyndns.info/~anonymous/n/o/i/z/[Mister.Himi_the_Last]holy_snow_remixx.zip"]
+addr = [
+    "https://nekokan.dyndns.info/~anonymous/n/o/i/z/",
+    "[Mister.Himi_the_Last]holy_snow_remixx.zip",
+]
 
 [[entries]]
 no = "102"
@@ -1233,14 +1238,16 @@ addr = [
     "-",
     "https://drive.google.com/file/d/1Jk7zcnC4i7lysGeSunzt9t9zfX_kQ6aV/view?usp=sharing",
     "-",
-    "https://1drv.ms/u/s!AodogG7jJNek9Hgwu6jajRV0MdeW?e=v6G5oE",
+    "https://1drv.ms/u/s",
+    "!AodogG7jJNek9Hgwu6jajRV0MdeW?e=v6G5oE",
     "Most up-to-date package for beatoraja/beatoraja用最新パッケージ/Bản cập nhật mới nhất dành cho beatoraja",
     "All SABUN charts included/差分全て含む/Đã bao gồm SABUN",
     "Archive size/アーカイブサイズ/Kích cỡ file giải nén: 158526 KB",
     "-",
     "https://drive.google.com/file/d/159l18tLvk3_YU3nrEGR0kUZH-ib_bya2/view?usp=sharing",
     "-",
-    "https://1drv.ms/u/s!AodogG7jJNek9Hm2rT-pQEAyAmL5?e=3UcmRG",
+    "https://1drv.ms/u/s",
+    "!AodogG7jJNek9Hm2rT-pQEAyAmL5?e=3UcmRG",
     "Update 4 (For package before October 18/10月18日以前のパッケージのため/Dành cho bản cập nhật trước ngày 18 tháng 10)",
     "Archive size/アーカイブサイズ/Kích cỡ file giải nén: 160 KB",
     "-",
@@ -1673,7 +1680,8 @@ team = "THE 3 REJOICERS"
 title = "THE UPHEAVAL LOCUS Feat. 初音ミク"
 size = "84987 KB"
 addr = [
-    "https://1drv.ms/u/s!AtmLfKulJbptjN4HzcOARB0F0CQRJQ?e=bjhkUg",
+    "https://1drv.ms/u/s",
+    "!AtmLfKulJbptjN4HzcOARB0F0CQRJQ?e=bjhkUg",
     "https://drive.google.com/file/d/1oiSDs1SfPlMzmXO2mAjyPUUYACkteRGp/view?usp=sharing",
 ]
 
@@ -1910,7 +1918,10 @@ name = "QFPYX"
 team = "mixTure"
 title = "Sunset Glow"
 size = "134872 KB"
-addr = ["https://1drv.ms/u/s!AkUUv8rQUe5ZgW28BUo7X-H2q0zb?e=wLHtBT"]
+addr = [
+    "https://1drv.ms/u/s",
+    "!AkUUv8rQUe5ZgW28BUo7X-H2q0zb?e=wLHtBT",
+]
 
 [[entries]]
 no = "173"
@@ -1918,7 +1929,10 @@ name = "QFPYX + Cabbage Ball"
 team = "mixTure"
 title = "Genetics_9331"
 size = "65457 KB"
-addr = ["https://1drv.ms/u/s!AkUUv8rQUe5ZgWzRJ8W3MiU9KOMO?e=KfpO3x"]
+addr = [
+    "https://1drv.ms/u/s",
+    "!AkUUv8rQUe5ZgWzRJ8W3MiU9KOMO?e=KfpO3x",
+]
 
 [[entries]]
 no = "174"
@@ -2080,9 +2094,11 @@ title = "Colorful Polytope"
 size = "207880 KB"
 addr = [
     "[wav]",
-    "https://drive.google.com/file/d/1HI3ffCb_KiJFsvKnIh4ysLCmZ7SBxqGb/view?usp=sharing（約203MB）",
+    "https://drive.google.com/file/d/1HI3ffCb_KiJFsvKnIh4ysLCmZ7SBxqGb/view?usp=sharing",
+    "（約203MB）",
     "[ogg]",
-    "https://drive.google.com/file/d/1ZPY2yYSsVuF8uJsEn2lMiKiK04iK8v-k/view?usp=sharing（約77MB）",
+    "https://drive.google.com/file/d/1ZPY2yYSsVuF8uJsEn2lMiKiK04iK8v-k/view?usp=sharing",
+    "（約77MB）",
 ]
 
 [[entries]]
@@ -2250,23 +2266,26 @@ title = "すこやかドレンチェリー"
 size = "134289 KB"
 addr = [
     "通常版（ogg版）",
-    "https://wakaba-shirasu.info/Tobiuo_BMS/[TeamTobiuo]SukoyakaDrainedCherry_ogg.zip（LR2向け",
-    "/ beatoraja向け  両方対応しておりますが、その分重いです）",
-    "https://wakaba-shirasu.info/Tobiuo_BMS/[TeamTobiuo]SukoyakaDrainedCherry_ogg_oraja.zip（beatoraja向け",
-    "/ LR2では再生できません）",
-    "https://wakaba-shirasu.info/Tobiuo_BMS/[TeamTobiuo]SukoyakaDrainedCherry_ogg_LR2.zip（LR2向け）",
+    "https://wakaba-shirasu.info/Tobiuo_BMS/",
+    "[TeamTobiuo]SukoyakaDrainedCherry_ogg.zip（LR2向け / beatoraja向け  両方対応しておりますが、その分重いです）",
+    "https://wakaba-shirasu.info/Tobiuo_BMS/",
+    "[TeamTobiuo]SukoyakaDrainedCherry_ogg_oraja.zip（beatoraja向け / LR2では再生できません）",
+    "https://wakaba-shirasu.info/Tobiuo_BMS/",
+    "[TeamTobiuo]SukoyakaDrainedCherry_ogg_LR2.zip（LR2向け）",
     "ミラーサイト（Google Drive、ogg版）",
-    "https://drive.google.com/file/d/1kYK630iuh7558i_kv9HS_mBWObK31Hq1/view?usp=sharing（LR2向け",
-    "/ beatoraja向け  両方対応しておりますが、その分重いです）",
-    "https://drive.google.com/file/d/17vd880xHWgIWtkGzO0uhXwbeuUvcmJ8Q/view?usp=sharing（beatoraja向け",
-    "/ LR2では再生できません）",
-    "https://drive.google.com/file/d/1H4q3ps_2wXIsQqDe38xlHIFa8O43r5up/view?usp=sharing（LR2向け）",
+    "https://drive.google.com/file/d/1kYK630iuh7558i_kv9HS_mBWObK31Hq1/view?usp=sharing",
+    "（LR2向け / beatoraja向け  両方対応しておりますが、その分重いです）",
+    "https://drive.google.com/file/d/17vd880xHWgIWtkGzO0uhXwbeuUvcmJ8Q/view?usp=sharing",
+    "（beatoraja向け / LR2では再生できません）",
+    "https://drive.google.com/file/d/1H4q3ps_2wXIsQqDe38xlHIFa8O43r5up/view?usp=sharing",
+    "（LR2向け）",
     "ムービーのみ",
-    "https://wakaba-shirasu.info/Tobiuo_BMS/[TeamTobiuo]SukoyakaDrainedCherry_Movie_Fixed.zip（LR2向け",
-    "/ beatoraja向け  両方対応しておりますが、その分重いです）",
-    "https://wakaba-shirasu.info/Tobiuo_BMS/[TeamTobiuo]SukoyakaDrainedCherry_Movie_Fixed_oraja.zip（beatoraja向け",
-    "/ LR2では再生できません）",
-    "https://wakaba-shirasu.info/Tobiuo_BMS/[TeamTobiuo]SukoyakaDrainedCherry_Movie_Fixed_LR2.zip（LR2向け）",
+    "https://wakaba-shirasu.info/Tobiuo_BMS/",
+    "[TeamTobiuo]SukoyakaDrainedCherry_Movie_Fixed.zip（LR2向け / beatoraja向け  両方対応しておりますが、その分重いです）",
+    "https://wakaba-shirasu.info/Tobiuo_BMS/",
+    "[TeamTobiuo]SukoyakaDrainedCherry_Movie_Fixed_oraja.zip（beatoraja向け / LR2では再生できません）",
+    "https://wakaba-shirasu.info/Tobiuo_BMS/",
+    "[TeamTobiuo]SukoyakaDrainedCherry_Movie_Fixed_LR2.zip（LR2向け）",
 ]
 
 [[entries]]
@@ -2853,8 +2872,8 @@ title = "Random 431!!!"
 size = "40449 KB"
 addr = [
     "Google:",
-    "https://drive.google.com/file/d/1P_WYgpqMmljAqZ6HyKUF7K9qyWbJJ5rM/view?usp=drive_link;br",
-    ">百度：链接：",
+    "https://drive.google.com/file/d/1P_WYgpqMmljAqZ6HyKUF7K9qyWbJJ5rM/view?usp=drive_link",
+    ";br>百度：链接：",
     "https://pan.baidu.com/s/1mUPHt0wlbOC6et-yUUjpEw?pwd=awsl",
     "提取码：awsl",
 ]
@@ -4398,8 +4417,8 @@ title = "The Reviving Nightmare (fm 20th Anniv. Remix)"
 size = "183878 KB"
 addr = [
     "BMS",
-    "https://drive.google.com/file/d/1Cg2Y_Glhk_Va_ACTz-UNJOzzW7k_5VAo/view?usp=sharing(2024/10/28",
-    "20:00(JST)以前にダウンロードした方はこちらのmp4を同フォルダにいれるとAPPEND譜面のBGAが導入出来ます。)",
+    "https://drive.google.com/file/d/1Cg2Y_Glhk_Va_ACTz-UNJOzzW7k_5VAo/view?usp=sharing",
+    "(2024/10/28 20:00(JST)以前にダウンロードした方はこちらのmp4を同フォルダにいれるとAPPEND譜面のBGAが導入出来ます。)",
     "https://drive.google.com/file/d/1ckFkHddwgpivPLWRqyYZSiN-6i4zivYu/view?usp=sharing",
 ]
 
