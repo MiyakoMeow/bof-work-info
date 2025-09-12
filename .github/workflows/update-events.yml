@@ -110,11 +110,60 @@ jobs:
           committer: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
           author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
 
-      - name: Enable auto-merge
+      - name: Save PR number artifact
         if: steps.check-changes.outputs.has-changes == 'true' && steps.cpr.outputs.pull-request-number
-        id: enable-automerge
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo "${{ steps.cpr.outputs.pull-request-number }}" > pr-number.txt
+
+      - name: Upload PR number artifact
+        if: steps.check-changes.outputs.has-changes == 'true' && steps.cpr.outputs.pull-request-number
+        uses: actions/upload-artifact@v4
+        with:
+          name: pr-number-${{ matrix.event_key }}
+          path: pr-number.txt
+          if-no-files-found: error
+
+  automerge-pr:
+    name: Enable auto-merge ${{ matrix.event_key }}
+    needs: 
+      - prepare-matrix
+      - update-event
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      max-parallel: 1
+      matrix:
+        event_key: ${{ fromJSON(needs.prepare-matrix.outputs.keys) }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Download PR number artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: pr-number-${{ matrix.event_key }}
+          path: .
+          merge-multiple: false
+        continue-on-error: true
+
+      - name: Read PR number
+        id: read-pr
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ -f pr-number.txt ]; then
+            pr=$(cat pr-number.txt | tr -d '\r\n ')
+            if [ -n "$pr" ]; then
+              echo "pr=$pr" >> "$GITHUB_OUTPUT"
+            fi
+          fi
+
+      - name: Enable auto-merge
+        if: steps.read-pr.outputs.pr
         uses: peter-evans/enable-pull-request-automerge@v3
         with:
           token: ${{ secrets.AUTOMERGE_TOKEN }}
-          pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
+          pull-request-number: ${{ steps.read-pr.outputs.pr }}
           merge-method: merge
