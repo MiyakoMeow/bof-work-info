@@ -5,7 +5,7 @@
 ## 功能特性
 
 - 🔍 自动检测和解析BMS表格结构
-- 📝 支持多种输入方式：TOML配置文件、stdin、默认URL
+- 📝 支持多种输入方式：events.json配置文件、stdin
 - 📤 支持多种输出方式：stdout、指定文件
 - 🐛 完整的日志系统，支持不同日志级别
 - 🌐 支持多URL批量处理
@@ -32,21 +32,29 @@ cargo run -- --output data.toml
 cargo run -- --log-level debug
 ```
 
-### 从TOML配置文件读取URL
+### 从events.json配置文件读取事件
 
-创建URL配置文件 `urls.toml`：
+程序默认从 `events.json` 文件读取事件配置。该文件包含事件列表，每个事件有 `key` 和 `event_id` 字段：
 
-```toml
-urls = [
-    "https://manbow.nothing.sh/event/event.cgi?action=URLList&event=14&end=999",
-    "https://example.com/another-bms-table",
-]
+```json
+{
+  "events": [
+    {
+      "key": "BOF2005",
+      "event_id": "22"
+    },
+    {
+      "key": "BOF2006", 
+      "event_id": "36"
+    }
+  ]
+}
 ```
 
 然后运行：
 
 ```bash
-cargo run -- --input urls.toml --output output.toml
+cargo run -- --output output.toml
 ```
 
 ### 从stdin读取URL
@@ -63,7 +71,6 @@ cargo run -- --stdin < urls.txt
 
 ## 命令行参数
 
-- `-i, --input <PATH>`: 输入TOML配置文件路径，包含要抓取的URL列表
 - `-o, --output <PATH>`: 输出文件路径，如果不指定则输出到stdout
 - `--stdin`: 从stdin读取URL列表（每行一个URL）
 - `--log-level <LEVEL>`: 日志级别 (trace, debug, info, warn, error)，默认为info
@@ -95,19 +102,13 @@ addr = [                    # 地址列表
 
 ## 示例
 
-### 批量处理多个URL
+### 批量处理多个事件
+
+程序默认会从 `events.json` 读取所有事件配置并处理：
 
 ```bash
-# 创建配置文件
-cat > urls.toml << EOF
-urls = [
-    "https://manbow.nothing.sh/event/event.cgi?action=URLList&event=14&end=999",
-    "https://manbow.nothing.sh/event/event.cgi?action=URLList&event=15&end=999",
-]
-EOF
-
-# 运行程序
-cargo run -- --input urls.toml --output combined_data.toml --log-level info
+# 运行程序处理所有事件
+cargo run -- --output combined_data.toml --log-level info
 ```
 
 ### 调试模式

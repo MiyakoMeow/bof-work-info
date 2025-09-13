@@ -31,11 +31,6 @@ struct BmsData {
 }
 
 #[derive(Debug, Serialize, Deserialize)]
-struct UrlConfig {
-    urls: Vec<String>,
-}
-
-#[derive(Debug, Serialize, Deserialize)]
 struct EventConfig {
     key: String,
     #[serde(skip_serializing_if = "Option::is_none")]
@@ -52,10 +47,6 @@ struct EventsConfig {
 #[derive(Parser, Debug)]
 #[command(author, version, about, long_about = None)]
 struct Args {
-    /// 输入TOML配置文件路径，包含要抓取的URL列表
-    #[arg(short, long)]
-    input: Option<PathBuf>,
-
     /// 输出文件路径，如果不指定则输出到stdout
     #[arg(short, long)]
     output: Option<PathBuf>,
@@ -63,10 +54,6 @@ struct Args {
     /// 从stdin读取URL列表（每行一个URL）
     #[arg(long)]
     stdin: bool,
-
-    /// 从events.json读取事件配置
-    #[arg(long)]
-    events: bool,
 
     /// 日志级别 (trace, debug, info, warn, error)
     #[arg(long, default_value = "info")]
@@ -491,14 +478,6 @@ fn read_urls_from_stdin() -> Result<Vec<String>> {
     Ok(urls)
 }
 
-fn read_urls_from_file(path: &PathBuf) -> Result<Vec<String>> {
-    debug!("从文件读取URL配置: {:?}", path);
-    let content = std::fs::read_to_string(path)?;
-    let config: UrlConfig = toml::from_str(&content)?;
-    debug!("从文件读取到 {} 个URL", config.urls.len());
-    Ok(config.urls)
-}
-
 fn read_events_from_file(path: &PathBuf) -> Result<Vec<String>> {
     debug!("从events.json读取事件配置: {:?}", path);
     let content = std::fs::read_to_string(path)?;
@@ -563,18 +542,10 @@ async fn async_main(args: Args) -> Result<()> {
     // 获取URL列表
     let urls = if args.stdin {
         read_urls_from_stdin()?
-    } else if args.events {
-        // 从 events.json 读取事件配置
+    } else {
+        // 默认从 events.json 读取事件配置
         let events_path = PathBuf::from("events.json");
         read_events_from_file(&events_path)?
-    } else if let Some(input_path) = &args.input {
-        read_urls_from_file(input_path)?
-    } else {
-        // 默认URL
-        vec![
-            "https://manbow.nothing.sh/event/event.cgi?action=URLList&event=146&end=999"
-                .to_string(),
-        ]
     };
 
     if urls.is_empty() {
