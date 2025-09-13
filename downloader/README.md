@@ -12,8 +12,11 @@
 - 🤝 交互模式支持多链接选择
 - 📁 自动创建输出目录和清理文件名
 - 🐛 完整的日志系统
+- ✅ **只接受完整的URL格式** - 不再支持纯分享ID
 
 ## 支持的链接类型
+
+> **重要**: 只接受完整的URL格式，不再支持纯分享ID
 
 - **直链**: 直接HTTP/HTTPS下载链接
 - **Google Drive**: 
@@ -22,14 +25,12 @@
   - 支持UserContent格式：`https://drive.usercontent.google.com/download?id=ID`
   - 支持UserContent UC格式：`https://drive.usercontent.google.com/u/0/uc?id=ID&export=download`
   - 支持Drive Link格式：`https://drive.google.com/file/d/ID/view?usp=drive_link`
-  - 支持分享ID格式：`1jcN3IRYuRcLaact9vHhU1zNzEUdggAtD`
   - 自动从完整URL中提取分享ID并转换为直接下载链接
 - **Dropbox**: 
   - 支持完整URL格式：`https://www.dropbox.com/s/ID/filename`
   - 支持SCL FI格式：`https://www.dropbox.com/scl/fi/ID/filename?rlkey=xxx`
   - 支持SCL FO格式：`https://www.dropbox.com/scl/fo/ID/filename?rlkey=xxx`
   - 支持Dropboxusercontent格式：`https://dl.dropboxusercontent.com/scl/fi/ID/filename?rlkey=xxx`
-  - 支持分享ID格式：`xv5y8nncofb9yeh3h9brc`
   - 自动从完整URL中提取分享ID并转换为直接下载链接
 - **OneDrive**: 支持1drv.ms短链接
 - **MediaFire**: 支持mediafire.com链接
@@ -108,7 +109,7 @@ cargo run -p downloader -- --event events/BOFTT.toml --interactive
 
 ### 链接格式示例
 
-在events/*.toml文件中，可以使用以下格式：
+在events/*.toml文件中，**只接受完整的URL格式**：
 
 ```toml
 [[entries]]
@@ -123,30 +124,30 @@ addr = [
     "https://drive.usercontent.google.com/download?id=1m_GOnfpSIH-ZLMRBQnQT_avgCrSywIko",
     "https://drive.usercontent.google.com/u/0/uc?id=1NH6o6K87t8SyALD4dnlhoWjfmuhlhUJ1&export=download",
     "https://drive.google.com/file/d/1imaDyb6IVyLghtU9LurhI_kkwPZ5yOLd/view?usp=drive_link",
-    "1jcN3IRYuRcLaact9vHhU1zNzEUdggAtD",  # 纯分享ID
     
     # Dropbox - 支持多种格式
     "https://www.dropbox.com/s/xv5y8nncofb9yeh3h9brc/filename.zip",
     "https://www.dropbox.com/scl/fi/xv5y8nncofb9yeh3h9brc/filename.zip?rlkey=xxx",
     "https://www.dropbox.com/scl/fo/18srn7s8rj8voez0f5v8p/filename.zip?rlkey=xxx",
     "https://dl.dropboxusercontent.com/scl/fi/dyqxgoa9y0bae5l2aspmc/filename.zip?rlkey=xxx",
-    "xv5y8nncofb9yeh3h9brc",              # 纯分享ID
     
     # 其他链接
     "https://example.com/file.zip"        # 直链
 ]
 ```
 
+> **注意**: 不再支持纯分享ID格式（如 `1jcN3IRYuRcLaact9vHhU1zNzEUdggAtD`），必须使用完整的URL。
+
 ### 链接提取功能
 
-downloader会自动从完整的分享链接中提取分享ID：
+downloader会自动从完整的分享链接中提取分享ID并转换为直接下载链接：
 
 - **Google Drive**: 
-  - 从 `/file/d/ID/view` 格式中提取ID
+  - 从 `/file/d/ID/view` 格式中提取ID并转换为UC下载链接
   - 从 `?id=ID` 参数中提取ID
   - 从 `/download?id=ID` 格式中提取ID
   - 从 `/uc?id=ID` 格式中提取ID
-- **Dropbox**: 从 `/s/ID/filename`、`/scl/fi/ID/filename`、`/scl/fo/ID/filename` 或 `dl.dropboxusercontent.com/scl/fi/ID/filename` 格式中提取ID
+- **Dropbox**: 从 `/s/ID/filename`、`/scl/fi/ID/filename`、`/scl/fo/ID/filename` 或 `dl.dropboxusercontent.com/scl/fi/ID/filename` 格式中提取ID并转换为直接下载链接
 - 提取的ID用于构造更简洁的直接下载链接
 
 ## 文件命名规则

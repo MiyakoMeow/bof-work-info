@@ -77,32 +77,8 @@ enum LinkType {
 
 impl LinkType {
     fn from_url(url: &str) -> Self {
-        // 检查是否是纯分享ID格式（不包含协议）
-        if url.len() > 20
-            && url
-                .chars()
-                .all(|c| c.is_alphanumeric() || c == '-' || c == '_')
-            && !url.contains("://")
-        {
-            // 可能是分享ID，根据长度和字符特征判断
-            if url.len() >= 20 && url.len() <= 50 {
-                if url.chars().any(|c| c.is_uppercase()) {
-                    // 包含大写字母，可能是Google Drive ID
-                    Self::GoogleDrive {
-                        share_id: url.to_string(),
-                    }
-                } else {
-                    // 可能是Dropbox ID
-                    Self::Dropbox {
-                        share_id: url.to_string(),
-                    }
-                }
-            } else {
-                Self::Unknown {
-                    url: url.to_string(),
-                }
-            }
-        } else if url.starts_with("https://drive.google.com/")
+        // 只处理完整的URL，不再支持纯分享ID
+        if url.starts_with("https://drive.google.com/")
             || url.starts_with("https://drive.usercontent.google.com/")
         {
             // 从Google Drive链接中提取ID
@@ -236,42 +212,30 @@ impl LinkType {
         match self {
             Self::Direct { url } => Some(url.clone()),
             Self::GoogleDrive { share_id } => {
-                // 如果是分享ID，直接构造下载链接
-                if !share_id.contains("://") {
-                    Some(format!(
-                        "https://drive.google.com/uc?export=download&id={}",
-                        share_id
-                    ))
-                } else {
-                    // 如果是完整URL，尝试提取ID
-                    if share_id.contains("/file/d/") && share_id.contains("/view") {
-                        if let Some(id_start) = share_id.find("/file/d/") {
-                            let id_start = id_start + 8;
-                            if let Some(id_end) = share_id[id_start..].find("/") {
-                                let id = &share_id[id_start..id_start + id_end];
-                                return Some(format!(
-                                    "https://drive.google.com/uc?export=download&id={}",
-                                    id
-                                ));
-                            }
+                // 处理完整URL，尝试提取ID并构造下载链接
+                if share_id.contains("/file/d/") && share_id.contains("/view") {
+                    if let Some(id_start) = share_id.find("/file/d/") {
+                        let id_start = id_start + 8;
+                        if let Some(id_end) = share_id[id_start..].find("/") {
+                            let id = &share_id[id_start..id_start + id_end];
+                            return Some(format!(
+                                "https://drive.google.com/uc?export=download&id={}",
+                                id
+                            ));
                         }
                     }
-                    Some(share_id.clone())
                 }
+                // 如果已经是UC格式或其他格式，直接返回
+                Some(share_id.clone())
             }
             Self::Dropbox { share_id } => {
-                // 如果是分享ID，构造下载链接
-                if !share_id.contains("://") {
-                    Some(format!("https://www.dropbox.com/s/{}/file?dl=1", share_id))
+                // 处理完整URL，尝试转换为直接下载链接
+                if share_id.contains("?dl=0") {
+                    Some(share_id.replace("?dl=0", "?dl=1"))
+                } else if !share_id.contains("?dl=") {
+                    Some(format!("{}&dl=1", share_id))
                 } else {
-                    // 如果是完整URL，尝试转换为直接下载链接
-                    if share_id.contains("?dl=0") {
-                        Some(share_id.replace("?dl=0", "?dl=1"))
-                    } else if !share_id.contains("?dl=") {
-                        Some(format!("{}&dl=1", share_id))
-                    } else {
-                        Some(share_id.clone())
-                    }
+                    Some(share_id.clone())
                 }
             }
             Self::OneDrive { url } => Some(url.clone()),
@@ -317,22 +281,39 @@ fn filter_entries<'a>(
     Ok(entries)
 }
 
+fn is_valid_url(url: &str) -> bool {
+    // 基本URL格式验证
+    if !url.starts_with("http://") && !url.starts_with("https://") {
+        return false;
+    }
+
+    // 检查是否包含有效的域名部分
+    if let Some(colon_pos) = url.find("://") {
+        let after_protocol = &url[colon_pos + 3..];
+        if after_protocol.is_empty() || !after_protocol.contains('.') {
+            return false;
+        }
+    } else {
+        return false;
+    }
+
+    // 可以添加更多URL格式验证规则
+    true
+}
+
 fn analyze_links(entry: &BmsEntry) -> (Vec<LinkType>, Vec<String>) {
     let mut links = Vec::new();
     let mut non_links = Vec::new();
 
     for addr in &entry.addr {
-        // 检查是否是分享ID格式（20-50个字符，只包含字母数字、连字符、下划线）
-        if addr.len() >= 20
-            && addr.len() <= 50
-            && addr
-                .chars()
-                .all(|c| c.is_alphanumeric() || c == '-' || c == '_')
-            && !addr.contains("://")
-        {
-            links.push(LinkType::from_url(addr));
-        } else if addr.starts_with("http://") || addr.starts_with("https://") {
-            links.push(LinkType::from_url(addr));
+        // 只接受以 http:// 或 https:// 开头的有效URL
+        if addr.starts_with("http://") || addr.starts_with("https://") {
+            // 进一步验证URL格式
+            if is_valid_url(addr) {
+                links.push(LinkType::from_url(addr));
+            } else {
+                non_links.push(addr.clone());
+            }
         } else {
             non_links.push(addr.clone());
         }
