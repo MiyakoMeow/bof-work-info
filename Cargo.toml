@@ -1,5 +1,5 @@
 [workspace]
-members = ["fetcher"]
+members = ["fetcher", "downloader"]
 resolver = "3"
 default-members = ["fetcher"]
 
@@ -25,3 +25,16 @@ env_logger = "0.11"             # 环境变量日志实现
 
 # 错误处理
 anyhow = "1.0"                  # 错误处理工具
+
+# 文件系统操作
+tokio = "1.0"                   # 异步运行时
+walkdir = "2.4"                 # 目录遍历
+
+# URL解析
+url = "2.5"                     # URL解析库
+
+# 进度条
+indicatif = "0.17"              # 进度条显示
+
+# 文件类型检测
+infer = "0.13"                  # 文件类型检测
