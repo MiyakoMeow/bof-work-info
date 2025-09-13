@@ -38,18 +38,21 @@ jobs:
           python3 << 'EOF'
           import toml
           import json
-          import sys
+          import os
           
           with open('events.toml', 'r', encoding='utf-8') as f:
               data = toml.load(f)
           
           # 提取所有事件的 key
           keys = [event['key'] for event in data['events']]
-          print(f"keys={json.dumps(keys)}")
           
           # 提取所有事件的完整信息
           events = data['events']
-          print(f"events={json.dumps(events)}")
+          
+          # 将输出写入 GITHUB_OUTPUT
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
+              f.write(f"keys={json.dumps(keys)}\n")
+              f.write(f"events={json.dumps(events)}\n")
           EOF
 
   update-event:
