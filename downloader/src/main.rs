@@ -97,7 +97,9 @@ impl LinkType {
                     share_id: url.to_string(),
                 }
             }
-        } else if url.starts_with("https://www.dropbox.com/") {
+        } else if url.starts_with("https://www.dropbox.com/")
+            || url.starts_with("https://dl.dropboxusercontent.com/")
+        {
             // 从Dropbox链接中提取ID
             if let Some(id) = Self::extract_dropbox_id(url) {
                 Self::Dropbox { share_id: id }
@@ -179,6 +181,7 @@ impl LinkType {
                 return Some(url[id_start..id_start + end].to_string());
             }
         }
+
         // 匹配格式: https://www.dropbox.com/scl/fi/ID/filename
         if let Some(start) = url.find("/scl/fi/") {
             let id_start = start + 8;
@@ -186,6 +189,23 @@ impl LinkType {
                 return Some(url[id_start..id_start + end].to_string());
             }
         }
+
+        // 匹配格式: https://www.dropbox.com/scl/fo/ID/filename
+        if let Some(start) = url.find("/scl/fo/") {
+            let id_start = start + 8;
+            if let Some(end) = url[id_start..].find("/") {
+                return Some(url[id_start..id_start + end].to_string());
+            }
+        }
+
+        // 匹配格式: https://dl.dropboxusercontent.com/scl/fi/ID/filename
+        if url.starts_with("https://dl.dropboxusercontent.com/scl/fi/") {
+            let id_start = 40; // "https://dl.dropboxusercontent.com/scl/fi/".len()
+            if let Some(end) = url[id_start..].find("/") {
+                return Some(url[id_start..id_start + end].to_string());
+            }
+        }
+
         None
     }
 

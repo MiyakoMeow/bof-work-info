@@ -26,7 +26,9 @@
   - 自动从完整URL中提取分享ID并转换为直接下载链接
 - **Dropbox**: 
   - 支持完整URL格式：`https://www.dropbox.com/s/ID/filename`
-  - 支持SCL格式：`https://www.dropbox.com/scl/fi/ID/filename?rlkey=xxx`
+  - 支持SCL FI格式：`https://www.dropbox.com/scl/fi/ID/filename?rlkey=xxx`
+  - 支持SCL FO格式：`https://www.dropbox.com/scl/fo/ID/filename?rlkey=xxx`
+  - 支持Dropboxusercontent格式：`https://dl.dropboxusercontent.com/scl/fi/ID/filename?rlkey=xxx`
   - 支持分享ID格式：`xv5y8nncofb9yeh3h9brc`
   - 自动从完整URL中提取分享ID并转换为直接下载链接
 - **OneDrive**: 支持1drv.ms短链接
@@ -126,6 +128,8 @@ addr = [
     # Dropbox - 支持多种格式
     "https://www.dropbox.com/s/xv5y8nncofb9yeh3h9brc/filename.zip",
     "https://www.dropbox.com/scl/fi/xv5y8nncofb9yeh3h9brc/filename.zip?rlkey=xxx",
+    "https://www.dropbox.com/scl/fo/18srn7s8rj8voez0f5v8p/filename.zip?rlkey=xxx",
+    "https://dl.dropboxusercontent.com/scl/fi/dyqxgoa9y0bae5l2aspmc/filename.zip?rlkey=xxx",
     "xv5y8nncofb9yeh3h9brc",              # 纯分享ID
     
     # 其他链接
@@ -142,7 +146,7 @@ downloader会自动从完整的分享链接中提取分享ID：
   - 从 `?id=ID` 参数中提取ID
   - 从 `/download?id=ID` 格式中提取ID
   - 从 `/uc?id=ID` 格式中提取ID
-- **Dropbox**: 从 `/s/ID/filename` 或 `/scl/fi/ID/filename` 格式中提取ID
+- **Dropbox**: 从 `/s/ID/filename`、`/scl/fi/ID/filename`、`/scl/fo/ID/filename` 或 `dl.dropboxusercontent.com/scl/fi/ID/filename` 格式中提取ID
 - 提取的ID用于构造更简洁的直接下载链接
 
 ## 文件命名规则

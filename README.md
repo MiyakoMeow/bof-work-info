@@ -99,7 +99,7 @@ bof-table-fetch/
 ### 作品下载
 - 🔗 支持多种下载链接类型（直链、Google Drive、Dropbox、OneDrive、MediaFire等）
 - 🆔 支持分享ID格式和完整URL格式
-- 🔍 自动从完整分享链接中提取分享ID（支持多种Google Drive和Dropbox格式）
+- 🔍 自动从完整分享链接中提取分享ID（支持多种Google Drive和Dropbox格式，包括dropboxusercontent.com）
 - 🎯 支持按作品编号筛选下载
 - 🤝 交互模式支持多链接选择
 - 📁 自动创建输出目录和清理文件名
