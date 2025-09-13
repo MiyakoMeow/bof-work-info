@@ -11,7 +11,6 @@ use log::{debug, error, info};
 use regex::Regex;
 use scraper::{ElementRef, Html, Selector};
 use serde::{Deserialize, Serialize};
-use serde_json;
 use surf;
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -479,9 +478,9 @@ fn read_urls_from_stdin() -> Result<Vec<String>> {
 }
 
 fn read_events_from_file(path: &PathBuf) -> Result<Vec<String>> {
-    debug!("从events.json读取事件配置: {:?}", path);
+    debug!("从events.toml读取事件配置: {:?}", path);
     let content = std::fs::read_to_string(path)?;
-    let config: EventsConfig = serde_json::from_str(&content)?;
+    let config: EventsConfig = toml::from_str(&content)?;
 
     let mut urls = Vec::new();
     for event in config.events {
@@ -501,7 +500,7 @@ fn read_events_from_file(path: &PathBuf) -> Result<Vec<String>> {
         urls.push(url);
     }
 
-    debug!("从events.json读取到 {} 个URL", urls.len());
+    debug!("从events.toml读取到 {} 个URL", urls.len());
     Ok(urls)
 }
 
@@ -543,8 +542,8 @@ async fn async_main(args: Args) -> Result<()> {
     let urls = if args.stdin {
         read_urls_from_stdin()?
     } else {
-        // 默认从 events.json 读取事件配置
-        let events_path = PathBuf::from("events.json");
+        // 默认从 events.toml 读取事件配置
+        let events_path = PathBuf::from("events.toml");
         read_events_from_file(&events_path)?
     };
 

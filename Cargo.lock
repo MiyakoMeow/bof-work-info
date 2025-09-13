@@ -377,7 +377,6 @@ dependencies = [
  "regex",
  "scraper",
  "serde",
- "serde_json",
  "smol",
  "surf",
  "toml",
