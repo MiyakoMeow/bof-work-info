@@ -50,13 +50,29 @@ struct Args {
 
 #[derive(Debug, Clone)]
 enum LinkType {
-    Direct { url: String },
-    GoogleDrive { share_id: String },
-    Dropbox { share_id: String },
-    OneDrive { url: String },
-    MediaFire { url: String },
-    Mega { url: String },
-    Unknown { url: String },
+    Direct {
+        url: String,
+    },
+    GoogleDrive {
+        share_id: String,
+    },
+    Dropbox {
+        share_id: String,
+    },
+    OneDrive {
+        url: String,
+    },
+    MediaFire {
+        url: String,
+    },
+    Mega {
+        #[allow(dead_code)]
+        url: String,
+    },
+    Unknown {
+        #[allow(dead_code)]
+        url: String,
+    },
 }
 
 impl LinkType {
@@ -183,22 +199,18 @@ impl LinkType {
         }
 
         // 匹配格式: https://www.dropbox.com/scl/fi/ID/filename
-        if let Some(start) = url.find("/scl/fi/") {
-            let id_start = start + 8;
-            if let Some(end) = url[id_start..].find("/") {
-                return Some(url[id_start..id_start + end].to_string());
-            }
-        }
-
         // 匹配格式: https://www.dropbox.com/scl/fo/ID/filename
-        if let Some(start) = url.find("/scl/fo/") {
-            let id_start = start + 8;
-            if let Some(end) = url[id_start..].find("/") {
-                return Some(url[id_start..id_start + end].to_string());
+        // 匹配格式: https://dl.dropboxusercontent.com/scl/fi/ID/filename
+        for pattern in ["/scl/fi/", "/scl/fo/"] {
+            if let Some(start) = url.find(pattern) {
+                let id_start = start + pattern.len();
+                if let Some(end) = url[id_start..].find("/") {
+                    return Some(url[id_start..id_start + end].to_string());
+                }
             }
         }
 
-        // 匹配格式: https://dl.dropboxusercontent.com/scl/fi/ID/filename
+        // 特殊处理 dropboxusercontent.com 格式
         if url.starts_with("https://dl.dropboxusercontent.com/scl/fi/") {
             let id_start = 40; // "https://dl.dropboxusercontent.com/scl/fi/".len()
             if let Some(end) = url[id_start..].find("/") {
@@ -426,7 +438,7 @@ async fn download_file(url: &str, output_path: &Path) -> Result<()> {
     let mut file = fs::File::create(output_path)
         .with_context(|| format!("创建文件失败: {:?}", output_path))?;
 
-    let mut bytes = response
+    let bytes = response
         .body_bytes()
         .await
         .map_err(|e| anyhow::anyhow!("读取响应失败: {} - {}", url, e))?;

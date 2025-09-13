@@ -15,17 +15,3 @@ toml = { workspace = true }
 # HTTP和异步
 surf = { workspace = true }
 smol = { workspace = true }
-
-# 文件系统操作
-tokio = { workspace = true, features = ["full"] }
-walkdir = { workspace = true }
-
-# URL解析和正则
-url = { workspace = true }
-regex = { workspace = true }
-
-# 进度条
-indicatif = { workspace = true }
-
-# 文件类型检测
-infer = { workspace = true }
