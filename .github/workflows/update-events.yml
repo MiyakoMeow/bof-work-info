@@ -20,12 +20,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Install toml-cli
+      - name: Install Python dependencies
         run: |
-          wget https://github.com/gnprice/toml-cli/releases/download/v0.2.3/toml-0.2.3-x86_64-linux.tar.gz
-          tar -xzf toml-0.2.3-x86_64-linux.tar.gz
-          chmod +x toml-0.2.3-x86_64-linux/toml
-          sudo mv toml-0.2.3-x86_64-linux/toml /usr/local/bin/
+          python3 -m pip install toml
 
       - name: Build matrix keys from events.toml
         id: build-matrix
@@ -37,17 +34,23 @@ jobs:
             exit 1
           fi
           
-          # 提取所有事件的key
-          keys=$(toml get events.toml events[].key | jq -c '.')
-          if [ -z "$keys" ] || [ "$keys" = "null" ] || [ "$keys" = "[]" ]; then
-            echo "No events defined in events.toml" >&2
-            exit 1
-          fi
-          echo "keys=$keys" >> "$GITHUB_OUTPUT"
+          # 使用 Python 来解析 TOML 文件
+          python3 << 'EOF'
+          import toml
+          import json
+          import sys
           
-          # 提取所有事件的完整信息（包括event_id和url）
-          events=$(toml get events.toml events | jq -c '.')
-          echo "events=$events" >> "$GITHUB_OUTPUT"
+          with open('events.toml', 'r', encoding='utf-8') as f:
+              data = toml.load(f)
+          
+          # 提取所有事件的 key
+          keys = [event['key'] for event in data['events']]
+          print(f"keys={json.dumps(keys)}")
+          
+          # 提取所有事件的完整信息
+          events = data['events']
+          print(f"events={json.dumps(events)}")
+          EOF
 
   update-event:
     name: Update ${{ matrix.event_key }}
