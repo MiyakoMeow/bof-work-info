@@ -19,196 +19,340 @@ pub struct BmsEntry {
     pub addr: Vec<String>,
 }
 
-#[derive(Debug, Clone)]
-pub enum LinkType {
-    Direct {
-        url: String,
-    },
-    GoogleDrive {
-        share_id: String,
-    },
-    Dropbox {
-        share_id: String,
-    },
-    OneDrive {
-        url: String,
-    },
-    MediaFire {
-        url: String,
-    },
-    Mega {
-        #[allow(dead_code)]
-        url: String,
-    },
-    Unknown {
-        #[allow(dead_code)]
-        url: String,
-    },
+pub trait LinkTypeTrait: std::fmt::Debug {
+    fn is_downloadable(&self) -> bool;
+    fn get_direct_url(&self) -> Option<String>;
+    #[allow(unused)]
+    fn get_url(&self) -> &str;
+    #[allow(unused)]
+    fn get_type_name(&self) -> &'static str;
+    fn from_url(url: &str) -> Option<Self>
+    where
+        Self: Sized;
 }
 
-impl LinkType {
-    pub fn from_url(url: &str) -> Self {
-        // 只处理完整的URL，不再支持纯分享ID
+#[derive(Debug, Clone)]
+pub struct DirectLink {
+    pub url: String,
+}
+
+#[derive(Debug, Clone)]
+pub struct GoogleDriveLink {
+    pub share_id: String,
+}
+
+#[derive(Debug, Clone)]
+pub struct DropboxLink {
+    pub share_id: String,
+}
+
+#[derive(Debug, Clone)]
+pub struct OneDriveLink {
+    pub url: String,
+}
+
+#[derive(Debug, Clone)]
+pub struct MediaFireLink {
+    pub url: String,
+}
+
+#[derive(Debug, Clone)]
+pub struct MegaLink {
+    #[allow(unused)]
+    pub url: String,
+}
+
+#[derive(Debug, Clone)]
+pub struct UnknownLink {
+    #[allow(unused)]
+    pub url: String,
+}
+
+// 为所有具体类型实现Debug trait以便格式化输出
+pub type LinkType = Box<dyn LinkTypeTrait>;
+
+// 为每个具体类型实现 LinkTypeTrait
+impl LinkTypeTrait for DirectLink {
+    fn is_downloadable(&self) -> bool {
+        true
+    }
+    fn get_direct_url(&self) -> Option<String> {
+        Some(self.url.clone())
+    }
+    fn get_url(&self) -> &str {
+        &self.url
+    }
+    fn get_type_name(&self) -> &'static str {
+        "Direct"
+    }
+    fn from_url(url: &str) -> Option<Self> {
+        if url.starts_with("http://") || url.starts_with("https://") {
+            Some(DirectLink {
+                url: url.to_string(),
+            })
+        } else {
+            None
+        }
+    }
+}
+
+impl LinkTypeTrait for GoogleDriveLink {
+    fn is_downloadable(&self) -> bool {
+        true
+    }
+    fn get_direct_url(&self) -> Option<String> {
+        if self.share_id.starts_with("https://") {
+            Some(self.share_id.clone())
+        } else {
+            Some(format!(
+                "https://drive.google.com/uc?export=download&id={}",
+                self.share_id
+            ))
+        }
+    }
+    fn get_url(&self) -> &str {
+        &self.share_id
+    }
+    fn get_type_name(&self) -> &'static str {
+        "GoogleDrive"
+    }
+    fn from_url(url: &str) -> Option<Self> {
         if url.starts_with("https://drive.google.com/")
             || url.starts_with("https://drive.usercontent.google.com/")
         {
-            // 从Google Drive链接中提取ID
-            if let Some(id) = Self::extract_google_drive_id(url) {
-                Self::GoogleDrive { share_id: id }
+            if let Some(id) = extract_google_drive_id(url) {
+                Some(GoogleDriveLink { share_id: id })
             } else {
-                Self::GoogleDrive {
+                Some(GoogleDriveLink {
                     share_id: url.to_string(),
-                }
-            }
-        } else if url.starts_with("https://www.dropbox.com/")
-            || url.starts_with("https://dl.dropboxusercontent.com/")
-        {
-            // 从Dropbox链接中提取ID
-            if let Some(id) = Self::extract_dropbox_id(url) {
-                Self::Dropbox { share_id: id }
-            } else {
-                Self::Dropbox {
-                    share_id: url.to_string(),
-                }
-            }
-        } else if url.starts_with("https://1drv.ms/") {
-            Self::OneDrive {
-                url: url.to_string(),
-            }
-        } else if url.starts_with("https://www.mediafire.com/") {
-            Self::MediaFire {
-                url: url.to_string(),
-            }
-        } else if url.starts_with("https://mega.nz/") || url.starts_with("https://mega.co.nz/") {
-            Self::Mega {
-                url: url.to_string(),
-            }
-        } else if url.starts_with("http://") || url.starts_with("https://") {
-            Self::Direct {
-                url: url.to_string(),
+                })
             }
         } else {
-            Self::Unknown {
+            None
+        }
+    }
+}
+
+impl LinkTypeTrait for DropboxLink {
+    fn is_downloadable(&self) -> bool {
+        true
+    }
+    fn get_direct_url(&self) -> Option<String> {
+        if self.share_id.contains("?dl=0") {
+            Some(self.share_id.replace("?dl=0", "?dl=1"))
+        } else if !self.share_id.contains("?dl=") {
+            Some(format!("{}?dl=1", self.share_id))
+        } else {
+            Some(self.share_id.clone())
+        }
+    }
+    fn get_url(&self) -> &str {
+        &self.share_id
+    }
+    fn get_type_name(&self) -> &'static str {
+        "Dropbox"
+    }
+    fn from_url(url: &str) -> Option<Self> {
+        if url.starts_with("https://www.dropbox.com/")
+            || url.starts_with("https://dl.dropboxusercontent.com/")
+        {
+            if let Some(id) = extract_dropbox_id(url) {
+                Some(DropboxLink { share_id: id })
+            } else {
+                Some(DropboxLink {
+                    share_id: url.to_string(),
+                })
+            }
+        } else {
+            None
+        }
+    }
+}
+
+impl LinkTypeTrait for OneDriveLink {
+    fn is_downloadable(&self) -> bool {
+        true
+    }
+    fn get_direct_url(&self) -> Option<String> {
+        Some(self.url.clone())
+    }
+    fn get_url(&self) -> &str {
+        &self.url
+    }
+    fn get_type_name(&self) -> &'static str {
+        "OneDrive"
+    }
+    fn from_url(url: &str) -> Option<Self> {
+        if url.starts_with("https://1drv.ms/") {
+            Some(OneDriveLink {
                 url: url.to_string(),
-            }
+            })
+        } else {
+            None
         }
     }
+}
 
-    pub fn extract_google_drive_id(url: &str) -> Option<String> {
-        // 匹配格式: https://drive.google.com/file/d/ID/view
-        if let Some(start) = url.find("/file/d/") {
-            let id_start = start + 8;
-            if let Some(end) = url[id_start..].find("/") {
-                return Some(url[id_start..id_start + end].to_string());
-            }
+impl LinkTypeTrait for MediaFireLink {
+    fn is_downloadable(&self) -> bool {
+        true
+    }
+    fn get_direct_url(&self) -> Option<String> {
+        Some(self.url.clone())
+    }
+    fn get_url(&self) -> &str {
+        &self.url
+    }
+    fn get_type_name(&self) -> &'static str {
+        "MediaFire"
+    }
+    fn from_url(url: &str) -> Option<Self> {
+        if url.starts_with("https://www.mediafire.com/") {
+            Some(MediaFireLink {
+                url: url.to_string(),
+            })
+        } else {
+            None
         }
+    }
+}
 
-        // 匹配格式: https://drive.google.com/uc?id=ID
-        if let Some(start) = url.find("?id=") {
-            let id_start = start + 4;
-            if let Some(end) = url[id_start..].find("&") {
-                return Some(url[id_start..id_start + end].to_string());
-            } else {
-                return Some(url[id_start..].to_string());
-            }
-        }
-
-        // 匹配格式: https://drive.usercontent.google.com/download?id=ID
-        if let Some(start) = url.find("/download?id=") {
-            let id_start = start + 13;
-            if let Some(end) = url[id_start..].find("&") {
-                return Some(url[id_start..id_start + end].to_string());
-            } else {
-                return Some(url[id_start..].to_string());
-            }
-        }
-
-        // 匹配格式: https://drive.usercontent.google.com/u/0/uc?id=ID
-        if let Some(start) = url.find("/uc?id=") {
-            let id_start = start + 7;
-            if let Some(end) = url[id_start..].find("&") {
-                return Some(url[id_start..id_start + end].to_string());
-            } else {
-                return Some(url[id_start..].to_string());
-            }
-        }
-
+impl LinkTypeTrait for MegaLink {
+    fn is_downloadable(&self) -> bool {
+        false
+    }
+    fn get_direct_url(&self) -> Option<String> {
         None
     }
-
-    pub fn extract_dropbox_id(url: &str) -> Option<String> {
-        // 匹配格式: https://www.dropbox.com/s/ID/filename
-        if let Some(start) = url.find("/s/") {
-            let id_start = start + 3;
-            if let Some(end) = url[id_start..].find("/") {
-                return Some(url[id_start..id_start + end].to_string());
-            }
+    fn get_url(&self) -> &str {
+        &self.url
+    }
+    fn get_type_name(&self) -> &'static str {
+        "Mega"
+    }
+    fn from_url(url: &str) -> Option<Self> {
+        if url.starts_with("https://mega.nz/") || url.starts_with("https://mega.co.nz/") {
+            Some(MegaLink {
+                url: url.to_string(),
+            })
+        } else {
+            None
         }
+    }
+}
 
-        // 匹配格式: https://www.dropbox.com/scl/fi/ID/filename
-        // 匹配格式: https://www.dropbox.com/scl/fo/ID/filename
-        // 匹配格式: https://dl.dropboxusercontent.com/scl/fi/ID/filename
-        for pattern in ["/scl/fi/", "/scl/fo/"] {
-            if let Some(start) = url.find(pattern) {
-                let id_start = start + pattern.len();
-                if let Some(end) = url[id_start..].find("/") {
-                    return Some(url[id_start..id_start + end].to_string());
-                }
-            }
-        }
-
-        // 特殊处理 dropboxusercontent.com 格式
-        if url.starts_with("https://dl.dropboxusercontent.com/scl/fi/") {
-            let id_start = 40; // "https://dl.dropboxusercontent.com/scl/fi/".len()
-            if let Some(end) = url[id_start..].find("/") {
-                return Some(url[id_start..id_start + end].to_string());
-            }
-        }
-
+impl LinkTypeTrait for UnknownLink {
+    fn is_downloadable(&self) -> bool {
+        false
+    }
+    fn get_direct_url(&self) -> Option<String> {
         None
     }
+    fn get_url(&self) -> &str {
+        &self.url
+    }
+    fn get_type_name(&self) -> &'static str {
+        "Unknown"
+    }
+    fn from_url(url: &str) -> Option<Self> {
+        Some(UnknownLink {
+            url: url.to_string(),
+        })
+    }
+}
 
-    pub fn is_downloadable(&self) -> bool {
-        match self {
-            Self::Direct { .. }
-            | Self::GoogleDrive { .. }
-            | Self::Dropbox { .. }
-            | Self::OneDrive { .. }
-            | Self::MediaFire { .. } => true,
-            Self::Mega { .. } | Self::Unknown { .. } => false,
+pub fn create_link_from_url(url: &str) -> LinkType {
+    // 尝试各种链接类型
+    if let Some(link) = DirectLink::from_url(url) {
+        Box::new(link)
+    } else if let Some(link) = GoogleDriveLink::from_url(url) {
+        Box::new(link)
+    } else if let Some(link) = DropboxLink::from_url(url) {
+        Box::new(link)
+    } else if let Some(link) = OneDriveLink::from_url(url) {
+        Box::new(link)
+    } else if let Some(link) = MediaFireLink::from_url(url) {
+        Box::new(link)
+    } else if let Some(link) = MegaLink::from_url(url) {
+        Box::new(link)
+    } else {
+        // 默认为UnknownLink
+        Box::new(UnknownLink::from_url(url).unwrap())
+    }
+}
+
+pub fn extract_google_drive_id(url: &str) -> Option<String> {
+    // 匹配格式: https://drive.google.com/file/d/ID/view
+    if let Some(start) = url.find("/file/d/") {
+        let id_start = start + 8;
+        if let Some(end) = url[id_start..].find("/") {
+            return Some(url[id_start..id_start + end].to_string());
         }
     }
 
-    pub fn get_direct_url(&self) -> Option<String> {
-        match self {
-            Self::Direct { url } => Some(url.clone()),
-            Self::GoogleDrive { share_id } => {
-                // 如果share_id是完整URL，直接返回
-                if share_id.starts_with("https://") {
-                    Some(share_id.clone())
-                } else {
-                    // 如果只是ID，构造下载链接
-                    Some(format!(
-                        "https://drive.google.com/uc?export=download&id={}",
-                        share_id
-                    ))
-                }
-            }
-            Self::Dropbox { share_id } => {
-                // 处理完整URL，尝试转换为直接下载链接
-                if share_id.contains("?dl=0") {
-                    Some(share_id.replace("?dl=0", "?dl=1"))
-                } else if !share_id.contains("?dl=") {
-                    Some(format!("{}&dl=1", share_id))
-                } else {
-                    Some(share_id.clone())
-                }
-            }
-            Self::OneDrive { url } => Some(url.clone()),
-            Self::MediaFire { url } => Some(url.clone()),
-            _ => None,
+    // 匹配格式: https://drive.google.com/uc?id=ID
+    if let Some(start) = url.find("?id=") {
+        let id_start = start + 4;
+        if let Some(end) = url[id_start..].find("&") {
+            return Some(url[id_start..id_start + end].to_string());
+        } else {
+            return Some(url[id_start..].to_string());
         }
     }
+
+    // 匹配格式: https://drive.usercontent.google.com/download?id=ID
+    if let Some(start) = url.find("/download?id=") {
+        let id_start = start + 13;
+        if let Some(end) = url[id_start..].find("&") {
+            return Some(url[id_start..id_start + end].to_string());
+        } else {
+            return Some(url[id_start..].to_string());
+        }
+    }
+
+    // 匹配格式: https://drive.usercontent.google.com/u/0/uc?id=ID
+    if let Some(start) = url.find("/uc?id=") {
+        let id_start = start + 7;
+        if let Some(end) = url[id_start..].find("&") {
+            return Some(url[id_start..id_start + end].to_string());
+        } else {
+            return Some(url[id_start..].to_string());
+        }
+    }
+
+    None
+}
+
+pub fn extract_dropbox_id(url: &str) -> Option<String> {
+    // 匹配格式: https://www.dropbox.com/s/ID/filename
+    if let Some(start) = url.find("/s/") {
+        let id_start = start + 3;
+        if let Some(end) = url[id_start..].find("/") {
+            return Some(url[id_start..id_start + end].to_string());
+        }
+    }
+
+    // 匹配格式: https://www.dropbox.com/scl/fi/ID/filename
+    // 匹配格式: https://www.dropbox.com/scl/fo/ID/filename
+    // 匹配格式: https://dl.dropboxusercontent.com/scl/fi/ID/filename
+    for pattern in ["/scl/fi/", "/scl/fo/"] {
+        if let Some(start) = url.find(pattern) {
+            let id_start = start + pattern.len();
+            if let Some(end) = url[id_start..].find("/") {
+                return Some(url[id_start..id_start + end].to_string());
+            }
+        }
+    }
+
+    // 特殊处理 dropboxusercontent.com 格式
+    if url.starts_with("https://dl.dropboxusercontent.com/scl/fi/") {
+        let id_start = 40; // "https://dl.dropboxusercontent.com/scl/fi/".len()
+        if let Some(end) = url[id_start..].find("/") {
+            return Some(url[id_start..id_start + end].to_string());
+        }
+    }
+
+    None
 }
 
 pub fn is_valid_url(url: &str) -> bool {
@@ -240,7 +384,7 @@ pub fn analyze_links(entry: &BmsEntry) -> (Vec<LinkType>, Vec<String>) {
         if addr.starts_with("http://") || addr.starts_with("https://") {
             // 进一步验证URL格式
             if is_valid_url(addr) {
-                links.push(LinkType::from_url(addr));
+                links.push(create_link_from_url(addr));
             } else {
                 non_links.push(addr.clone());
             }
