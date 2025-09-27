@@ -56,18 +56,6 @@ pub struct MediaFireLink {
     pub url: String,
 }
 
-#[derive(Debug, Clone)]
-pub struct MegaLink {
-    #[allow(unused)]
-    pub url: String,
-}
-
-#[derive(Debug, Clone)]
-pub struct UnknownLink {
-    #[allow(unused)]
-    pub url: String,
-}
-
 // 为所有具体类型实现Debug trait以便格式化输出
 pub type LinkType = Box<dyn LinkTypeTrait>;
 
@@ -217,50 +205,6 @@ impl LinkTypeTrait for MediaFireLink {
     }
 }
 
-impl LinkTypeTrait for MegaLink {
-    fn is_downloadable(&self) -> bool {
-        false
-    }
-    fn get_direct_url(&self) -> Option<String> {
-        None
-    }
-    fn get_url(&self) -> &str {
-        &self.url
-    }
-    fn get_type_name(&self) -> &'static str {
-        "Mega"
-    }
-    fn from_url(url: &str) -> Option<Self> {
-        if url.starts_with("https://mega.nz/") || url.starts_with("https://mega.co.nz/") {
-            Some(MegaLink {
-                url: url.to_string(),
-            })
-        } else {
-            None
-        }
-    }
-}
-
-impl LinkTypeTrait for UnknownLink {
-    fn is_downloadable(&self) -> bool {
-        false
-    }
-    fn get_direct_url(&self) -> Option<String> {
-        None
-    }
-    fn get_url(&self) -> &str {
-        &self.url
-    }
-    fn get_type_name(&self) -> &'static str {
-        "Unknown"
-    }
-    fn from_url(url: &str) -> Option<Self> {
-        Some(UnknownLink {
-            url: url.to_string(),
-        })
-    }
-}
-
 pub fn create_link_from_url(url: &str) -> LinkType {
     // 尝试各种链接类型
     if let Some(link) = DirectLink::from_url(url) {
@@ -273,11 +217,11 @@ pub fn create_link_from_url(url: &str) -> LinkType {
         Box::new(link)
     } else if let Some(link) = MediaFireLink::from_url(url) {
         Box::new(link)
-    } else if let Some(link) = MegaLink::from_url(url) {
-        Box::new(link)
     } else {
-        // 默认为UnknownLink
-        Box::new(UnknownLink::from_url(url).unwrap())
+        // 默认为DirectLink
+        Box::new(DirectLink {
+            url: url.to_string(),
+        })
     }
 }
 
