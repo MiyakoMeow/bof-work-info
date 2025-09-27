@@ -1,11 +1,12 @@
 use std::{
+    any::Any,
     fs,
     io::{BufReader, Read},
     path::{Path, PathBuf},
 };
 
 use anyhow::{Context, Result};
-use log::{error, info, warn};
+use log::{info, warn};
 use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Serialize, Deserialize)]
@@ -19,7 +20,7 @@ pub struct BmsEntry {
     pub addr: Vec<String>,
 }
 
-pub trait LinkTypeTrait: std::fmt::Debug {
+pub trait LinkTypeTrait: std::fmt::Debug + Any {
     fn is_downloadable(&self) -> bool;
     fn get_direct_url(&self) -> Option<String>;
     #[allow(unused)]
@@ -29,6 +30,8 @@ pub trait LinkTypeTrait: std::fmt::Debug {
     fn from_url(url: &str) -> Option<Self>
     where
         Self: Sized;
+
+    fn as_any(&self) -> &dyn Any;
 }
 
 #[derive(Debug, Clone)]
@@ -82,6 +85,10 @@ impl LinkTypeTrait for DirectLink {
             None
         }
     }
+
+    fn as_any(&self) -> &dyn Any {
+        self
+    }
 }
 
 impl LinkTypeTrait for GoogleDriveLink {
@@ -119,6 +126,10 @@ impl LinkTypeTrait for GoogleDriveLink {
             None
         }
     }
+
+    fn as_any(&self) -> &dyn Any {
+        self
+    }
 }
 
 impl LinkTypeTrait for DropboxLink {
@@ -155,6 +166,10 @@ impl LinkTypeTrait for DropboxLink {
             None
         }
     }
+
+    fn as_any(&self) -> &dyn Any {
+        self
+    }
 }
 
 impl LinkTypeTrait for OneDriveLink {
@@ -179,6 +194,10 @@ impl LinkTypeTrait for OneDriveLink {
             None
         }
     }
+
+    fn as_any(&self) -> &dyn Any {
+        self
+    }
 }
 
 impl LinkTypeTrait for MediaFireLink {
@@ -202,6 +221,10 @@ impl LinkTypeTrait for MediaFireLink {
         } else {
             None
         }
+    }
+
+    fn as_any(&self) -> &dyn Any {
+        self
     }
 }
 
@@ -340,7 +363,10 @@ pub fn analyze_links(entry: &BmsEntry) -> (Vec<LinkType>, Vec<String>) {
     (links, non_links)
 }
 
-pub fn select_download_link(entry: &BmsEntry, interactive: bool) -> Result<Option<String>> {
+pub fn select_download_link_for_trait(
+    entry: &BmsEntry,
+    interactive: bool,
+) -> Result<Option<Box<dyn LinkTypeTrait>>> {
     let (links, non_links) = analyze_links(entry);
 
     if links.is_empty() {
@@ -351,13 +377,18 @@ pub fn select_download_link(entry: &BmsEntry, interactive: bool) -> Result<Optio
         return Ok(None);
     }
 
-    let downloadable_links: Vec<_> = links.iter().filter(|link| link.is_downloadable()).collect();
+    let downloadable_links: Vec<Box<dyn LinkTypeTrait>> = links
+        .into_iter()
+        .filter(|link| link.is_downloadable())
+        .collect();
 
     if downloadable_links.is_empty() {
         warn!("作品 #{} - {} 没有支持的下载链接", entry.no, entry.title);
+        // 重新获取所有链接来显示调试信息
+        let all_links = analyze_links(entry).0;
         info!(
             "  可用链接: {}",
-            links
+            all_links
                 .iter()
                 .map(|l| format!("{:?}", l))
                 .collect::<Vec<_>>()
@@ -368,10 +399,12 @@ pub fn select_download_link(entry: &BmsEntry, interactive: bool) -> Result<Optio
 
     if downloadable_links.len() == 1 {
         // 只有一个可下载链接，直接使用
-        let link = downloadable_links[0].get_direct_url().unwrap();
+        let link = downloadable_links.into_iter().next().unwrap();
         info!(
             "作品 #{} - {} 使用唯一链接: {}",
-            entry.no, entry.title, link
+            entry.no,
+            entry.title,
+            link.get_direct_url().unwrap_or_default()
         );
         return Ok(Some(link));
     }
@@ -386,7 +419,13 @@ pub fn select_download_link(entry: &BmsEntry, interactive: bool) -> Result<Optio
         println!("大小: {}", entry.size);
         println!("\n可用的下载链接:");
 
-        for (i, link) in downloadable_links.iter().enumerate() {
+        // 重新获取所有链接来显示调试信息
+        let all_links = analyze_links(entry).0;
+        let downloadable_links_for_display: Vec<_> = all_links
+            .iter()
+            .filter(|link| link.is_downloadable())
+            .collect();
+        for (i, link) in downloadable_links_for_display.iter().enumerate() {
             let direct_url = link
                 .get_direct_url()
                 .unwrap_or_else(|| "无法获取直接链接".to_string());
@@ -399,7 +438,7 @@ pub fn select_download_link(entry: &BmsEntry, interactive: bool) -> Result<Optio
 
         if let Ok(choice) = input.trim().parse::<usize>() {
             if choice > 0 && choice <= downloadable_links.len() {
-                let selected_link = downloadable_links[choice - 1].get_direct_url().unwrap();
+                let selected_link = downloadable_links.into_iter().nth(choice - 1).unwrap();
                 return Ok(Some(selected_link));
             }
         }
@@ -412,7 +451,13 @@ pub fn select_download_link(entry: &BmsEntry, interactive: bool) -> Result<Optio
             "作品 #{} - {} 有多个下载链接，请使用 --interactive 模式选择:",
             entry.no, entry.title
         );
-        for (i, link) in downloadable_links.iter().enumerate() {
+        // 重新获取所有链接来显示调试信息
+        let all_links = analyze_links(entry).0;
+        let downloadable_links_for_display: Vec<_> = all_links
+            .iter()
+            .filter(|link| link.is_downloadable())
+            .collect();
+        for (i, link) in downloadable_links_for_display.iter().enumerate() {
             let direct_url = link
                 .get_direct_url()
                 .unwrap_or_else(|| "无法获取直接链接".to_string());
@@ -720,7 +765,7 @@ pub fn is_valid_archive(file_path: &Path) -> Result<bool> {
     Ok(false)
 }
 
-pub async fn download_file(url: &str, output_path: &Path) -> Result<()> {
+pub async fn download_file(url: &str, output_path: &Path) -> Result<PathBuf> {
     info!("下载: {} -> {:?}", url, output_path);
 
     // 确保输出目录存在
@@ -744,7 +789,7 @@ pub async fn download_file(url: &str, output_path: &Path) -> Result<()> {
         .with_context(|| format!("写入文件失败: {:?}", output_path))?;
 
     info!("下载完成: {:?}", output_path);
-    Ok(())
+    Ok(output_path.to_path_buf())
 }
 
 pub fn generate_filename(entry: &BmsEntry) -> String {
@@ -774,24 +819,14 @@ pub async fn download_entry(entry: &BmsEntry, output_dir: &Path, interactive: bo
     let filename = generate_filename(entry);
     let output_path = output_dir.join(&filename);
 
-    if let Some(download_url) = select_download_link(entry, interactive)? {
-        // 检查是否是Google Drive链接
-        if download_url.contains("drive.google.com") {
-            // 提取文件ID
-            if let Some(file_id) = extract_google_drive_id_from_url(&download_url) {
-                let final_path = download_google_drive_file(&file_id, &output_path).await?;
+    if let Some(link) = select_download_link_for_trait(entry, interactive)? {
+        let final_path = download_link_by_type(link.as_ref(), &output_path).await?;
 
-                // 验证下载的文件是否为有效压缩包
-                if is_valid_archive(&final_path)? {
-                    info!("文件验证成功: {:?} 是有效的压缩包", final_path);
-                } else {
-                    warn!("文件验证失败: {:?} 不是有效的压缩包", final_path);
-                }
-            } else {
-                error!("无法从Google Drive URL中提取文件ID: {}", download_url);
-            }
+        // 验证下载的文件是否为有效压缩包
+        if is_valid_archive(&final_path)? {
+            info!("文件验证成功: {:?} 是有效的压缩包", final_path);
         } else {
-            download_file(&download_url, &output_path).await?;
+            warn!("文件验证失败: {:?} 不是有效的压缩包", final_path);
         }
     }
 
@@ -824,6 +859,111 @@ pub fn extract_google_drive_id_from_url(url: &str) -> Option<String> {
             return Some(url[id_start..id_start + end].to_string());
         } else {
             return Some(url[id_start..].to_string());
+        }
+    }
+
+    None
+}
+
+pub async fn download_link_by_type(
+    link: &dyn LinkTypeTrait,
+    output_path: &Path,
+) -> Result<PathBuf> {
+    let type_name = link.get_type_name();
+
+    match type_name {
+        "Direct" => {
+            let direct_link = link.as_any().downcast_ref::<DirectLink>().unwrap();
+            download_file(&direct_link.url, output_path).await
+        }
+        "GoogleDrive" => {
+            let google_link = link.as_any().downcast_ref::<GoogleDriveLink>().unwrap();
+            let file_id = if google_link.share_id.starts_with("https://") {
+                if let Some(id) = extract_google_drive_id_from_url(&google_link.share_id) {
+                    id
+                } else {
+                    return Err(anyhow::anyhow!(
+                        "无法从Google Drive URL中提取文件ID: {}",
+                        google_link.share_id
+                    ));
+                }
+            } else {
+                google_link.share_id.clone()
+            };
+            download_google_drive_file(&file_id, output_path).await
+        }
+        "Dropbox" => {
+            let dropbox_link = link.as_any().downcast_ref::<DropboxLink>().unwrap();
+            let download_url = dropbox_link.get_direct_url().ok_or_else(|| {
+                anyhow::anyhow!("无法获取Dropbox下载链接: {}", dropbox_link.share_id)
+            })?;
+            download_file(&download_url, output_path).await
+        }
+        "OneDrive" => {
+            let onedrive_link = link.as_any().downcast_ref::<OneDriveLink>().unwrap();
+            let client = reqwest::Client::builder()
+                .user_agent("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36")
+                .redirect(reqwest::redirect::Policy::limited(5))
+                .build()
+                .map_err(|e| anyhow::anyhow!("创建HTTP客户端失败: {}", e))?;
+
+            let response = client.head(&onedrive_link.url).send().await.map_err(|e| {
+                anyhow::anyhow!("访问OneDrive链接失败: {} - {}", onedrive_link.url, e)
+            })?;
+
+            let final_url = response.url().to_string();
+            download_file(&final_url, output_path).await
+        }
+        "MediaFire" => {
+            let mediafire_link = link.as_any().downcast_ref::<MediaFireLink>().unwrap();
+            let client = reqwest::Client::builder()
+                .user_agent("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36")
+                .build()
+                .map_err(|e| anyhow::anyhow!("创建HTTP客户端失败: {}", e))?;
+
+            let response = client.get(&mediafire_link.url).send().await.map_err(|e| {
+                anyhow::anyhow!("访问MediaFire链接失败: {} - {}", mediafire_link.url, e)
+            })?;
+
+            let html_content = response.text().await.map_err(|e| {
+                anyhow::anyhow!("读取MediaFire页面失败: {} - {}", mediafire_link.url, e)
+            })?;
+
+            let download_url = extract_mediafire_download_url(&html_content).ok_or_else(|| {
+                anyhow::anyhow!("无法从MediaFire页面中提取下载链接: {}", mediafire_link.url)
+            })?;
+
+            download_file(&download_url, output_path).await
+        }
+        _ => {
+            return Err(anyhow::anyhow!("不支持的链接类型: {}", type_name));
+        }
+    }
+}
+
+pub fn extract_mediafire_download_url(html_content: &str) -> Option<String> {
+    // 在MediaFire页面中查找下载按钮的链接
+    // 通常格式为: <a href="下载链接" class="download_link" 或包含 download
+    if let Some(start) = html_content.find("download_link") {
+        if let Some(href_start) = html_content[..start].rfind("href=\"") {
+            let url_start = href_start + 6;
+            if let Some(end) = html_content[url_start..].find('"') {
+                let url = &html_content[url_start..url_start + end];
+                if url.starts_with("http") {
+                    return Some(url.to_string());
+                }
+            }
+        }
+    }
+
+    // 尝试查找其他可能的下载链接模式
+    if let Some(start) = html_content.find("http") {
+        let potential_url = &html_content[start..];
+        if let Some(end) = potential_url.find('"') {
+            let url = &potential_url[..end];
+            if url.contains("download") && (url.contains("mediafire") || url.contains("dl")) {
+                return Some(url.to_string());
+            }
         }
     }
 
