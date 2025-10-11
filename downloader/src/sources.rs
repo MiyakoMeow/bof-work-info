@@ -429,22 +429,23 @@ pub fn select_download_link_for_trait(
             let direct_url = link
                 .get_direct_url()
                 .unwrap_or_else(|| "无法获取直接链接".to_string());
-            println!("  {}. {} -> {}", i + 1, format!("{:?}", link), direct_url);
+            println!("  {}. {:?} -> {}", i + 1, link, direct_url);
         }
 
         println!("\n请选择要下载的链接 (输入数字，或按 Enter 跳过):");
         let mut input = String::new();
         std::io::stdin().read_line(&mut input)?;
 
-        if let Ok(choice) = input.trim().parse::<usize>() {
-            if choice > 0 && choice <= downloadable_links.len() {
-                let selected_link = downloadable_links.into_iter().nth(choice - 1).unwrap();
-                return Ok(Some(selected_link));
-            }
+        if let Ok(choice) = input.trim().parse::<usize>()
+            && choice > 0
+            && choice <= downloadable_links.len()
+        {
+            let selected_link = downloadable_links.into_iter().nth(choice - 1).unwrap();
+            return Ok(Some(selected_link));
         }
 
         info!("跳过作品 #{} - {}", entry.no, entry.title);
-        return Ok(None);
+        Ok(None)
     } else {
         // 非交互模式，提示用户
         warn!(
@@ -461,9 +462,9 @@ pub fn select_download_link_for_trait(
             let direct_url = link
                 .get_direct_url()
                 .unwrap_or_else(|| "无法获取直接链接".to_string());
-            println!("  {}. {} -> {}", i + 1, format!("{:?}", link), direct_url);
+            println!("  {}. {:?} -> {}", i + 1, link, direct_url);
         }
-        return Ok(None);
+        Ok(None)
     }
 }
 
@@ -601,9 +602,9 @@ pub fn extract_filename_from_disposition(disposition: &str) -> Option<String> {
         let filename_part = &disposition[filename_start..];
 
         // 处理引号包围的文件名
-        if filename_part.starts_with('"') {
-            if let Some(end) = filename_part[1..].find('"') {
-                return Some(filename_part[1..end + 1].to_string());
+        if let Some(stripped) = filename_part.strip_prefix('"') {
+            if let Some(end) = stripped.find('"') {
+                return Some(stripped[..end].to_string());
             }
         }
         // 处理没有引号的文件名
@@ -718,13 +719,13 @@ pub fn extract_download_url_from_html(html_content: &str) -> Option<String> {
 
 pub fn extract_filename_from_html(html_content: &str) -> Option<String> {
     // 从HTML中提取文件名，格式如: <a href="/open?id=...">filename.zip</a>
-    if let Some(start) = html_content.find(">") {
-        if let Some(end) = html_content[start + 1..].find("<") {
-            let filename = &html_content[start + 1..start + 1 + end];
-            if filename.contains('.') && !filename.contains(' ') {
-                info!("从HTML中提取到文件名: {}", filename);
-                return Some(filename.to_string());
-            }
+    if let Some(start) = html_content.find(">")
+        && let Some(end) = html_content[start + 1..].find("<")
+    {
+        let filename = &html_content[start + 1..start + 1 + end];
+        if filename.contains('.') && !filename.contains(' ') {
+            info!("从HTML中提取到文件名: {}", filename);
+            return Some(filename.to_string());
         }
     }
 
@@ -935,23 +936,21 @@ pub async fn download_link_by_type(
 
             download_file(&download_url, output_path).await
         }
-        _ => {
-            return Err(anyhow::anyhow!("不支持的链接类型: {}", type_name));
-        }
+        _ => Err(anyhow::anyhow!("不支持的链接类型: {}", type_name)),
     }
 }
 
 pub fn extract_mediafire_download_url(html_content: &str) -> Option<String> {
     // 在MediaFire页面中查找下载按钮的链接
     // 通常格式为: <a href="下载链接" class="download_link" 或包含 download
-    if let Some(start) = html_content.find("download_link") {
-        if let Some(href_start) = html_content[..start].rfind("href=\"") {
-            let url_start = href_start + 6;
-            if let Some(end) = html_content[url_start..].find('"') {
-                let url = &html_content[url_start..url_start + end];
-                if url.starts_with("http") {
-                    return Some(url.to_string());
-                }
+    if let Some(start) = html_content.find("download_link")
+        && let Some(href_start) = html_content[..start].rfind("href=\"")
+    {
+        let url_start = href_start + 6;
+        if let Some(end) = html_content[url_start..].find('"') {
+            let url = &html_content[url_start..url_start + end];
+            if url.starts_with("http") {
+                return Some(url.to_string());
             }
         }
     }

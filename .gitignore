@@ -1,1 +1,20 @@
-/target
+# Rust
+/target/
+**/*.rs.bk
+Cargo.lock
+
+# Nix
+.direnv/
+result
+result-*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db

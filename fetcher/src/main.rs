@@ -11,7 +11,6 @@ use log::{debug, error, info};
 use regex::Regex;
 use scraper::{ElementRef, Html, Selector};
 use serde::{Deserialize, Serialize};
-use surf;
 
 #[derive(Debug, Serialize, Deserialize)]
 struct BmsEntry {
@@ -182,7 +181,7 @@ fn detect_column_mapping(document: &Html) -> Result<ColumnMapping> {
             }
             _ => {
                 // 尝试从右往左推断：最后一列是Addr，倒数第二列是Size
-                if mapping.addr.is_none() && cell_texts.len() > 0 {
+                if mapping.addr.is_none() && !cell_texts.is_empty() {
                     mapping.addr = Some(cell_texts.len() - 1);
                 }
                 if mapping.size.is_none() && cell_texts.len() > 1 {
@@ -325,6 +324,7 @@ async fn fetch_and_parse_table(url: &str) -> Result<BmsData> {
     // 选择表格行
     let row_selector = Selector::parse("tr").unwrap();
     let cell_selector = Selector::parse("td").unwrap();
+    let num_regex = Regex::new(r"\d+").unwrap();
 
     let mut entries = Vec::new();
     let mut seen_entries = HashMap::new(); // 用于去重
@@ -409,7 +409,6 @@ async fn fetch_and_parse_table(url: &str) -> Result<BmsData> {
             no_text
         } else {
             // 尝试从HTML中提取数字
-            let num_regex = Regex::new(r"\d+").unwrap();
             if let Some(no_idx) = column_mapping.no {
                 if no_idx < cells.len() {
                     if let Some(mat) = num_regex.find(&cells[no_idx].inner_html()) {
@@ -434,7 +433,7 @@ async fn fetch_and_parse_table(url: &str) -> Result<BmsData> {
         // 处理地址字段 - 按换行符分割，然后提取URL
         let addr_lines: Vec<String> = addr_html
             .split("<br>")
-            .flat_map(|line| extract_urls_and_text(line))
+            .flat_map(extract_urls_and_text)
             .filter(|s| !s.trim().is_empty())
             .collect();
 
