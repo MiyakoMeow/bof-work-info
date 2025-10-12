@@ -522,15 +522,14 @@ no = "55"
 name = "∧STEЯ with ZCFish"
 team = "Zeropia"
 title = "流光の残響 ~The Echoes Of Flowing Light~"
-size = "88479 KB"
+size = "103890 KB"
 addr = [
-    "(2025-10-03)",
+    "(2025-10-12)",
+    "(Fix the problem of LR2 BGA and stagefile.)",
     "Google Drive:",
-    "https://drive.google.com/file/d/18DBEcnVPZDY_eOeeZ-gOTrXHsaqES_CG/view?usp=sharing",
-    "Onedrive:",
-    "https://1drv.ms/u/c/913d1326689fce02/EUXDnTBXJ4BEpa0U5pzssh4B7jqfoAuwd_i3bWKPJXGruw?e=c2zHPN",
+    "https://drive.google.com/file/d/1wqiDVgcDGGaZjtgxrrmzSQd2xzfqD7KA/view?usp=drive_link",
     "cncncloud(For Chinese players):",
-    "https://cncncloud.com/s/8BpCy",
+    "https://cncncloud.com/s/Jr6t9",
 ]
 
 [[entries]]
@@ -797,7 +796,7 @@ addr = ["--------"]
 
 [[entries]]
 no = "83"
-name = "oo-kani(illust:餅月米)"
+name = "oo-kani feat.ついなちゃん(illust:餅月米)"
 team = "焼鳥ダークフェニックス"
 title = "--------"
 size = "---- KB"
@@ -1575,3 +1574,11 @@ addr = [
     "MP4 BGA (168058KB)",
     "https://drive.google.com/file/d/1v9G90TWyaUqKK_-PvwHh1b33UzmPm708/view?usp=sharing",
 ]
+
+[[entries]]
+no = "165"
+name = "Alex Turell"
+team = "BMS Video"
+title = "--------"
+size = "---- KB"
+addr = ["--------"]
