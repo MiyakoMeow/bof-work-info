@@ -307,8 +307,8 @@ no = "33"
 name = "k"
 team = "Enthelekxis"
 title = "N4Me_L3SS"
-size = "140566 KB"
-addr = ["https://www.dropbox.com/scl/fi/n7w7u11hfnflkqla7ldp5/Enthelekxis_k-N4Me_L3SS_ogg.zip?rlkey=7cnuphkiquab3s22rjyhll9sx&st=ubtbvne0&dl=1"]
+size = "140679 KB"
+addr = ["https://www.dropbox.com/scl/fi/gbrr0rsqtlk599qrsed2d/Enthelekxis_k-N4Me_L3SS_ogg.zip?rlkey=5hk0383b299zywfm85nft3s74&st=1x9o7g0c&dl=1"]
 
 [[entries]]
 no = "34"
@@ -467,10 +467,12 @@ team = "家に帰りたい"
 title = "AfterMe"
 size = "148000 KB"
 addr = [
-    "Ogg_v1",
-    "https://drive.google.com/file/d/18axPzCdrILnGklw134ycspesqjvF_6_I/view?usp=sharing",
+    "Ogg_v1(修正版)",
+    "https://drive.google.com/file/d/13Q8pPkDAitHLCuxQZACK4SZiUX7Hn2AB/view?usp=sharing",
+    "★ファイルが欠損している問題を修正",
     "Wav_v1",
     "https://drive.google.com/file/d/12TsAoKAVC2J3Ory-gAIw14a6v180j_4y/view?usp=sharing",
+    "各N/H譜面等は後日まとめて追加します、イベントのルールに則って現状出せる2譜面のみで公開します。",
 ]
 
 [[entries]]
@@ -1524,7 +1526,7 @@ name = "暮狛"
 team = "HDM連合"
 title = "停滞の匚庭"
 size = "62000 KB"
-addr = ["https://drive.google.com/uc?export=download&id=13yDXRpqdqtGyPgrtO3TSsfOHJ3eKI8DU"]
+addr = ["https://drive.usercontent.google.com/download?id=1hSTYaYNrIH-FIYE17FgZDRMB3I_t29Bx"]
 
 [[entries]]
 no = "161"
@@ -1634,3 +1636,88 @@ team = "調味料"
 title = "--------"
 size = "---- KB"
 addr = ["--------"]
+
+[[entries]]
+no = "172"
+name = "てんてる"
+team = "もちもちゆにばーす"
+title = "夜明けのヴォヤージュコメット"
+size = "83107 KB"
+addr = ["https://drive.google.com/file/d/1_JMJz1eHJ5tUXQ6sItSQYOJSKIZwOUEb/view?usp=sharing"]
+
+[[entries]]
+no = "173"
+name = "にょろも(かめ)"
+team = "BMSノース★サファリ"
+title = "頭文字N（法定速度遵守）"
+size = "34998 KB"
+addr = ["https://drive.google.com/file/d/1HvkMQQQjpVuBB37IjhY5Kmjw2qwZZ_Vz/view?usp=sharing"]
+
+[[entries]]
+no = "174"
+name = "sogum"
+team = "4+6K BiBiMBAP REViVE"
+title = "At 8 o'clock"
+size = "45200 KB"
+addr = ["https://drive.google.com/file/d/1Npf2mq5DGsAkzvia3zlYFwfxpKvalCPL/view?usp=sharing"]
+
+[[entries]]
+no = "175"
+name = "Khrisma"
+team = "羅針月"
+title = "Refracted Afterimage of Endless Rain (BMS Edit)"
+size = "88471 KB"
+addr = [
+    "https://drive.google.com/file/d/1VWikHXceZBqHRd714uHy0644DQROnjPr/",
+    "中国大陆地区玩家/For Mainland China players:",
+    "https://wwqw.lanzouu.com/iNJNa389du8h",
+]
+
+[[entries]]
+no = "176"
+name = "Nego_tiator"
+team = "Fizzled Drizzle"
+title = "--------"
+size = "---- KB"
+addr = ["--------"]
+
+[[entries]]
+no = "177"
+name = "snwy"
+team = "MAY’d otokonoko club"
+title = "Ex Nihilo"
+size = "211324 KB"
+addr = [
+    "mp4, preview included:",
+    "https://drive.google.com/file/d/1QmpdqT9Sjo2e8b6ZsCDxzD5AgzQOkInt/view?usp=sharing",
+    "ogg:",
+    "https://drive.google.com/file/d/1bZ5gXJ8iCVo5is-RMzJA3onlAUMVat4-/view?usp=sharing",
+]
+
+[[entries]]
+no = "178"
+name = "LYRi_WHiTE × HiHUMi"
+team = "デジタルの窓"
+title = "操リ人形ノ舞ニ意味ハ有ルカ"
+size = "70033 KB"
+addr = [
+    "ogg(LR2/oraja 兼用)<パッケージ化はこれでお願いします",
+    "https://docs.google.com/uc?export=download&id=1NKBqmep6RG2t88SD38D--2f8ZUb7tERM",
+    "ogg(LR2専用 軽量版)",
+    "https://docs.google.com/uc?export=download&id=13YqeJc0evwj0pNviwjdf4bJGR0bRX50v",
+    "wav(LR2/oraja 兼用)",
+    "https://docs.google.com/uc?export=download&id=1rqRRSk7O_kD_Sz1iMc4z6uLZUwI9bTMw",
+]
+
+[[entries]]
+no = "179"
+name = "OfficialAz3 feat. Echa & Hodong (VOX Factory)"
+team = "Luctus: Tears of Aphrodite"
+title = "Tears of Denial"
+size = "98656 KB"
+addr = [
+    "GDrive (main):",
+    "https://drive.usercontent.google.com/download?id=1b9lZyObZ5NAd5ZUihg92zjnMVilhEzXF&export=download",
+    "mega.nz (Backup):",
+    "https://mega.nz/file/NpZxhBAT#T8CDJ53SdOHKLDDrGjdc_A2B0KLV2pOTmpoqElnlznA",
+]
