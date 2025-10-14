@@ -286,12 +286,16 @@ no = "31"
 name = "RNY"
 team = "春雨マグロMサイズ"
 title = "flarionix"
-size = "12574 KB"
+size = "45851 KB"
 addr = [
-    "ogg:",
+    "ogg (wmv / LR2, 44.8MB):",
     "https://drive.google.com/file/d/11Lt3MzERyXOsiuLuvLDKK-q57BUG7eLc/view?usp=sharing",
-    "wav:",
+    "wav (wmv / LR2, 117.2MB):",
     "https://drive.google.com/file/d/1OWcxrFRhwoJYj3EK9sU5iZ1OqnxcyS7b/view?usp=sharing",
+    "ogg (mp4, 53.7MB):",
+    "https://drive.google.com/file/d/1KSNSNgpN41WPmvXWtF9ZnR9GYKhP_7yu/view?usp=drive_link",
+    "ogg (mpg, 14.7MB):",
+    "https://drive.google.com/file/d/1s0x0r2GXdwQ6oPdaPpDUlsWmr4kgkh3J/view?usp=drive_link",
 ]
 
 [[entries]]
@@ -362,8 +366,8 @@ no = "39"
 name = "nothinbutafedupdude"
 team = "So?"
 title = "TOOTH DECAY FREESTYLE 2025"
-size = "72842 KB"
-addr = ["https://drive.google.com/file/d/1jK2uN6N_TTdSBHTYkC9VLbEoAhJbVLUN/view?usp=sharing"]
+size = "69733 KB"
+addr = ["https://drive.google.com/file/d/1XiEoK7Xxkxnf-c7i8ZO4-U3TjGicjLIy/view?usp=drive_link"]
 
 [[entries]]
 no = "40"
@@ -1699,14 +1703,14 @@ no = "178"
 name = "LYRi_WHiTE × HiHUMi"
 team = "デジタルの窓"
 title = "操リ人形ノ舞ニ意味ハ有ルカ"
-size = "70033 KB"
+size = "70034 KB"
 addr = [
     "ogg(LR2/oraja 兼用)<パッケージ化はこれでお願いします",
-    "https://docs.google.com/uc?export=download&id=1NKBqmep6RG2t88SD38D--2f8ZUb7tERM",
+    "https://docs.google.com/uc?export=download&id=1CLAM6PBg2WcjDRYJPVYFMuXJ1aVMnD9a",
     "ogg(LR2専用 軽量版)",
-    "https://docs.google.com/uc?export=download&id=13YqeJc0evwj0pNviwjdf4bJGR0bRX50v",
+    "https://docs.google.com/uc?export=download&id=1aa4XPVk32LCJw561Ew32gZEBlX8iir_g",
     "wav(LR2/oraja 兼用)",
-    "https://docs.google.com/uc?export=download&id=1rqRRSk7O_kD_Sz1iMc4z6uLZUwI9bTMw",
+    "https://docs.google.com/uc?export=download&id=17Vt1WfEylq4q7is9tB6kR-14arB4cAnK",
 ]
 
 [[entries]]
@@ -1721,3 +1725,39 @@ addr = [
     "mega.nz (Backup):",
     "https://mega.nz/file/NpZxhBAT#T8CDJ53SdOHKLDDrGjdc_A2B0KLV2pOTmpoqElnlznA",
 ]
+
+[[entries]]
+no = "180"
+name = "やわらかラリーハウス北村"
+team = "骨伝導式Jアラート"
+title = "GOES AROUND"
+size = "59264 KB"
+addr = [
+    "For LR2",
+    "https://drive.google.com/file/d/10I4cUv5v6w6sXn4SHj8kHH67qamZxd_8/view?usp=sharing",
+    "For beatoraja(高画質版BGA)",
+    "https://drive.google.com/file/d/1BYphbqAG_sK4dQbJQt5Gx0yenCa4Xcl-/view?usp=sharing",
+]
+
+[[entries]]
+no = "181"
+name = "Notorious(Nota & TRIAL)"
+team = "う～～！ふみゅみゅ～～！！"
+title = "ZERO"
+size = "48006 KB"
+addr = [
+    "wav：",
+    "https://www.dropbox.com/scl/fi/orzwbliiz5u0amtuw48cy/Notorious-Nota-TRIAL-ZERO-HQ.zip?rlkey=fmc8qrkt6yueemnu9tmp5nhzb&dl=1",
+    "ogg：",
+    "https://www.dropbox.com/scl/fi/xk1hpi9mqo8oiskg1l0m7/Notorious-Nota-TRIAL-ZERO-LQ.zip?rlkey=lnv0hb7wvi6p8b8qgxljq9wru&dl=1",
+    "高画質BGA(mp4)：",
+    "https://www.dropbox.com/scl/fi/j5go404bv2646n3jivjp0/ZERO_-BGA.zip?rlkey=lejj36t7l1p4jw3882a5tadk1&dl=1",
+]
+
+[[entries]]
+no = "182"
+name = "あさり"
+team = "Ford Forest Foreigner"
+title = "--------"
+size = "---- KB"
+addr = ["--------"]
