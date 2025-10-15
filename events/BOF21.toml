@@ -398,9 +398,9 @@ title = "IDENCY"
 size = "42600 KB"
 addr = [
     "[WAV]",
-    "http://publish.soundpiercer.io/bms/2025/ESPITZ_IDENCY_WAV.zip",
+    "https://publish.soundpiercer.io/bms/2025/ESPITZ_IDENCY_WAV.zip",
     "[OGG]",
-    "http://publish.soundpiercer.io/bms/2025/ESPITZ_IDENCY_OGG.zip",
+    "https://publish.soundpiercer.io/bms/2025/ESPITZ_IDENCY_OGG.zip",
 ]
 
 [[entries]]
@@ -1761,3 +1761,86 @@ team = "Ford Forest Foreigner"
 title = "--------"
 size = "---- KB"
 addr = ["--------"]
+
+[[entries]]
+no = "183"
+name = "れおん feat. 紲星あかり"
+team = "★アソートアベニュー★"
+title = "星のカービィSDXエンディング（2025 G2R Edit）"
+size = "71075 KB"
+addr = ["https://drive.google.com/file/d/1a5wQ13AbvnXCcdMzPUxclS8Z0--B0ARO/view?usp=sharing"]
+
+[[entries]]
+no = "184"
+name = "Khibine"
+team = "もふもふハウス"
+title = "Tús na ceiliúradh"
+size = "106797 KB"
+addr = [
+    "wav版(86023KB)",
+    "https://drive.google.com/uc?export=download&id=1EZUQ5iJdf1D8NIvvHYvKVMd3VQCRGmDI",
+    "ogg版(20774KB)",
+    "https://drive.google.com/uc?export=download&id=1f7C5flPU_qz5Ws6Mll3A0INVJjT7BBqh",
+]
+
+[[entries]]
+no = "185"
+name = "Lemi."
+team = "う～～！ふみゅみゅ～～！！"
+title = "--------"
+size = "---- KB"
+addr = ["--------"]
+
+[[entries]]
+no = "186"
+name = "Sanchia"
+team = "& Journey of Yinhe Huahai &"
+title = "Falling Kingdom"
+size = "30620 KB"
+addr = [
+    "百度网盘:",
+    "https://pan.baidu.com/s/1WJq7PORm3ocAwYCbDtFX7w?pwd=ivww",
+    "谷歌网盘:",
+    "https://drive.google.com/file/d/1eEJisj1fqSGKWSf7kJtg97w45MXkD9kN/view?usp=sharing",
+]
+
+[[entries]]
+no = "187"
+name = "ColorFoxs"
+team = "& Journey of Yinhe Huahai &"
+title = "--------"
+size = "---- KB"
+addr = ["--------"]
+
+[[entries]]
+no = "188"
+name = "ILusMin & moonset feat. ☁"
+team = "THE BASS GUARDIAN"
+title = "dream of utopia"
+size = "158720 KB"
+addr = [
+    "[Normal package / with BGA]",
+    "https://drive.google.com/file/d/1RReIn0vckKJUXDEgedNrzZ0hhXQ_I-JZ/view?usp=sharing",
+    "[for LR2]",
+    "https://drive.google.com/file/d/1SgZZMiNpjnbJRhtJUealt8iSQykG_MnS/view?usp=sharing",
+    "[BGI]",
+    "https://drive.google.com/file/d/1FrWEBW2ZC4oZNQV24LeVW9VINwbK9aNR/view?usp=sharing",
+    "[for LR2 / BGI]",
+    "https://drive.google.com/file/d/1IRUpeEWJcFEl9rixfQX-MQh6hfeASvHZ/view?usp=sharing",
+]
+
+[[entries]]
+no = "189"
+name = "めもも"
+team = "もちもちゆにばーす"
+title = "わんだー☆ゆにばーす"
+size = "90537 KB"
+addr = ["https://drive.google.com/uc?id=1Fc9BcVpw5Uugw9V4-bKOE-wJeOWKFD3v"]
+
+[[entries]]
+no = "190"
+name = "anco vs usb_nk"
+team = "理系女子に恋して100万年(3年目)"
+title = "Dilclumina"
+size = "38756 KB"
+addr = ["https://1drv.ms/u/c/614a04da8ab0ce14/EWUJi_wUje5AoJ_D5l82cIoB1IQq0zBZvS5QxwVjRKYMoA"]
