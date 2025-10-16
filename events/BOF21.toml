@@ -401,6 +401,7 @@ addr = [
     "https://publish.soundpiercer.io/bms/2025/ESPITZ_IDENCY_WAV.zip",
     "[OGG]",
     "https://publish.soundpiercer.io/bms/2025/ESPITZ_IDENCY_OGG.zip",
+    "※10/19~20 LEGGENDARIA / DP / 9B追加予定",
 ]
 
 [[entries]]
@@ -743,6 +744,9 @@ team = "Crescent Reminiscence"
 title = "TRANICE JOURNEY"
 size = "33061 KB"
 addr = [
+    "URL(new version, recommended, volume balance fixed):",
+    "https://drive.google.com/file/d/1gn7hxHuIHXzWVfvpcbqiqwvT0ihBje5h/view?usp=sharing",
+    "URL(old version)",
     "https://https://drive.google.com/file/d/11QknnaSVZfw8a5RZSrRblWeSRc6M00cF/view?usp=sharing",
     "https://www.mediafire.com/file/flcewq218sf0du8/%255BBOF21%255D_Tranice_Journey_%255BMy_PC%255D.zip/file",
 ]
@@ -925,7 +929,12 @@ name = "GM_Shadows"
 team = "Gifts Over Glimmers"
 title = "Flowing Light"
 size = "60332 KB"
-addr = ["https://drive.google.com/file/d/1Fufe32gj1eJKm3Vp0_gzfWCIPrZ0umGn/view?usp=sharing"]
+addr = [
+    "URL2(new version, fixed  gimmick of SPL):",
+    "https://drive.google.com/file/d/1oN8d99gRXZ4lCd7J4E-gbVAngEr6bz8p/view?usp=sharing",
+    "URL1(old version):",
+    "https://drive.google.com/file/d/1Fufe32gj1eJKm3Vp0_gzfWCIPrZ0umGn/view?usp=sharing",
+]
 
 [[entries]]
 no = "96"
@@ -1081,7 +1090,9 @@ team = "Gifts Over Glimmers"
 title = "4mbivalencE"
 size = "38662 KB"
 addr = [
-    "URL1:",
+    "URL2(recommended, volume balance fixed):",
+    "https://drive.google.com/file/d/1IYicCpl9n3DKPXPKJ04a952Yin1rGc2-/view?usp=sharing",
+    "URL1(not fixed, the volume is too loud):",
     "https://drive.google.com/file/d/1B-EnXyDGMLtnXQEhJrw9Z7U3FpzLWONc/view?usp=sharing",
 ]
 
@@ -1936,3 +1947,22 @@ addr = [
     "■HQBGA for beatoraja",
     "https://drive.google.com/file/d/16ynu-IWHqB16lEhv_WhdqpSVKojiWt8S/view?usp=drive_link",
 ]
+
+[[entries]]
+no = "200"
+name = "Xydlor vs Rosin"
+team = "Gifts Over Glimmers"
+title = "Last Encounter"
+size = "38122 KB"
+addr = [
+    "URL1:",
+    "https://drive.google.com/file/d/1GY2Rl13XMl4eeA2yqGJH0HJJiYOUxggb/view?usp=sharing",
+]
+
+[[entries]]
+no = "201"
+name = "atily (feat. 花隈千冬)"
+team = "家に帰りたい"
+title = "--------"
+size = "---- KB"
+addr = ["--------"]
