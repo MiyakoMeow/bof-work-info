@@ -267,7 +267,7 @@ no = "29"
 name = "watch"
 team = "Nishi Hachi Usagi"
 title = "Celestial Dawn"
-size = "16111 KB"
+size = "11111 KB"
 addr = [
     "OGG",
     "https://drive.google.com/file/d/1hh-VisYR_18eN7CF7fRC5IdSBotzFhAh/view?usp=sharing",
@@ -962,6 +962,11 @@ addr = [
     "https://drive.google.com/file/d/1ofpEa2sYw6EwbFts5W6uXoIUmanSsk2D/view?usp=sharing",
     "OGG",
     "https://drive.google.com/file/d/1Mkocb1Gf1PPqG89B9LW0LRrdteausx96/view?usp=sharing",
+    "追加音源(導入済みの方はこの音源の上書きをお願いします)",
+    "WAV",
+    "https://drive.google.com/file/d/1_TU7aK_zEX6iytXrZYnAo84NLZa6sKyQ/view?usp=shaWAV",
+    "OGG",
+    "https://drive.google.com/file/d/1yExQWaDHZyVWJqIxqgmA4zz_u74Q1DTT/view?usp=sharing",
 ]
 
 [[entries]]
@@ -978,7 +983,7 @@ name = "LucaProject vs Neptune XI"
 team = "if everything collapses"
 title = "[Re]Birth"
 size = "76400 KB"
-addr = ["http://publish.soundpiercer.io/bms/2025/%5BRe%5DBirth.zip"]
+addr = ["https://publish.soundpiercer.io/bms/2025/%5BRe%5DBirth.zip"]
 
 [[entries]]
 no = "102"
@@ -1065,7 +1070,7 @@ team = "if everything collapses"
 title = "goodbye world"
 size = "93000 KB"
 addr = [
-    "http://publish.soundpiercer.io/bms/2025/goodbye",
+    "https://publish.soundpiercer.io/bms/2025/goodbye",
     "+world.zip",
 ]
 
@@ -1388,7 +1393,7 @@ name = "KMTM."
 team = "3Dメガネの向こうから"
 title = "Margaret -Latinized Mix-"
 size = "4497 KB"
-addr = ["https://drive.google.com/file/d/1HUnBu7wERggTu9LZX4hGdAZaD2rzSxAt/view?usp=sharing"]
+addr = ["https://drive.google.com/file/d/1Z27M6WVZsXPEI1Gg3yiKFZbdrAxGfLUg/view?usp=drive_link"]
 
 [[entries]]
 no = "146"
@@ -1603,7 +1608,7 @@ name = "Itz62iGD"
 team = "BOF_スターダスト"
 title = "AirPause"
 size = "32281 KB"
-addr = ["https://wwtm.lanzouq.com/i3zkP387ra5g"]
+addr = ["https://wwtm.lanzouq.com/iZ3g238i7syj"]
 
 [[entries]]
 no = "168"
@@ -1844,3 +1849,90 @@ team = "理系女子に恋して100万年(3年目)"
 title = "Dilclumina"
 size = "38756 KB"
 addr = ["https://1drv.ms/u/c/614a04da8ab0ce14/EWUJi_wUje5AoJ_D5l82cIoB1IQq0zBZvS5QxwVjRKYMoA"]
+
+[[entries]]
+no = "191"
+name = "Nego_tiator × 神宮要"
+team = "残響ルナリア虚構機構"
+title = "SISIA Overture"
+size = "45620 KB"
+addr = ["https://drive.google.com/file/d/1RfaaKkEBv4xqwAyiDZKPg_t6dzrkUpI1/view?usp=sharing"]
+
+[[entries]]
+no = "192"
+name = "ILusMin"
+team = "Silicon Poet"
+title = "Diphylleia"
+size = "89627 KB"
+addr = [
+    "[BGA(工事中バージョン)]",
+    "https://drive.google.com/file/d/1TDIvao8OJ9lweJY_Rg1D7Eg4kUNxJunt/view?usp=sharing",
+    "[BGI ONLY]",
+    "https://drive.google.com/file/d/1B4hBF_8lG9UzDbLahIxlJo9MUceu9Phj/view?usp=sharing",
+]
+
+[[entries]]
+no = "193"
+name = "6CHA9N"
+team = "コバコノカクレガ"
+title = "米粉"
+size = "44711 KB"
+addr = ["https://drive.google.com/uc?export=download&id=1u9Yi3TTDDRB24RoQdCK91X9PEC_oSRK7"]
+
+[[entries]]
+no = "194"
+name = "Oa5is"
+team = "WZ'ZX -Live音社と青卒画社の偉大同盟-"
+title = "UltraBlue"
+size = "91180611 KB"
+addr = ["https://drive.google.com/file/d/1r8wMFTkoX2kwRlh3fnD5zzEVflVKjSLZ/view?usp=sharing"]
+
+[[entries]]
+no = "195"
+name = "サイアン cyan"
+team = "WZ'ZX -Live音社と青卒画社の偉大同盟-"
+title = "Unearth Utopia"
+size = "264371907 KB"
+addr = ["https://drive.google.com/file/d/1HZBtrBSvS6twIGhv6S6ylmjtolFWI9gh/view?usp=sharing"]
+
+[[entries]]
+no = "196"
+name = "Herge vs Fish1wF"
+team = "WZ'ZX -Live音社と青卒画社の偉大同盟-"
+title = "deAd Eternity"
+size = "383476356 KB"
+addr = ["https://drive.google.com/file/d/1KfbJpYSsldaLLbiBsZS5zqWFuDZcxOc5/view?usp=sharing"]
+
+[[entries]]
+no = "197"
+name = "MessX"
+team = "発焼橙豆隊"
+title = "Call of the City"
+size = "595000 KB"
+addr = [
+    "Beatoraja (mp4 file included):",
+    "https://drive.google.com/file/d/1eLAy3E74cvIFfn2LWfTIKvzhIiGgaeP9/view?usp=sharing",
+    "Lunatic Rave 2 (mpg file included):",
+    "https://drive.google.com/file/d/1LlWseTE9bgfOs-yXBB9UGk5YIf2V-BfR/view?usp=sharing",
+]
+
+[[entries]]
+no = "198"
+name = "nebulaimako vs PRAYROOM"
+team = "わちゃわちゃミュージックソリューションズ株式会社"
+title = "--------"
+size = "---- KB"
+addr = ["--------"]
+
+[[entries]]
+no = "199"
+name = "otoshi.b"
+team = "こぐま座のパレード"
+title = "Yearning for the Blue Marble;"
+size = "120903 KB"
+addr = [
+    "■BMS",
+    "https://drive.google.com/file/d/1FcaAlKDuQqg25ghoSv8S2s7TDa7JSUw3/view?usp=drive_link",
+    "■HQBGA for beatoraja",
+    "https://drive.google.com/file/d/16ynu-IWHqB16lEhv_WhdqpSVKojiWt8S/view?usp=drive_link",
+]
