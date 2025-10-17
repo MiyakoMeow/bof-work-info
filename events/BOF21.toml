@@ -267,9 +267,9 @@ no = "29"
 name = "watch"
 team = "Nishi Hachi Usagi"
 title = "Celestial Dawn"
-size = "11111 KB"
+size = "53000 KB"
 addr = [
-    "OGG",
+    "OGG with BG",
     "https://drive.google.com/file/d/1hh-VisYR_18eN7CF7fRC5IdSBotzFhAh/view?usp=sharing",
 ]
 
@@ -1192,7 +1192,7 @@ name = "ODAGAWA SHION"
 team = "3Dメガネの向こうから"
 title = "幼馴染の唄"
 size = "370938 KB"
-addr = ["https://drive.google.com/file/d/1n9XAiYwvS80DD32srGyZ4Ai2LUagYVtt/view?usp=drive_link"]
+addr = ["https://drive.google.com/file/d/1x2XirDDja76aMknriMjc_nzJlYxyrcKH/view?usp=drive_link"]
 
 [[entries]]
 no = "119"
@@ -1242,6 +1242,8 @@ addr = [
     "https://drive.google.com/file/d/1t8LFePmPSdedVzt5tP9FCvQ_xQSnqcRu/view?usp=sharing",
     "wav:",
     "https://drive.google.com/file/d/1eS2co42m3j0AOVUmLoGbZpSbgGXEOQpu/view?usp=sharing",
+    "Another譜面の修正(2025/10/17 0:39以前にDLした場合はこちらに差し替えてください):",
+    "https://drive.google.com/file/d/1SslHqsb2rrZLlq--rhANvq-BYP_xq79U/view?usp=sharing",
 ]
 
 [[entries]]
@@ -2096,7 +2098,7 @@ name = "Kei"
 team = "Womohide club"
 title = "q-ppp-p-p-p"
 size = "101401 KB"
-addr = ["https://drive.google.com/file/d/1O4QkFQifmZ9wYxW354R425_U6LI48dW_/view?usp=sharing"]
+addr = ["https://drive.google.com/drive/folders/1NUh0n_2iHgRNHIt9Sh1-LpgS5zitoZ_t?usp=sharing"]
 
 [[entries]]
 no = "207"
@@ -2104,7 +2106,10 @@ name = "Icebowbing"
 team = "HereAster Forth"
 title = "Xxxlle"
 size = "40175 KB"
-addr = ["https://drive.google.com/file/d/1f7IsgWI1hslilXbYr-tQrNtTRsXv1znQ/view?usp=sharing"]
+addr = [
+    "https://drive.google.com/file/d/1f7IsgWI1hslilXbYr-tQrNtTRsXv1znQ/view?usp=sharing",
+    "https://www.mediafire.com/file/1s7h562ev5j8ric/Xxxlle_-_Icebowbing%255Bogg%255D.zip/file",
+]
 
 [[entries]]
 no = "208"
@@ -2118,3 +2123,129 @@ addr = [
     "OGG(Oraja用)",
     "https://drive.google.com/file/d/1IOfSsNwvVkzbKhWpg1FByPjr43ioouWM/view?usp=sharing",
 ]
+
+[[entries]]
+no = "209"
+name = "FL0PPY"
+team = "SYSTEM:REBOOT"
+title = "Flowering in the abyss"
+size = "35153 KB"
+addr = [
+    "ogg for oraja",
+    "https://drive.google.com/file/d/1Kmu30q4ctviLDyFenEflRHD3Oq2Z88kI/view?usp=sharing",
+    "ogg for LR2",
+    "https://drive.google.com/file/d/1ht8TKSfbI039iOvgQpd14nv5QaVfCwCh/view?usp=sharing",
+]
+
+[[entries]]
+no = "210"
+name = "Lamanya"
+team = "鍵盤をシバいた猫"
+title = "unstable delusional beliefs"
+size = "154000 KB"
+addr = ["https://drive.google.com/file/d/1Z5z2UlMjdr9UV347DD0_CTikON1NADKq/view?usp=drive_link"]
+
+[[entries]]
+no = "211"
+name = "星咲Suzumi & AprilXI"
+team = "発焼橙豆隊"
+title = "Ácettefin"
+size = "839000 KB"
+addr = [
+    "For Beatoraja (mp4 included):",
+    "https://drive.google.com/file/d/1CFBSRu2lpjC3KK92k5IGGL2FETY3sEA_/view?usp=drive_link",
+    "For Lunatic Rave 2 (mpg included):",
+    "https://drive.google.com/file/d/1_fdot36i0-RtrUes-YEFvhjF_JzjRwOh/view?usp=drive_link",
+]
+
+[[entries]]
+no = "212"
+name = "Du Vel Mat Te"
+team = "Bloodletters"
+title = "1600"
+size = "17866 KB"
+addr = [
+    "https://drive.google.com/file/d/1UbC3WY_p7v3E_as8DlalCT7BKm9TG_oR/view",
+    "(ogg - 5.16 MB)",
+    "https://drive.google.com/file/d/1vXtjv61rTLVdgkn0u6qzLGdIyzTgUm3j/view",
+    "( wav - 10.7 MB)",
+]
+
+[[entries]]
+no = "213"
+name = "CAELUS"
+team = "Bloodletters"
+title = "black train"
+size = "18844 KB"
+addr = ["https://drive.google.com/file/d/18pV6GovKhCKtxF_6UKrqnRFAmSVG9qZs/view?usp=sharing"]
+
+[[entries]]
+no = "214"
+name = "ZhenXea"
+team = "鏡田宇少年の石鏡簿"
+title = "SaShira -桜白-"
+size = "5275 KB"
+addr = ["https://drive.google.com/file/d/1HEuJ4RD_Z1jwt605aezRhrL9ZTYTsyZd/view?usp=sharing"]
+
+[[entries]]
+no = "215"
+name = "Mizu"
+team = "元気もりもりティーンズ"
+title = "I III I"
+size = "13100 KB"
+addr = [
+    "ogg版",
+    "https://drive.google.com/file/d/1fjFcJG7CQBGaE0Oyjk8l_FxEBw_KjxDa/view?usp=drive_link",
+    "wav版",
+    "https://drive.google.com/file/d/1onnw8SynAhFowRQfisHWDMdTJuc4-A8p/view?usp=drive_link",
+    "高画質BGA",
+    "https://drive.google.com/file/d/11_oJhUWm1rn1yVriSi4eUdE54HHqAbK3/view?usp=drive_link",
+]
+
+[[entries]]
+no = "216"
+name = "小壹Faust"
+team = "Echo of pluiE"
+title = "End of Spring"
+size = "59847 KB"
+addr = ["https://drive.google.com/file/d/10vmuDl2S1SeWVmoYPu6gzBCvagyn0dTB/view?usp=sharing"]
+
+[[entries]]
+no = "217"
+name = "*レイナヒトミ/*reinahitomi"
+team = "残響ルナリア虚構機構"
+title = "Ѧrtificial Queen"
+size = "21677 KB"
+addr = ["https://drive.google.com/file/d/1qtmAjof4BN2YYnsnBBC7J5QbxgBay9_T/view?usp=share_link"]
+
+[[entries]]
+no = "218"
+name = "- Feline Astronaut -"
+team = "gatememorylog"
+title = "Universal Traverser"
+size = "166100 KB"
+addr = ["https://drive.google.com/file/d/14DpKEZFWeLZfi7SKTp_kq0mhfCkbgpd3/view?usp=drivesdk"]
+
+[[entries]]
+no = "219"
+name = "Fish1wF feat. hastetax"
+team = "WZ'ZX -Live音社と青卒画社の偉大同盟-"
+title = "nothing but a worm dreaming to be a butterfly"
+size = "126688478 KB"
+addr = ["https://drive.google.com/file/d/1V0izUoe7hs0C9bodlalkNqkospZoRHxR/view?usp=sharing"]
+
+[[entries]]
+no = "220"
+name = "Lamanya"
+team = "A = 444Hz"
+title = "IIII IIII IIII"
+size = "140000 KB"
+addr = ["https://drive.google.com/file/d/1-SurUpqThtoSrWKiZND9RSjjRRzha4l5/view?usp=sharing"]
+
+[[entries]]
+no = "221"
+name = "Yosk! & ume feat.水鏡華"
+team = "こぐま座のパレード"
+title = "Voyager for the Archived Tomorrow"
+size = "94880 KB"
+addr = ["https://drive.google.com/file/d/1d1K9PL-es9W2UNyFOx3lmo76Tnld7UDm"]
