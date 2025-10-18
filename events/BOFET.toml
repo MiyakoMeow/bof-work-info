@@ -1558,10 +1558,7 @@ name = "Orange Vox+ ft.AKA"
 team = "Sieste"
 title = "reveL"
 size = "80297 KB"
-addr = [
-    "https://klamnop.info/BOF2012/reveL_OrangeVox",
-    "+.zip",
-]
+addr = ["https://klamnop.info/BOF2012/reveL_OrangeVox+.zip"]
 
 [[entries]]
 no = "159"
