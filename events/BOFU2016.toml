@@ -2094,10 +2094,7 @@ name = "Sho Fish"
 team = "僕らはもう一人じゃない"
 title = "WernDaGrv"
 size = "10000 KB"
-addr = [
-    "http://www.mediafire.com/file/2k3lnl3micdehf8/%5BSho",
-    "+Fish%5DWernDaGrv-ogg.zip",
-]
+addr = ["http://www.mediafire.com/file/2k3lnl3micdehf8/%5BSho+Fish%5DWernDaGrv-ogg.zip"]
 
 [[entries]]
 no = "230"
@@ -2519,10 +2516,7 @@ name = "Radaxis"
 team = "Hardcore Teknology"
 title = "I'preferito 200Vel"
 size = "47002 KB"
-addr = [
-    "http://www.mediafire.com/file/35p8zzf3m7zy6o4/I%27preferito",
-    "+200Vel.zip",
-]
+addr = ["http://www.mediafire.com/file/35p8zzf3m7zy6o4/I%27preferito+200Vel.zip"]
 
 [[entries]]
 no = "268"
@@ -3025,10 +3019,7 @@ name = "Sho Fish"
 team = "Reap the noise F"
 title = "Steel Core Bullet"
 size = "20000 KB"
-addr = [
-    "http://www.mediafire.com/file/3v6jbdl44f45i2a/%5BSho",
-    "+Fish%5DSteel+Core+Bullet-ogg.zip",
-]
+addr = ["http://www.mediafire.com/file/3v6jbdl44f45i2a/%5BSho+Fish%5DSteel+Core+Bullet-ogg.zip"]
 
 [[entries]]
 no = "323"
@@ -3370,8 +3361,8 @@ size = "47944 KB"
 addr = [
     "https://www.dropbox.com/s/wawu1i83ae7cqci/%5Bkazunocobit%5Daojirokute_tsumetai%20%28ogg%29.zip?dl=0",
     "(ogg)",
-    "http://ux.getuploader.com/kazunoco/download/15/%5Bkazunocobit%5Daojirokute_tsumetai",
-    "+%28ogg%29.zip (oggミラー)",
+    "http://ux.getuploader.com/kazunoco/download/15/%5Bkazunocobit%5Daojirokute_tsumetai+%28ogg%29.zip",
+    "(oggミラー)",
     "https://www.dropbox.com/s/hfegapxdp7orkwz/%5Bkazunocobit%5Daojirokute_tsumetai%20%28wav%29.zip?dl=0",
     "(wav)",
 ]
@@ -4121,11 +4112,9 @@ team = "秋の大ソフランまつり"
 title = "Lots Of Spices"
 size = "52000 KB"
 addr = [
-    "http://www.mediafire.com/file/m7tbk2ssd654u5q/%5BHammer",
-    "+Switch%5DLots+Of+Spices-ogg.zip",
+    "http://www.mediafire.com/file/m7tbk2ssd654u5q/%5BHammer+Switch%5DLots+Of+Spices-ogg.zip",
     "2016/10/18 4:50頃以前にDLした方は追加差分の導入をお願いします。DLして上書きでOK",
-    "http://www.mediafire.com/file/tmtmyy89bu3kf2t/%5BHammer",
-    "+Switch%5DLots+Of+Spices-ogg.zip",
+    "http://www.mediafire.com/file/tmtmyy89bu3kf2t/%5BHammer+Switch%5DLots+Of+Spices-ogg.zip",
 ]
 
 [[entries]]
@@ -5254,8 +5243,7 @@ size = "17086 KB"
 addr = [
     "http://gensoukyousoukyoku.nekokan.dyndns.info/4-LU-robb_ahar_chawVIP.rar",
     "(7key差分 原曲のフォルダの中に放り込んで下さい)",
-    "http://gensoukyousoukyoku.nekokan.dyndns.info/robb_ahar_chawVIP_7",
-    "+14.rar",
+    "http://gensoukyousoukyoku.nekokan.dyndns.info/robb_ahar_chawVIP_7+14.rar",
 ]
 
 [[entries]]
@@ -5835,8 +5823,7 @@ team = "都会大岡山"
 title = "World Raw Ci A"
 size = "9300 KB"
 addr = [
-    "http://ux.getuploader.com/exStreamers_BMS/download/11/World",
-    "+Raw+Ci+A%28ex%C2%A7tream%29.zip",
+    "http://ux.getuploader.com/exStreamers_BMS/download/11/World+Raw+Ci+A%28ex%C2%A7tream%29.zip",
     "https://www.dropbox.com/s/9wb2jeqpzvhi3wo/World%20Raw%20Ci%20A%28ex%C2%A7tream%29.zip?dl=0",
     "（ミラー）",
 ]
