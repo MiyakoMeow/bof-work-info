@@ -1658,10 +1658,7 @@ no = "192"
 name = "ZUN remixed by MarisaB"
 title = "Phantom Ensemble (MarisaB Remix)"
 size = "43540 KB"
-addr = [
-    "http://uploader.bms.ms/bof2011okfquh83/?download=MarisaB",
-    "+-+Phantom+Ensemble+%28HQ+OGG%29_.zip",
-]
+addr = ["http://uploader.bms.ms/bof2011okfquh83/?download=MarisaB+-+Phantom+Ensemble+%28HQ+OGG%29_.zip"]
 
 [[entries]]
 no = "193"
