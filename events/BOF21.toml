@@ -1108,10 +1108,7 @@ name = "yeowool"
 team = "if everything collapses"
 title = "goodbye world"
 size = "93000 KB"
-addr = [
-    "https://publish.soundpiercer.io/bms/2025/goodbye",
-    "+world.zip",
-]
+addr = ["https://publish.soundpiercer.io/bms/2025/goodbye+world.zip"]
 
 [[entries]]
 no = "111"
@@ -2390,7 +2387,7 @@ no = "231"
 name = "Spehs"
 team = "デジタルの窓"
 title = "Sudden Encounter"
-size = "40402 KB"
+size = "46474 KB"
 addr = [
     "(ogg) <パッケージ化はこれでお願いします",
     "https://dl.dropboxusercontent.com/scl/fi/xo630tgs7u64n2dntc3kd/Spehs-Sudden_Encounter_ogg.zip?rlkey=sbawg1xvd1atp3fzjhmjsv2lm&st=9al5ts6c&dl=0",
@@ -2465,12 +2462,12 @@ no = "238"
 name = "Liáo理青 ✽"
 team = "Crown of the Hegemon"
 title = "memories i love"
-size = "89013 KB"
+size = "65520 KB"
 addr = [
     "WAV:",
-    "https://drive.google.com/drive/folders/1h0boOdfwU0SIGFdp6YpJCEBhJOcR2w1J?usp=sharing",
+    "https://drive.google.com/file/d/1wcAT-AxIdyhs6bnZi9Sk2qWIgEM41UGD/view?usp=sharing",
     "OGG:",
-    "https://drive.google.com/drive/folders/17kie24d4x_jfKAx7_Qdxey0sUEXP_a5-?usp=sharing",
+    "https://drive.google.com/file/d/1Q3-GPLrV2b_6pRy7_zlRGshUbwaXTwJZ/view?usp=sharing",
 ]
 
 [[entries]]
@@ -2638,3 +2635,92 @@ team = "代打三兄弟"
 title = "Tell me"
 size = "86154 KB"
 addr = ["https://drive.google.com/file/d/1FRWJl1t-7xYqYaZjvRxqBU3Bi5dT-eYt/view?usp=sharing"]
+
+[[entries]]
+no = "256"
+name = "Aliesrite* (Ym1024 feat. lamie*)"
+team = "Maple brit'S"
+title = "Resonate"
+size = "76893 KB"
+addr = [
+    "LR用",
+    "https://yellowmapleleaf.com/bms/ym66_resonate_ogg_lr.zip",
+    "beatoraja用",
+    "https://yellowmapleleaf.com/bms/ym66_resonate_ogg_oraja.zip",
+]
+
+[[entries]]
+no = "257"
+name = "KU.kamogawa"
+team = "Womohide club"
+title = "GIANT SALAMANDER"
+size = "117200 KB"
+addr = ["https://drive.google.com/drive/folders/1RUIoewip_6McIGbNU60hqFtwqie9x5rg?usp=drive_link"]
+
+[[entries]]
+no = "258"
+name = "Horizon_Prot&NELVO"
+team = "Optimism"
+title = "Pulverizing"
+size = "111333 KB"
+addr = [
+    "https://drive.google.com/file/d/1_Zt6HI4tG2zgR6_TQtR91p8CRmBhmcv_/",
+    "(111333KB)",
+    "https://drive.google.com/file/d/1o5TOJQtHkgA4cKGmB1Ka6EzHjUNF9Wju/",
+    "(without BGA)",
+]
+
+[[entries]]
+no = "259"
+name = "yamaki"
+team = "Optimism"
+title = "华彩"
+size = "98311 KB"
+addr = [
+    "https://drive.google.com/file/d/1iizjpdxn25GOPiMZGhr8QntgNPgF4lMk/",
+    "（Audio visualization include）（98311KB）",
+    "https://drive.google.com/file/d/1piWYAq6xa23TpbBU6IKBg0xsmc80Sxw7/",
+    "（29310KB）",
+]
+
+[[entries]]
+no = "260"
+name = "yassu"
+team = "Maple brit'S"
+title = "推しの子はビスクドール"
+size = "65694 KB"
+addr = ["https://drive.google.com/file/d/1f3N1be8pOs8rjF8yNpU-FQkFT3VorUTO/view?usp=drive_link"]
+
+[[entries]]
+no = "261"
+name = "YuKa feat.ROSE"
+team = "いちご組"
+title = "Plug Into Heart"
+size = "14381 KB"
+addr = ["https://drive.google.com/file/d/163FY6yACN6b79efs3h9n6SGI4MaTHSCe/view?usp=sharing"]
+
+[[entries]]
+no = "262"
+name = "OfficialAz3"
+team = "THE BASS GUARDIAN"
+title = "the world of periwinkle"
+size = "61836 KB"
+addr = [
+    "GDrive (main):",
+    "https://drive.usercontent.google.com/u/0/uc?id=1p32Bh50148y8FkMFrC9A0Bs8H9XVif7z&export=download",
+    "mega.nz (backup):",
+    "https://mega.nz/file/B8YyVSSR#aXJ50VdWbhw2YmbzK05JqgXFjiimFv5Ne2OzR2F8PM0",
+    "HQ BGA only (mp4) -> Copy&Paste to the BMS Package",
+    "GDrive (main):",
+    "https://drive.google.com/file/d/1k7jJ2YW8dpA9EMPZ9yER1SRhGBRZ_8Vw/view?usp=sharing",
+    "mega.nz (backup):",
+    "https://mega.nz/file/plZnHbjS#JMnCjlT4DuiQ7ifakaatz-RPuiYn8bd5y9Tm-GNuMFk",
+]
+
+[[entries]]
+no = "263"
+name = "NeoNer +  QFPYX"
+team = "AMiNOS"
+title = "Fading Skyline"
+size = "19559 KB"
+addr = ["https://1drv.ms/u/c/59ee51d0cabf1445/ETz2hGGHRnBGuzAXcc_SOeABm5RgQX1445GZc9JRpNi8Gw?e=NsAAnH"]
