@@ -156,10 +156,7 @@ no = "19"
 name = "daisan"
 title = "-+"
 size = "39505 KB"
-addr = [
-    "http://clockxellox.sakura.ne.jp/BMS/%5bBOF2013%5d-",
-    "+%5bColorTeller%5d.zip",
-]
+addr = ["http://clockxellox.sakura.ne.jp/BMS/%5bBOF2013%5d-+%5bColorTeller%5d.zip"]
 
 [[entries]]
 no = "20"
@@ -1841,10 +1838,7 @@ no = "251"
 name = "kazuNOcobit"
 title = "Blank Space"
 size = "1346 KB"
-addr = [
-    "http://ux.getuploader.com/kazunoco/download/2/kzNk_Blank",
-    "+Space.zip",
-]
+addr = ["http://ux.getuploader.com/kazunoco/download/2/kzNk_Blank+Space.zip"]
 
 [[entries]]
 no = "252"
