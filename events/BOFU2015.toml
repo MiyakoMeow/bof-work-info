@@ -1913,10 +1913,7 @@ no = "220"
 name = "mas ver0.1"
 title = "starpieces rain"
 size = "7600 KB"
-addr = [
-    "http://ux.getuploader.com/exStreamers_BMS/download/6/starpieces",
-    "+rain.zip",
-]
+addr = ["http://ux.getuploader.com/exStreamers_BMS/download/6/starpieces+rain.zip"]
 
 [[entries]]
 no = "221"
@@ -2392,10 +2389,7 @@ no = "277"
 name = "Sho Fish"
 title = "Green Cherry"
 size = "3500 KB"
-addr = [
-    "http://www.mediafire.com/download/8x13qdiz4td25c2/%5BSho",
-    "+Fish%5DGreen+Cherry.zip",
-]
+addr = ["http://www.mediafire.com/download/8x13qdiz4td25c2/%5BSho+Fish%5DGreen+Cherry.zip"]
 
 [[entries]]
 no = "278"
@@ -3315,8 +3309,7 @@ title = "ソルブ・オール・ウィズダム"
 size = "67928 KB"
 addr = [
     "Full Package (Updated : 2015.10.04)",
-    "http://www.mediafire.com/download/ya0k1btzdfe3p1v/Solve",
-    "+All+Wisdom.zip",
+    "http://www.mediafire.com/download/ya0k1btzdfe3p1v/Solve+All+Wisdom.zip",
     "Append Pattern Only (Updated : 2015.10.04)",
     "http://www.mediafire.com/download/0aj4j84ft9iyxxy/saw_append.zip",
 ]
@@ -3691,10 +3684,7 @@ no = "437"
 name = "ex§tream"
 title = "Luminophobe"
 size = "4900 KB"
-addr = [
-    "http://ux.getuploader.com/exStreamers_BMS/download/10/Luminophobe",
-    "+%5Bex%C2%A7tream+%28IDM%29%5D.zip",
-]
+addr = ["http://ux.getuploader.com/exStreamers_BMS/download/10/Luminophobe+%5Bex%C2%A7tream+%28IDM%29%5D.zip"]
 
 [[entries]]
 no = "438"
