@@ -838,8 +838,7 @@ addr = [
     "BMS file",
     "http://uploader.bms.ms/data/subup/Empty_sky.zip",
     "Original mix",
-    "http://uploader.bms.ms/subup/?download=empty",
-    "+sky.mp3",
+    "http://uploader.bms.ms/subup/?download=empty+sky.mp3",
 ]
 
 [[entries]]
