@@ -228,10 +228,10 @@ name = "CRUNCH"
 title = "candy (neglected child)"
 size = "3110 KB"
 addr = [
-    "http://uploader.bms.ms/bof2008/?download=candy",
-    "+ogg.rar ogg版(3110KB)",
-    "http://uploader.bms.ms/bof2008/?download=candy",
-    "+wav+lq.rar wav LQ版(2980KB)",
+    "http://uploader.bms.ms/bof2008/?download=candy+ogg.rar",
+    "ogg版(3110KB)",
+    "http://uploader.bms.ms/bof2008/?download=candy+wav+lq.rar",
+    "wav LQ版(2980KB)",
     "↓ミラーです↓",
     "http://nekokan.dyndns.info/uploader/candy%20ogg.rar",
     "ogg版(3110KB)",
@@ -1367,10 +1367,10 @@ name = "syzfonics"
 title = "The Azure Box"
 size = "13057 KB"
 addr = [
-    "http://syzf.108shiki.com/bms/syzf-the_azure_box_wav",
-    "+bmp.rar MQ(wav+bmp)",
-    "http://syzf.108shiki.com/bms/syzf-the_azure_box_ogg",
-    "+png.rar HQ(ogg+png)",
+    "http://syzf.108shiki.com/bms/syzf-the_azure_box_wav+bmp.rar",
+    "MQ(wav+bmp)",
+    "http://syzf.108shiki.com/bms/syzf-the_azure_box_ogg+png.rar",
+    "HQ(ogg+png)",
 ]
 
 [[entries]]
