@@ -267,9 +267,9 @@ no = "29"
 name = "watch"
 team = "Nishi Hachi Usagi"
 title = "Celestial Dawn"
-size = "53000 KB"
+size = "51200 KB"
 addr = [
-    "OGG with BG",
+    "OGG",
     "https://drive.google.com/file/d/1hh-VisYR_18eN7CF7fRC5IdSBotzFhAh/view?usp=sharing",
 ]
 
@@ -696,7 +696,7 @@ no = "71"
 name = "Cryo-Myosotis"
 team = "Deadline Impact"
 title = "Pistil as Moon"
-size = "11111 KB"
+size = "51200 KB"
 addr = [
     "OGG",
     "https://drive.google.com/file/d/19cJEwSTifIGRrZBe1_xapXjH5PcYZ8GJ/view?usp=sharing",
@@ -1776,19 +1776,14 @@ name = "snwy"
 team = "MAY’d otokonoko club"
 title = "Ex Nihilo"
 size = "211324 KB"
-addr = [
-    "mp4, preview included:",
-    "https://drive.google.com/file/d/1QmpdqT9Sjo2e8b6ZsCDxzD5AgzQOkInt/view?usp=sharing",
-    "ogg:",
-    "https://drive.google.com/file/d/1bZ5gXJ8iCVo5is-RMzJA3onlAUMVat4-/view?usp=sharing",
-]
+addr = ["https://drive.google.com/file/d/1QmpdqT9Sjo2e8b6ZsCDxzD5AgzQOkInt/view?usp=sharing"]
 
 [[entries]]
 no = "178"
 name = "LYRi_WHiTE × HiHUMi"
 team = "デジタルの窓"
 title = "操リ人形ノ舞ニ意味ハ有ルカ"
-size = "70034 KB"
+size = "68006 KB"
 addr = [
     "ogg(LR2/oraja 兼用)<パッケージ化はこれでお願いします",
     "https://docs.google.com/uc?export=download&id=1CLAM6PBg2WcjDRYJPVYFMuXJ1aVMnD9a",
@@ -1796,6 +1791,8 @@ addr = [
     "https://docs.google.com/uc?export=download&id=1aa4XPVk32LCJw561Ew32gZEBlX8iir_g",
     "wav(LR2/oraja 兼用)",
     "https://docs.google.com/uc?export=download&id=17Vt1WfEylq4q7is9tB6kR-14arB4cAnK",
+    "BGA(LR2_HQ)<初期版をダウンロードした方は上書きしてください",
+    "https://docs.google.com/uc?export=download&id=1UngsMWLVcRPd79y_K4mvd0m7CJnzP3pG",
 ]
 
 [[entries]]
@@ -2134,6 +2131,8 @@ team = "SYSTEM:REBOOT"
 title = "Flowering in the abyss"
 size = "35153 KB"
 addr = [
+    "for package (mpg+mp4)",
+    "https://drive.google.com/file/d/1w2HMafeRkmukXgV-Q08ryLMT4Pk8I1C_/view?usp=sharing",
     "ogg for oraja",
     "https://drive.google.com/file/d/1Kmu30q4ctviLDyFenEflRHD3Oq2Z88kI/view?usp=sharing",
     "ogg for LR2",
@@ -2881,3 +2880,626 @@ team = "残響ルナリア虚構機構"
 title = "天使は胡蝶の夢を喰んだ"
 size = "56456 KB"
 addr = ["https://www.dropbox.com/scl/fi/6wkiy46e386ptb8trgy28/ArkplotxNego_tiator-tenshi_ha_kocho_no_yume_wo_handa.zip?rlkey=jkpdjwx1w8kwmv5s3am4n3d9j&st=393295km&dl=0"]
+
+[[entries]]
+no = "283"
+name = "Swimming Cat"
+team = "Want to be heard"
+title = "Lo vuns poken"
+size = "43008 KB"
+addr = ["https://drive.google.com/file/d/1vZyotR8F1ua1PfQjiFpeblGOmEDtvs8T/view?usp=drive_link"]
+
+[[entries]]
+no = "284"
+name = "Lost Angel"
+team = "Want to be heard"
+title = "Collapse Original"
+size = "52224 KB"
+addr = ["https://drive.google.com/file/d/1yP_N3HEwvwWTLq1BPqq23DjNfZC9fOyZ/view?usp=drive_link"]
+
+[[entries]]
+no = "285"
+name = "DJ E_Pigeon"
+team = "超　狂乱木曜日のメガバスト　～我が力の本流に望むはフライドチキン也～"
+title = "untitled_project_01"
+size = "77161 KB"
+addr = ["https://drive.google.com/file/d/1vIb16gxaJpjE54-qJPH6teZYHebQwDrJ/view?usp=sharing"]
+
+[[entries]]
+no = "286"
+name = "Juka_Box"
+team = "モアイッヌ"
+title = "Rainy Float"
+size = "47820 KB"
+addr = ["https://drive.google.com/file/d/15Rh3R2w0-Fh0htqPv_wExmgCtIIOd3zM/view?usp=sharing"]
+
+[[entries]]
+no = "287"
+name = "Mr.Faine"
+team = "コズミック★AMIDAKUZI"
+title = "Swing by"
+size = "20000 KB"
+addr = ["https://drive.google.com/file/d/1772L8syJmNsm549gagR9ptpT7u7zswa0/view?usp=sharing"]
+
+[[entries]]
+no = "288"
+name = "Soundwave"
+team = "発焼橙豆隊"
+title = "Finale"
+size = "53000 KB"
+addr = ["https://drive.google.com/file/d/1fWhMHaBcIQPb6fGFQMbzyHj_l82DwP4J/view?usp=drive_link"]
+
+[[entries]]
+no = "289"
+name = "Medium"
+team = "StoryTeller"
+title = "Tenebris"
+size = "23900 KB"
+addr = ["https://mega.nz/file/WxJ1Vb7D#HduJjJcIF-kDiRtfznv2MY3YjvUJ7-M966JR1eMc8UU"]
+
+[[entries]]
+no = "290"
+name = "K4Y5"
+team = "#SHIBUYAMELTDOWN"
+title = "星空メルトダウン"
+size = "25458 KB"
+addr = [
+    "[ogg]",
+    "https://drive.google.com/uc?id=1qVAffwVSp3Dm5qpVHDuJ-CRWOP-Vb1Zo",
+    "[wav]",
+    "https://drive.google.com/uc?id=1iHXB192T6zKw1FiRfum5MvpepH-ZC0wK",
+]
+
+[[entries]]
+no = "291"
+name = "poritoruk (porise & oratoruk)"
+team = "骨伝導式Jアラート"
+title = "B&F"
+size = "84100 KB"
+addr = [
+    "通常版 :",
+    "https://drive.google.com/file/d/1M3FzNjuCCVygkdwXeLMG5u_4CrObNxBP/view?usp=drive_link",
+    "Beatoraja用高画質mp4版 :",
+    "https://drive.google.com/file/d/1JYtSLxz-JtUph4n6CjzYvF-Ny-NoHWNT/view?usp=drive_link",
+]
+
+[[entries]]
+no = "292"
+name = "やまだぶりんfeat.重音テトSV"
+team = "Spirits of Hardcore"
+title = "アオハル・ブレイクスルー"
+size = "128200 KB"
+addr = ["https://drive.google.com/file/d/1T_VPKgOK2Kyus67FdBDzTsgrRzM4IL3u/view?usp=drive_link"]
+
+[[entries]]
+no = "293"
+name = "XakDuk"
+team = "MAY’d otokonoko club"
+title = "Hyperdynamic"
+size = "432333 KB"
+addr = [
+    "https://drive.google.com/drive/folders/1KMz5ATxkUFRfUzEfyLSXb1Af-T4Ox06n?usp=drive_link",
+    "The _light version dosen't include only .mp4 BGA and .wav preview files.",
+]
+
+[[entries]]
+no = "294"
+name = "Xxjun"
+team = "Silicon Poet"
+title = "Night Reverie"
+size = "9411 KB"
+addr = ["https://drive.google.com/file/d/1TwHIqHQndACpi18BSwLE-OMpNUNHV9Cy/view?usp=sharing"]
+
+[[entries]]
+no = "295"
+name = "Krimek"
+team = "V For Vivace"
+title = "Apomorphy (ft. eili)"
+size = "22464 KB"
+addr = [
+    "https://drive.google.com/file/d/1ZioqIduKLl0Yq8V4WLRieRPft-kYv9u7/view?usp=sharing",
+    "https://1drv.ms/u/c/a4d724e36e806887/ETmjq9SXoIhKsyZKVFYDMsoBcWzEzCNK5fcZHSKh_MTg3Q?e=ygAtpI",
+]
+
+[[entries]]
+no = "296"
+name = "uk."
+team = "Vector Tech"
+title = "Nobady Racer"
+size = "103516 KB"
+addr = [
+    "wav、ogg：",
+    "https://drive.google.com/drive/u/1/folders/141dpSkRQBq1o6WjsOSV0lx0SavRaZzR0",
+]
+
+[[entries]]
+no = "297"
+name = "Azure Core (QFPYX + Crane2cc)"
+team = "AMiNOS"
+title = "Atlantis"
+size = "23245 KB"
+addr = ["https://1drv.ms/u/c/59ee51d0cabf1445/EYO58N-zK1pJoFa6DCsejHEBvccMLUMHg1VstFzNy-TbSQ?e=BkyRdd"]
+
+[[entries]]
+no = "298"
+name = "blobdash"
+team = "V For Vivace"
+title = "Parallax"
+size = "48925 KB"
+addr = [
+    "wav :",
+    "https://drive.google.com/file/d/1443rBaNvpe3DVExsB0NZR7tFI23VFDGZ/view?usp=drive_link",
+    "ogg :",
+    "https://drive.google.com/file/d/1N7n5iKwaLJGaOSfgN6qX0yDg4oUfD8kT/view?usp=drive_link",
+]
+
+[[entries]]
+no = "299"
+name = "JUNGNBASS & Xenopulse"
+team = "Fragmented Memories"
+title = "Otricanie"
+size = "194560 KB"
+addr = ["https://drive.google.com/file/d/1vT4TQF5IhudaEe2Hkz8IuCWSnYCVNtbs"]
+
+[[entries]]
+no = "300"
+name = "YtzkA"
+team = "SoLY"
+title = "世界が僕らを好いた結果"
+size = "88053 KB"
+addr = ["https://drive.google.com/file/d/1p81nBQnX4KmND87VVqZ73avfKlCYP2QK/view?usp=sharing"]
+
+[[entries]]
+no = "301"
+name = "usb_nk"
+team = "理系女子に恋して100万年(3年目)"
+title = "忌可視の鏡鯨"
+size = "216642 KB"
+addr = [
+    "ogg:",
+    "https://drive.google.com/file/d/13Lpmby8e6iNZFpt2fqmLnTRL1vc5klVl/view?usp=sharing",
+    "wav:",
+    "https://drive.google.com/file/d/1VJqeIwwqGsxFJEWoeedHHfmq6916DIah/view?usp=sharing",
+]
+
+[[entries]]
+no = "302"
+name = "LEVenhuk"
+team = "Blinding Mirror Surface"
+title = "9 + 10 = BOF21"
+size = "28800 KB"
+addr = ["https://drive.google.com/drive/folders/14Tt_DRuXC0MQmz51RpEz6TQuAkCbg2UE?usp=sharing"]
+
+[[entries]]
+no = "303"
+name = "Captain Sseeasm"
+team = "Phoenix"
+title = "otto%Me?Me!"
+size = "143770 KB"
+addr = ["https://drive.google.com/file/d/192kljPaZc8i9hb6U5MRM1sMGNZwU1ET8/view"]
+
+[[entries]]
+no = "304"
+name = "dirty magiq"
+team = "Spirits of Hardcore"
+title = "Frenziedly Legato Act."
+size = "322696 KB"
+addr = ["https://drive.google.com/file/d/12dR8bScbP31PcO7woQDbAu_SQ1TQUVoW/view?usp=sharing"]
+
+[[entries]]
+no = "305"
+name = "Pandemonium."
+team = "gatememorylog"
+title = "Collapse."
+size = "81472 KB"
+addr = [
+    "GDrive (main):",
+    "https://drive.usercontent.google.com/download?id=1YnBR7qCdSMDmu98d8Dijzfl0_uFvmjZk&export=download&authuser=0",
+    "mega.nz (backup):",
+    "https://mega.nz/file/goY12Lrb#3BKEkD1QNJgehDeTyDERmgytw8kroeoMRUr1rar21t4",
+]
+
+[[entries]]
+no = "306"
+name = "Suglarke"
+team = "Phoenix"
+title = "SOLiNULL"
+size = "75776 KB"
+addr = ["https://drive.google.com/file/d/1aOwUckvZn20TUn3RPk5b3lbp1CcXphWu/view?usp=drive_link"]
+
+[[entries]]
+no = "307"
+name = "IV LayZ vs Silenpop"
+team = "Fragmented Memories"
+title = "BR3AK0UT"
+size = "27000 KB"
+addr = ["https://drive.google.com/file/d/1ESCMxuJOAKZNWVz_sB-XeJJx_0HxMFVJ/view"]
+
+[[entries]]
+no = "308"
+name = "Nankumo"
+team = "P"
+title = "Veil of Ease"
+size = "55000 KB"
+addr = ["https://drive.google.com/file/d/18HzX85xeltng7zn6P7cgQ40gni7uqPJh/view?usp=sharing"]
+
+[[entries]]
+no = "309"
+name = "wbr"
+team = "Chicken Mirror"
+title = "Xerynth Zorok"
+size = "100741 KB"
+addr = ["https://drive.google.com/file/d/1jGmBiLIi1TdALKt7lqai6ib2GJiAqR_i/view?usp=sharing"]
+
+[[entries]]
+no = "310"
+name = "noyrfa"
+team = "Nishi Hachi Usagi"
+title = "果て前の花"
+size = "51200 KB"
+addr = [
+    "OGG",
+    "https://drive.google.com/file/d/1pcG34UJZ-zCN6OKcTGBzMxOcPdoaZgMI/view?usp=sharing",
+]
+
+[[entries]]
+no = "311"
+name = "JDF"
+team = "大８大"
+title = "inv.Arcadia"
+size = "51200 KB"
+addr = [
+    "OGG",
+    "https://drive.google.com/file/d/1_Qx6IsY_d34-NAiXTeH8d6Kox0kivhLa/view?usp=sharing",
+]
+
+[[entries]]
+no = "312"
+name = "从II从"
+team = "大８大"
+title = "般舟"
+size = "51200 KB"
+addr = [
+    "OGG",
+    "https://drive.google.com/file/d/1obq0sGqAW8keB0v2KWS0tqw5ePj0c_z4/view?usp=sharing",
+]
+
+[[entries]]
+no = "313"
+name = 'Normal1zer as "Art of Kickz"'
+team = "大８大"
+title = "AYO WTF?!"
+size = "51200 KB"
+addr = [
+    "OGG",
+    "https://drive.google.com/file/d/1wUj9ZF5SCShiF-bw7ZIIXojYfrE0bIrA/view?usp=sharing",
+]
+
+[[entries]]
+no = "314"
+name = "Chai the Tea"
+team = "GOFROG"
+title = "same day delivery"
+size = "9000 KB"
+addr = [
+    "ogg",
+    "https://drive.proton.me/urls/MTHWFR7PHC#hM8l2xnOCOn9",
+    "wav",
+    "https://drive.proton.me/urls/GRN73K8SA4#qq1ckzfxCIIN",
+    "mirror:",
+    "ogg",
+    "https://drive.google.com/file/d/1yaE5_p39ZNrE23JPDIfNcxWOPDbSBZt5/view?usp=sharing",
+    "wav",
+    "https://drive.google.com/file/d/1YC8jUsSqhL-ghyEm19YZkJkhvYELhaKn/view?usp=sharing",
+]
+
+[[entries]]
+no = "315"
+name = "Verlexin"
+team = "International."
+title = "monochromatization"
+size = "175000 KB"
+addr = ["https://drive.google.com/drive/folders/1D-CXNkmJhxbaI_D_G6V9ABVb2x7puqxm?usp=sharing"]
+
+[[entries]]
+no = "316"
+name = "Fisky"
+team = "GOFROG"
+title = "TURN IT UP"
+size = "9000 KB"
+addr = [
+    ".wav (126MB) |",
+    "https://drive.google.com/file/d/1atDHS8rXGnPxzH1H3OeaJ0RW5_bL4DI0/view?usp=sharing",
+    ".ogg (12.7MB) |",
+    "https://drive.google.com/file/d/1_VOVsol0augY2FIKEJja25vPRNVpAiYS/view?usp=sharing",
+]
+
+[[entries]]
+no = "317"
+name = "THE ENTIRE EARTH"
+team = "GOFROG"
+title = "Hands Up!!"
+size = "8800 KB"
+addr = [
+    "ogg & mp4",
+    "https://drive.google.com/file/d/1W1-ee9RCpeU4Aa7eZsHBCTi1_yX0dVJm/view?usp=drive_link",
+    "wav",
+    "https://drive.google.com/file/d/1h7DmTu2QNUt7ROZcV1csFxo1EbwTPUdL/view?usp=drive_link",
+    "wmv",
+    "https://drive.google.com/file/d/1EH0raV_pYs_IL6uHTA8Sj4IZqRPJsQtr/view?usp=drive_link",
+]
+
+[[entries]]
+no = "318"
+name = "カエ龍"
+team = "POSITIVE ENERGY"
+title = "Venture"
+size = "40639 KB"
+addr = ["https://drive.google.com/file/d/1f3DI35rdTKqXx3qpNWahyWR1Y7DnBF7E/view?usp=sharing"]
+
+[[entries]]
+no = "319"
+name = "sega73 x Liáo理青 ✽ x reallerr"
+team = "Crown of the Hegemon"
+title = "cassiopeia.lzh"
+size = "196311 KB"
+addr = [
+    ".wav:",
+    "https://drive.google.com/file/d/16pJH99R4OuKVecG0fLG0zfPdZ1gweaFf/view?usp=sharing",
+    ".ogg",
+    "https://drive.google.com/file/d/1FwDDivu2yAhHW1zRSMR2q62mfG0zS4xk/view?usp=sharing",
+]
+
+[[entries]]
+no = "320"
+name = "sam"
+team = "Crown of the Hegemon"
+title = "passage"
+size = "59933 KB"
+addr = ["https://drive.google.com/file/d/15jMfn6XpUmcb-ZFQlYvtdLZpGcfA8qck/view?usp=sharing"]
+
+[[entries]]
+no = "321"
+name = "dsktpgrl"
+team = "Bloodletters"
+title = "bloodstains"
+size = "38800 KB"
+addr = ["https://drive.google.com/file/d/1A55ChfN4Nd0sReUHGEQawl5k5k_wTzou/view?usp=sharing"]
+
+[[entries]]
+no = "322"
+name = "CXTXNXEXA"
+team = "POSITIVE ENERGY"
+title = "Venture"
+size = "159400 KB"
+addr = ["https://drive.google.com/file/d/1OumM5k9vyxU_Rc6Evn0TCK5hRYXWyF9B/view?usp=sharing"]
+
+[[entries]]
+no = "323"
+name = "イベライ with Private Printing"
+team = "仄か姫閑言楽団　2025年「鳴」"
+title = "perfectcopy"
+size = "46225 KB"
+addr = ["https://drive.google.com/file/d/1NLnL8kE2oTms6-E8AhNAFwwCxP0BfVtz/view?usp=sharing"]
+
+[[entries]]
+no = "324"
+name = "kas_0120"
+team = "コズミック★AMIDAKUZI"
+title = "breakfast special"
+size = "18794 KB"
+addr = ["https://drive.google.com/file/d/1_2UAC_04rJsGXr5kq73xpSfn_4GkxrBa/view?usp=drive_link"]
+
+[[entries]]
+no = "325"
+name = "T2o Feat 未名行星"
+team = "sounds pretty guy"
+title = "离心记(Revølution)"
+size = "48492 KB"
+addr = [
+    "【WAV】",
+    "https://drive.google.com/file/d/1IYHzGgw_E7SXj15w-8FA2ZRWM966Gd92/view?usp=sharing",
+    "(62.1MB)",
+    "【OGG】",
+    "https://drive.google.com/file/d/1q4eagc6vwdDXDyf_SqE4YORqyEFYHoUp/view?usp=sharing",
+]
+
+[[entries]]
+no = "326"
+name = "パープルしぶがきマン"
+team = "Nameless Flowers"
+title = "PatchLighT"
+size = "26330 KB"
+addr = [
+    "ogg:",
+    "https://drive.google.com/file/d/1piOZXJDQxjrHASsO-0B8CgoH9yeq37i_/view?usp=sharing",
+    "wav:",
+    "https://drive.google.com/file/d/1BeKC1MPQ6ouur08NltBiRYJak87qXzX5/view?usp=sharing",
+]
+
+[[entries]]
+no = "327"
+name = "えびです"
+team = "新神戸駅"
+title = "GRAYSCALE"
+size = "39504 KB"
+addr = ["https://drive.google.com/file/d/1jAa9HOXM6oYz2bzCfh92RxxrmkPpkmrY/view?usp=drive_link"]
+
+[[entries]]
+no = "328"
+name = "AVENUED"
+team = "From Root To Present"
+title = "あたらしき日"
+size = "35145 KB"
+addr = ["https://www.dropbox.com/scl/fi/fdo1iymhybuzl5acydxp1/AVENUED-newday-From-Root-to-Present.zip?rlkey=e4iz1h50bhhcg1b10m34m6bkw&st=70nltfl5&dl=1"]
+
+[[entries]]
+no = "329"
+name = "穐山 綾目"
+team = "クリームソーダ"
+title = "青い空"
+size = "119308 KB"
+addr = ["https://drive.google.com/file/d/14MgnrlrUHVjlGL5uL4m6R3rIGIjSPnpn/view?usp=drive_link"]
+
+[[entries]]
+no = "330"
+name = "DJ MossyStone feat.可可Aletta"
+team = "超　狂乱木曜日のメガバスト　～我が力の本流に望むはフライドチキン也～"
+title = "夭(よう)"
+size = "132227 KB"
+addr = ["https://drive.google.com/file/d/1t6YXIjTfADnFxCD2p8HfElkUzcYxwsaJ/view?usp=drive_link"]
+
+[[entries]]
+no = "331"
+name = "REIMOLA"
+team = "クリームソーダ"
+title = "SampleReturn"
+size = "10300 KB"
+addr = ["https://drive.google.com/file/d/13-ZJVk3r9CMfQgrLDVM8uTfeTXr2j5q2/view?usp=drive_link"]
+
+[[entries]]
+no = "332"
+name = "Zris feat. Sephid"
+team = "sounds pretty guy"
+title = "3000 Stars"
+size = "71753 KB"
+addr = ["https://drive.google.com/file/d/1UHaJUZ58j8gVrNlavAmvTvxnXrSXNE0l/view?usp=sharing"]
+
+[[entries]]
+no = "333"
+name = "uma"
+team = "Super Sonic Surge"
+title = "The World Tree"
+size = "207021 KB"
+addr = [
+    "https://www.mediafire.com/file/17apmjg0rillqnj/",
+    "[SuperSonicSurge]uma_theworldtree_2025-10-20.zip/file/",
+]
+
+[[entries]]
+no = "334"
+name = "Lutom"
+team = "Nameless Flowers"
+title = "Seed Vault"
+size = "7356 KB"
+addr = ["https://www.dropbox.com/scl/fi/m3kdz8bl3dsvuozppb0mf/Lutom-Seed-Vault.zip?rlkey=cke69i95reix62afmkqit9w7l&st=bnx61n32&dl=0"]
+
+[[entries]]
+no = "335"
+name = "ag feat. 倉先"
+team = "ATR"
+title = "Hero"
+size = "99955 KB"
+addr = [
+    "■ogg版",
+    "https://www.dropbox.com/scl/fi/wafensqs66l6s96kwp567/agfeatkurasaki_Hero_ogg.zip?rlkey=j7yfsamtmrcbjv4tq32hjtz9c&st=6dxj26j5&dl=0",
+    "■wav(高音質)版",
+    "https://www.dropbox.com/scl/fi/snc6vja4ufaa1yxee4o6v/agfeatkurasaki_Hero_wav.zip?rlkey=nlbzshmrp8abks3rcbcyagyeo&st=keiexlmd&dl=0",
+]
+
+[[entries]]
+no = "336"
+name = "Lanait"
+team = "仄か姫閑言楽団　2025年「鳴」"
+title = "colorful journey"
+size = "25452 KB"
+addr = ["https://drive.google.com/file/d/16lIMPygeO1XWNLEGYOrZkd1y6QUchILG/view?usp=sharing"]
+
+[[entries]]
+no = "337"
+name = "AeventyrNoKibou"
+team = "HereAster Forth"
+title = "望遠鏡にて天際へ傾く"
+size = "18812 KB"
+addr = [
+    "https://drive.google.com/drive/folders/1bRdnBrV5Y4vl4eBsUiqjgSiUvKCUWaPz?usp=sharing",
+    "https://www.mediafire.com/folder/mk4tgu6054igo/Bouenkyou-nite_Tensai-he_katamuku_%5BAeventyrNoKibou%5D",
+]
+
+[[entries]]
+no = "338"
+name = "tigerlily"
+team = "ATR"
+title = "Virtual Highway 99"
+size = "68850 KB"
+addr = [
+    "【ogg】",
+    "https://tigerlily.thbok.com/data/bms/tigerlily_virtual_highway_99_ogg.zip",
+    "https://drive.google.com/file/d/1I38je179V7mRARycSl9IvyO4Ac5VcvOj/view?usp=sharing",
+    "【wav】",
+    "https://tigerlily.thbok.com/data/bms/tigerlily_virtual_highway_99_wav.zip",
+    "https://drive.google.com/file/d/1_k0KXmCjt5sT-29Y4r3Cerhq9RD_ulcK/view?usp=sharing",
+]
+
+[[entries]]
+no = "339"
+name = "RYO-K a.k.a Kanikama"
+team = "PUNCH OUT -SEASON VIII-"
+title = "Lycoris Sanguinea(Radio Edit)"
+size = "41938 KB"
+addr = ["https://www.dropbox.com/scl/fi/x0jh5essd6h4hrzba0ui5/RYO-K-a.k.a-Kanikama-Lycoris_Sanguinea-Radio-Edit.zip?rlkey=fxxg4w1egc6yo7oidh6aqot8d&st=i3zyo5qb&dl=1"]
+
+[[entries]]
+no = "340"
+name = "Yumul Onishi"
+team = "クリームソーダ"
+title = "HANADOKI"
+size = "221000 KB"
+addr = ["https://drive.google.com/file/d/17ebTMxtpJDtv2diKnxnoxf5C8L_xVwhy"]
+
+[[entries]]
+no = "341"
+name = "38k"
+team = "BMSノース★サファリ"
+title = "Emberlight Dawn"
+size = "123671 KB"
+addr = [
+    "https://1drv.ms/u/c/89e7b93bd71678f2/EZDr9WZ3U65JogF0z-VMH_QBQclN4hNvrh0z9DvimYymFw",
+    "(120MB)",
+    "＜1280x720 mp4のみ版 (beatoraja向け)＞",
+    "https://1drv.ms/u/c/89e7b93bd71678f2/EVeE9N0KMZtOjfLYASYn2Y0B1v7QGk95lFAeAhalHFYJcQ",
+    "(94.0MB)",
+    "＜512x512 aviのみ版 (LR2向け)＞",
+    "https://1drv.ms/u/c/89e7b93bd71678f2/EWNQirFvh9JLjdT13QYaBXEBaoLJnpOr50tSiZucknsrgg",
+    "(61.3MB)",
+]
+
+[[entries]]
+no = "342"
+name = "Integer"
+team = "New Moments"
+title = "Arcxivia"
+size = "13301 KB"
+addr = ["https://drive.google.com/file/d/1bOKqraNWF9irp8Hhly3m4wlHlb58L-E9/view?usp=sharing"]
+
+[[entries]]
+no = "343"
+name = "Rain_Light"
+team = "BOF_スターダスト"
+title = "静かな夜、星明かりの夜"
+size = "23731 KB"
+addr = [
+    "https://wwtm.lanzouq.com/iEWTJ38wru0b",
+    "https://bowlroll.net/file/343774",
+]
+
+[[entries]]
+no = "344"
+name = "Ju_E"
+team = "明日。"
+title = "outorder"
+size = "47181 KB"
+addr = ["https://drive.google.com/file/d/1qITDOlYoGcxwPTSmS2b1JQjokWiFEbgY/view?usp=sharing"]
+
+[[entries]]
+no = "345"
+name = "Altair vs. YuKa feat.宮舞モカ"
+team = "いちご組"
+title = "LAPSE"
+size = "21303 KB"
+addr = [
+    "ogg",
+    "https://drive.google.com/file/d/1YtJ9CJneV-EmyNA-2zXu_w2EqCQ-pR9g/view?usp=sharing",
+    "wav",
+    "https://drive.google.com/file/d/1UqvsbUxktiq5EYiPaHadksuitUnYBsNB/view?usp=sharing",
+]
