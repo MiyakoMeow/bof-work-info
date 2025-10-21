@@ -401,7 +401,7 @@ addr = [
     "https://publish.soundpiercer.io/bms/2025/ESPITZ_IDENCY_WAV.zip",
     "[OGG]",
     "https://publish.soundpiercer.io/bms/2025/ESPITZ_IDENCY_OGG.zip",
-    "※10/19~20 LEGGENDARIA / DP / 9B追加予定",
+    "※10/28 0:00 LEGGENDARIA / DP / 9B追加予定",
 ]
 
 [[entries]]
@@ -2076,7 +2076,7 @@ no = "204"
 name = "UANwork"
 team = "T-BMS Recording"
 title = "Until That Day Passes"
-size = "37583 KB"
+size = "65625 KB"
 addr = ["https://drive.google.com/file/d/1QInZI5pvWkafh4Eub2kwTr-53u5pODQr/view?usp=sharing"]
 
 [[entries]]
@@ -2225,7 +2225,7 @@ no = "218"
 name = "- Feline Astronaut -"
 team = "gatememorylog"
 title = "Universal Traverser"
-size = "166100 KB"
+size = "209730 KB"
 addr = ["https://drive.google.com/file/d/14DpKEZFWeLZfi7SKTp_kq0mhfCkbgpd3/view?usp=drivesdk"]
 
 [[entries]]
@@ -2311,7 +2311,12 @@ name = "TANAGEN"
 team = "元気もりもりティーンズ"
 title = "RUN FOR YOUR LIFE!!"
 size = "52800 KB"
-addr = ["https://drive.google.com/file/d/1ipyFloFQ9_2S0cAB6LxkaA61WKKmY6Nz/view?usp=drive_link"]
+addr = [
+    "本体",
+    "https://drive.google.com/file/d/1ipyFloFQ9_2S0cAB6LxkaA61WKKmY6Nz/view?usp=drive_link",
+    "BIGINNER譜面(修正版)",
+    "https://drive.google.com/file/d/1CLGlTlDbI7MdYj_SjR9V65X4hBp25OWK/view?usp=drive_link",
+]
 
 [[entries]]
 no = "226"
@@ -2388,11 +2393,11 @@ team = "デジタルの窓"
 title = "Sudden Encounter"
 size = "46474 KB"
 addr = [
-    "(ogg) <パッケージ化はこれでお願いします",
+    "ogg(LR2/oraja 兼用) <パッケージ化はこれでお願いします",
     "https://dl.dropboxusercontent.com/scl/fi/xo630tgs7u64n2dntc3kd/Spehs-Sudden_Encounter_ogg.zip?rlkey=sbawg1xvd1atp3fzjhmjsv2lm&st=9al5ts6c&dl=0",
-    "(ogg_LR2Only)",
+    "ogg(LR2専用 軽量版)",
     "https://dl.dropboxusercontent.com/scl/fi/4o1qt9zf3mkhkdlhgm3ax/Spehs-Sudden_Encounter_ogg_LR2Only.zip?rlkey=n04rbez7woaqyifkoyypiuvu4&st=nrrizpns&dl=0",
-    "(wav)",
+    "wav(LR2/oraja 兼用)",
     "https://dl.dropboxusercontent.com/scl/fi/tt8aurlb0x56lilm0dewg/Spehs-Sudden_Encounter_wav.zip?rlkey=go2pkfzheh3363ztmgyiaeb8t&st=es4twvlj&dl=0",
 ]
 
@@ -2424,12 +2429,12 @@ team = "デジタルの窓"
 title = "Awakening Pulse"
 size = "68610 KB"
 addr = [
-    "(ogg) <パッケージ化はこれでお願いします",
-    "https://drive.google.com/file/d/1POfkR6AFr3EGU2vwlNgFPHE37eRChpjZ/view?usp=sharing",
-    "(ogg_LR2Only)",
-    "https://drive.google.com/file/d/1D8Yr0Q-XtGuIv4Yx-WtGKs_-5QdaTWZA/view?usp=sharing",
-    "(wav)",
-    "https://drive.google.com/file/d/1FRKJVlUxjGlzeHnfMwp4xDQTqT9YEtCE/view?usp=sharing",
+    "ogg(LR2/oraja 兼用) <パッケージ化はこれでお願いします",
+    "https://docs.google.com/uc?export=download&id=1POfkR6AFr3EGU2vwlNgFPHE37eRChpjZ",
+    "ogg(LR2専用 軽量版)",
+    "https://docs.google.com/uc?export=download&id=1D8Yr0Q-XtGuIv4Yx-WtGKs_-5QdaTWZA",
+    "wav(LR2/oraja 兼用)",
+    "https://docs.google.com/uc?export=download&id=1FRKJVlUxjGlzeHnfMwp4xDQTqT9YEtCE",
 ]
 
 [[entries]]
@@ -3456,12 +3461,18 @@ size = "123671 KB"
 addr = [
     "https://1drv.ms/u/c/89e7b93bd71678f2/EZDr9WZ3U65JogF0z-VMH_QBQclN4hNvrh0z9DvimYymFw",
     "(120MB)",
+    "https://drive.google.com/file/d/1DHYGXbP37KC881njGb65yn7QA1yANBYh/view?usp=drive_link",
+    "(ミラー)",
     "＜1280x720 mp4のみ版 (beatoraja向け)＞",
     "https://1drv.ms/u/c/89e7b93bd71678f2/EVeE9N0KMZtOjfLYASYn2Y0B1v7QGk95lFAeAhalHFYJcQ",
     "(94.0MB)",
+    "https://drive.google.com/file/d/1UK7pd0ihAFj7T2tsR-UiOFrq4b_eCjcV/view?usp=drive_link",
+    "(ミラー)",
     "＜512x512 aviのみ版 (LR2向け)＞",
     "https://1drv.ms/u/c/89e7b93bd71678f2/EWNQirFvh9JLjdT13QYaBXEBaoLJnpOr50tSiZucknsrgg",
     "(61.3MB)",
+    "https://drive.google.com/file/d/1ZVNZiiYD5Q7xp6O0nKO4h2iOxL9hFB5w/view?usp=drive_link",
+    "(ミラー)",
 ]
 
 [[entries]]
@@ -3713,7 +3724,12 @@ name = "Silentroom"
 team = "Stone Arch Project"
 title = "Limen"
 size = "51075 KB"
-addr = ["https://drive.google.com/file/d/1d01WX7O3S4t5mgHJIQVy3EFEFuJkVOiA/view?usp=sharing"]
+addr = [
+    "https://drive.google.com/file/d/1d01WX7O3S4t5mgHJIQVy3EFEFuJkVOiA/view?usp=sharing",
+    "(ogg, MQ 通常はこちらで)",
+    "https://drive.google.com/file/d/1k2wIUPyIMhDcCBgGKMK7lR-haN3jOoKY/view?usp=sharing",
+    "(wav, HQ but slightly lower in volume, 無損失wavですがわずかに音量が小さいです)",
+]
 
 [[entries]]
 no = "370"
@@ -3883,10 +3899,10 @@ no = "389"
 name = "sugosugiii & SiLiS"
 team = "V For Vivace"
 title = "LEAVE 1T ALL 2 U (ft. eili)"
-size = "18900 KB"
+size = "47384 KB"
 addr = [
-    "https://drive.google.com/file/d/1FwJAyNPGLavk2N6rqr6_xuGqAVm-sKa-/view?usp=sharing",
-    "https://mega.nz/file/U1JDCIQJ#fjtxGzQnXTwtfEDFtQsRwnPB6Cj71Fgt9x95ffzb_UM",
+    "https://drive.google.com/file/d/1Rt6p8J81LUTfcrPn-gMFqXKYOr2dNGxB/view?usp=sharing",
+    "https://mega.nz/file/wsYT2Z7A#GHyYL7NCckEWe71djHyujtV0qxTNyidDWa86zHnu_aU",
 ]
 
 [[entries]]
@@ -3900,6 +3916,7 @@ addr = [
     "soon",
     "==No-BGA==",
     "ogg:",
+    "https://drive.google.com/file/d/1iscWgHNFKLXQCOCCt50Lv15JvxubryIS/view?usp=sharing",
     "wav:",
     "https://drive.google.com/file/d/16DIeK7nuHQeue1jaw6zwkD6EwlMsRpa8/view?usp=drive_link",
 ]
@@ -3980,7 +3997,7 @@ name = "OverNote'"
 team = "こぐま座のパレード"
 title = "Wings for the Dreamers"
 size = "48396 KB"
-addr = ["https://drive.google.com/file/d/1OMOLx4-QWUmBRcvWQ8ca9xtPcMcMlP8f/view?usp=sharing"]
+addr = ["https://drive.google.com/file/d/10eUNuV5E7p9RTnOOZ5h0Kwn_Y0UqpSRR/view?usp=sharing"]
 
 [[entries]]
 no = "399"
@@ -4063,8 +4080,14 @@ no = "406"
 name = "Lalot. vs EigHt feat.ミーウェル"
 team = "Pray for Andraste"
 title = "7th Force"
-size = "392563 KB"
+size = "28513 KB"
 addr = [
+    "〈20251021_ver2〉",
+    "wav版：",
+    "https://www.dropbox.com/scl/fi/u79c6ihqv9fa1n7yivaf1/7thForce_bms_wav_v2.zip?rlkey=awc5btadctxwkqcmsurf0zovb&st=nf8b54de&dl=1",
+    "ogg版：",
+    "https://www.dropbox.com/scl/fi/1tkj0jua3pnopwwtvdmty/7thForce_bms_ogg_v2.zip?rlkey=wt9zjll10s23g0hvxquocu9yd&st=xz1xj72n&dl=1",
+    "〈20251020_ver1〉",
     "wav版：",
     "https://www.dropbox.com/scl/fi/ckabvgjwxd27x28c79g14/7thForce_bms_wav.zip?rlkey=00z1y188pjloy51nh1u2636t9&st=f4eew0vh&dl=1",
     "ogg版：",
@@ -4293,15 +4316,15 @@ addr = ["https://drive.google.com/file/d/11vRk0JFtlc-11I3SOnXOhzgjWam4C_Jv/view?
 no = "430"
 name = "AsTRaL_SkYLiNE"
 team = "Want to be heard"
-title = "散り桜の下でのラストシーン"
-size = "55245 KB"
+title = "The final scene under the scattering cherry blossoms"
+size = "64000 KB"
 addr = ["https://drive.google.com/file/d/1L0Vi29IZhiLkgde-7LxUTDYzOkXj-JjU/view?usp=drive_link"]
 
 [[entries]]
 no = "431"
 name = "DJ momo"
 team = "シブかわ"
-title = "F.I.R.E"
+title = "F.I.R.E (BMS Edit)"
 size = "100000 KB"
 addr = ["https://drive.google.com/file/d/1I8xOxxq2QHVNvdUhGlBi17qhK2zWY8wy/view?usp=sharing"]
 
