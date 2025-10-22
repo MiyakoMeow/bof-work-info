@@ -1270,7 +1270,11 @@ name = "YAN*TS"
 team = "THE LUCKY TRIO"
 title = "CAN'T UNDO ME!!"
 size = "51471 KB"
-addr = ["https://www.mediafire.com/file/upbg0g90jdn3ico/%255BYANTS%255DCAN%2527T_UNDO_ME.rar/file"]
+addr = [
+    "https://www.mediafire.com/file/upbg0g90jdn3ico/%255BYANTS%255DCAN%2527T_UNDO_ME.rar/file",
+    "[BGA修正差分(2025/10/22より前にDLした方はこちらから)]",
+    "https://www.mediafire.com/file/oic4p2se13u31hh/cant_undo_me_BGA_fixed.rar/file",
+]
 
 [[entries]]
 no = "127"
@@ -3542,6 +3546,8 @@ addr = [
     "https://drive.google.com/file/d/1GrGzaWq2DtzFLqzGARHJn_UYrmjXwf84/view?usp=sharing",
     "wave版(248,295KB)",
     "https://drive.google.com/file/d/19Q7WoP6qx0mBiPqxqn9Sz_4kPs1kYc5t/view?usp=sharing",
+    "ogg＋低容量wmv版(55,092KB) ※25/10/21追加",
+    "https://drive.google.com/file/d/1bYfUDIgK4bNF3gQcc_U_Q5X889eZAZb3/view?usp=sharing",
 ]
 
 [[entries]]
@@ -4289,7 +4295,11 @@ name = "oratoruk"
 team = "前だけ見てろ"
 title = "Grand Gathering"
 size = "28300 KB"
-addr = ["https://drive.google.com/file/d/1n7pXN4e_0_AEWeVamAA6Ui3sQXTtRhS_/view?usp=drive_link"]
+addr = [
+    "https://drive.google.com/file/d/1n7pXN4e_0_AEWeVamAA6Ui3sQXTtRhS_/view?usp=drive_link",
+    "2025/10/22以前にDLした方向け 画像ファイルのみ",
+    "https://drive.google.com/file/d/1K6YPONeeeQFp0lG1LATJd9OfevoIBXNp/view?usp=drive_link",
+]
 
 [[entries]]
 no = "428"
@@ -4340,6 +4350,6 @@ addr = ["https://drive.google.com/file/d/1rcutAdpPfkvXrGWSLbY6_3zemWI3NbRb/view?
 no = "433"
 name = "Nebulium__"
 team = "So?"
-title = "「」"
+title = "「 ⁠ ⁠ ⁠ ⁠ ⁠ ⁠ ⁠ ⁠ ⁠  ⁠ ⁠ ⁠ ⁠ 」"
 size = "71326 KB"
 addr = ["https://drive.google.com/file/d/1P7bAn8wFq7JNIOHl5zc1tM_R5c7HdjQr/view?usp=sharing"]
