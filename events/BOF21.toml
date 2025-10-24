@@ -677,8 +677,8 @@ no = "69"
 name = "k"
 team = "SKY NEXUS"
 title = "自在宙域"
-size = "119794 KB"
-addr = ["https://www.dropbox.com/scl/fi/16yj7nq8dn93kyppi88pv/SKY_NEXUS_k-_ogg.zip?rlkey=nt8hqjgqegqx693njdjaec7tx&st=frh4gada&dl=1"]
+size = "147226 KB"
+addr = ["https://www.dropbox.com/scl/fi/rld2mea4yjupja5epvhe9/SKY_NEXUS_k-_ogg.zip?rlkey=j4mtehg78aks676r7k42vu7by&st=uhal434w&dl=1"]
 
 [[entries]]
 no = "70"
@@ -3951,10 +3951,12 @@ no = "391"
 name = "Abel"
 team = "Otoge = Onnanoko + Gorilla"
 title = "Transcendence"
-size = "54652 KB"
+size = "164397 KB"
 addr = [
-    "https://drive.google.com/file/d/1qc0KvdRk8hqJ5cH-8I95LaBbFtVvRCLj/view?usp=sharing",
-    "BGA under construction, OGG",
+    "https://drive.google.com/file/d/1Yewp6d24TnfGWS0f0m5h1PArb-ogOaZ1/view?usp=sharing",
+    "BGA High Quality (mp4), OGG, 99218 KB",
+    "https://drive.google.com/file/d/1wb6GT3W3xRho79eDdthqr23lJyWCfXpt/view?usp=sharing",
+    "BGA Low Quality (mpg), OGG,  65179 KB",
 ]
 
 [[entries]]
