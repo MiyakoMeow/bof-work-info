@@ -80,8 +80,8 @@ no = "9"
 name = "Kurast703"
 team = "So?"
 title = "Sorry_"
-size = "64922 KB"
-addr = ["https://www.mediafire.com/file/442joqlts270zva/Sorry__BMS_ogg.zip/file"]
+size = "65536 KB"
+addr = ["https://www.mediafire.com/file/ip5qul50yrceu27/Sorry__BMS_ogg_fixed.zip/file"]
 
 [[entries]]
 no = "10"
@@ -398,7 +398,7 @@ addr = [
     "https://publish.soundpiercer.io/bms/2025/ESPITZ_IDENCY_WAV.zip",
     "[OGG]",
     "https://publish.soundpiercer.io/bms/2025/ESPITZ_IDENCY_OGG.zip",
-    "※10/28 0:00 LEGGENDARIA / DP / 9B追加予定",
+    "※10/31 0:00 LEGGENDARIA / DP / 9B追加予定 都合のため延期しました",
 ]
 
 [[entries]]
@@ -961,8 +961,12 @@ no = "96"
 name = "Stella's Color (ShooTinGStaR & NULLCOLOR)"
 team = "FUN Fighter"
 title = "Egoistential"
-size = "58256 KB"
-addr = ["https://drive.google.com/file/d/1npUynYsFBV_bCoMK7vqT2jGwlD9VDN16/view?usp=drive_link"]
+size = "58399 KB"
+addr = [
+    "https://drive.google.com/file/d/1IZ2WBwQQbHGta2DQJamT1NACh_hRfRsi/view?usp=drive_link",
+    "DP Pack:",
+    "https://drive.google.com/file/d/1IBrF6csIKNFVQN0xia_QWHZfDH-15Zd6/view?usp=drive_link",
+]
 
 [[entries]]
 no = "97"
@@ -1328,8 +1332,13 @@ no = "132"
 name = "ΣΔΣ"
 team = "Echo of pluiE"
 title = "Across From The Rain"
-size = "436738 KB"
-addr = ["https://drive.google.com/file/d/13zYzfppej78mvY3gpqR6Ier1cek4sA7a/view?usp=drive_link"]
+size = "266654 KB"
+addr = [
+    "Old：",
+    "https://drive.google.com/file/d/13zYzfppej78mvY3gpqR6Ier1cek4sA7a/view?usp=drive_link",
+    "New：",
+    "https://drive.google.com/file/d/12IXuLR4ibHyC753dcQfDTLok6B8tBnR7/view?usp=drive_link",
+]
 
 [[entries]]
 no = "133"
@@ -1587,8 +1596,14 @@ no = "159"
 name = "Yutopia Qremia"
 team = "得上県製作委員会"
 title = "アメイロプロムナード"
-size = "109272 KB"
+size = "562368 KB"
 addr = [
+    "Ver.1.1(2025/10/28)難易度INSANE,INSAMEIROを追加しました",
+    "ogg(109289KB)",
+    "https://www.dropbox.com/scl/fi/w3282nwt0j802m08cgbd3/Ameiro_Promenade_ogg_Ver.1.1.zip?rlkey=j6zdo8f8kzefxw1nzewd7grrp&st=z0qdcjp2&dl=1",
+    "wav(562368KB)",
+    "https://www.dropbox.com/scl/fi/p2aqhzqn7qao9agpfkrf4/Ameiro_Promenade_wav_Ver.1.1.zip?rlkey=8gdq0itpeevpz1f7vobwa9qay&st=1vb547u9&dl=1",
+    "Ver.1.0(2025/10/11)",
     "ogg(109272KB)",
     "https://www.dropbox.com/scl/fi/6choxweg33nquevo9cmoi/Ameiro_Promenade_ogg.zip?rlkey=ta8bj4933d7q9n7joe5r8gqk8&st=g2zg3y1v&dl=1",
     "wav(562352KB)",
@@ -2327,7 +2342,7 @@ no = "226"
 name = "kitsunet"
 team = "もちもちゆにばーす"
 title = "Mentally Unstable"
-size = "161300 KB"
+size = "172078 KB"
 addr = ["https://drive.google.com/file/d/16vVnOP3DtWu9Yayc64_B5IIzuBZ1dVbp/view?usp=sharing"]
 
 [[entries]]
@@ -3379,8 +3394,12 @@ no = "333"
 name = "uma"
 team = "Super Sonic Surge"
 title = "The World Tree"
-size = "207021 KB"
+size = "210793 KB"
 addr = [
+    "2025/10/28 一部音源のフェードを修正しました",
+    "https://www.mediafire.com/file/g0tuv7gseubgyzp/",
+    "[SuperSonicSurge]uma_theworldtree2025-10-28.zip/file",
+    "※旧データ",
     "https://www.mediafire.com/file/17apmjg0rillqnj/",
     "[SuperSonicSurge]uma_theworldtree_2025-10-20.zip/file/",
 ]
@@ -3492,9 +3511,12 @@ no = "343"
 name = "Rain_Light"
 team = "BOF_スターダスト"
 title = "静かな夜、星明かりの夜"
-size = "23731 KB"
+size = "23830 KB"
 addr = [
+    "Old (NO SPA):",
     "https://wwtm.lanzouq.com/iEWTJ38wru0b",
+    "New:",
+    "https://wwtm.lanzouq.com/ilXiZ39izrdg",
     "https://bowlroll.net/file/343774",
 ]
 
@@ -4181,6 +4203,12 @@ team = "得上県製作委員会"
 title = "しななちゃのスーパー・ウルトラ・ハイパーな日常！"
 size = "455882 KB"
 addr = [
+    "Ver.1.1(2025/10/28) ANOTHER譜面を修正しました。",
+    "ogg(131419KB)",
+    "https://www.dropbox.com/scl/fi/7ia328l0n88nvp6q191d9/Shinanacha_ogg_Fixed.zip?rlkey=67iit5zmro03cpdq4cqdhaqai&st=cay6amvd&dl=1",
+    "wav(455882KB)",
+    "https://www.dropbox.com/scl/fi/flygjvqzjh6anscf7q4fo/Shinanacha_wav_Fixed.zip?rlkey=0navb005yqalph48v8iccodk0&st=fxneon11&dl=1",
+    "Ver.1.0(2025/10/20)",
     "ogg(131419KB)",
     "https://www.dropbox.com/scl/fi/ka5m0mjwpxllfd7tmmszn/Shinanacha_ogg.zip?rlkey=3mla1nz70ho8l4l3bktmwgijd&st=v5104d43&dl=1",
     "wav(455882KB)",
@@ -4234,7 +4262,10 @@ name = "イニシャル・アール"
 team = "YOUろずばく"
 title = "Retroaction"
 size = "32254 KB"
-addr = ["https://www.mediafire.com/file/bjatzfklz6qusr8/retroaction%255Bogg%255D.zip/file"]
+addr = [
+    "↓2025.10.28 追加SPA差分：「SP Subject 4」↓",
+    "https://www.mediafire.com/file/bjatzfklz6qusr8/retroaction%255Bogg%255D.zip/file",
+]
 
 [[entries]]
 no = "418"
