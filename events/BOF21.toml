@@ -232,8 +232,13 @@ no = "25"
 name = "くるやのぶ"
 team = "VRCが実家"
 title = "The Blonde"
-size = "82916 KB"
-addr = ["https://drive.google.com/file/d/1p5LVDW-W4phFH8P4d971aUEVjy2qBiG6/view?usp=sharing"]
+size = "83292 KB"
+addr = [
+    "【本体】",
+    "https://drive.google.com/file/d/1p5LVDW-W4phFH8P4d971aUEVjy2qBiG6/view?usp=sharing",
+    "【追加差分のみ】「SP ULTIMATE(★20)、PMS N(35)H(45)」",
+    "https://drive.google.com/file/d/15m_lokZJzw1W8fdg7wXl1T2gTdTqUmO9/view?usp=sharing",
+]
 
 [[entries]]
 no = "26"
@@ -356,7 +361,7 @@ name = "Chikanya"
 team = "Memories of Her..."
 title = "White Petals for the Unspoken"
 size = "108638 KB"
-addr = ["https://drive.google.com/file/d/1o-xaiZJUCLPQChMt7YU2t89PV_2xxxP7/view?usp=drive_link"]
+addr = ["https://drive.google.com/file/d/1YPoDl9ixYfXNeYAum8uWcD0BOW4V65f5/view?usp=drive_link"]
 
 [[entries]]
 no = "39"
@@ -1039,7 +1044,7 @@ name = "DJ Double G"
 team = "Memories of Her..."
 title = "-Falling Aurora- IX2"
 size = "132583 KB"
-addr = ["https://drive.google.com/file/d/1iFP93NS5MdTN99OjxJBpUXE2mQ45jn7K/view?usp=drive_link"]
+addr = ["https://drive.google.com/file/d/19G0eznaJkeHjowamVbP7Xg0XWFsjXuCf/view?usp=drive_link"]
 
 [[entries]]
 no = "104"
@@ -1101,7 +1106,7 @@ name = "NonNam feat.Yixi"
 team = "Memories of Her..."
 title = "Checkmate"
 size = "75164 KB"
-addr = ["https://drive.google.com/file/d/1oi6DJ9EBBTHUdOd5KZnUAwCwuJz-_h93/view?usp=drive_link"]
+addr = ["https://drive.google.com/file/d/1bzotkiur6IVFGfTOXhy49Py4AKPql7Xx/view?usp=drive_link"]
 
 [[entries]]
 no = "110"
@@ -1528,7 +1533,13 @@ name = "TdrA-0.24"
 team = "Phoenix"
 title = "ye ju"
 size = "20684 KB"
-addr = ["https://drive.google.com/file/d/1ylkQylMtc9SUuGH7tzdVSnzh1hmXSIPZ/view"]
+addr = [
+    "fixed ver:",
+    "https://drive.google.com/file/d/1cUU_s4T-gcdjwkWZ8kx-VMCVwsRdLvKn/view?usp=drive_link",
+    "(17424KB)",
+    "old ver:",
+    "https://drive.google.com/file/d/1ylkQylMtc9SUuGH7tzdVSnzh1hmXSIPZ/view",
+]
 
 [[entries]]
 no = "152"
@@ -1955,8 +1966,14 @@ no = "190"
 name = "anco vs usb_nk"
 team = "理系女子に恋して100万年(3年目)"
 title = "Dilclumina"
-size = "38756 KB"
-addr = ["https://1drv.ms/u/c/614a04da8ab0ce14/EWUJi_wUje5AoJ_D5l82cIoB1IQq0zBZvS5QxwVjRKYMoA"]
+size = "139043 KB"
+addr = [
+    "https://1drv.ms/u/c/614a04da8ab0ce14/EWUJi_wUje5AoJ_D5l82cIoB1IQq0zBZvS5QxwVjRKYMoA",
+    "[2025/10/29 18:52 : BGA(beatoraja用)追加(本体に同梱済み)]",
+    "https://1drv.ms/u/c/614a04da8ab0ce14/EefqeCvJIg5Oq_lr-iR8fBIBlWyW2JpQUK-WQ_r4_9IY0g",
+    "[2025/10/29 19:03 : BGA(LR2用)追加(本体に同梱済み)]",
+    "https://1drv.ms/u/c/614a04da8ab0ce14/ET7JtY4ZZalAv8tzz_957pQB4ZKPlGVAybm--ZEOrzCF8Q",
+]
 
 [[entries]]
 no = "191"
@@ -2761,12 +2778,12 @@ no = "265"
 name = "てのり feat.POPY"
 team = "いちご組"
 title = "MY SWEET ONE!"
-size = "22574 KB"
+size = "24288 KB"
 addr = [
     "[ogg]",
-    "https://drive.google.com/file/d/1Z7dj3dsiRbF18ikHFNcVAExk2CzRST7T/view?usp=sharing",
+    "https://drive.google.com/file/d/1_4go9hbxqMzpQ4lFoV1qwtX6qJDUC45U/view?usp=sharing",
     "[wav]",
-    "https://drive.google.com/file/d/14DtQ8QyZyTNZ3R2nf0tFR-jJwDP6QDyX/view?usp=sharing",
+    "https://drive.google.com/file/d/14c5eytzrn4OQ99VeCW8u2qmksozTJ6Nk/view?usp=sharing",
 ]
 
 [[entries]]
@@ -3303,8 +3320,13 @@ no = "323"
 name = "イベライ with Private Printing"
 team = "仄か姫閑言楽団　2025年「鳴」"
 title = "perfectcopy"
-size = "46225 KB"
-addr = ["https://drive.google.com/file/d/1NLnL8kE2oTms6-E8AhNAFwwCxP0BfVtz/view?usp=sharing"]
+size = "46290 KB"
+addr = [
+    "https://drive.google.com/file/d/1NLnL8kE2oTms6-E8AhNAFwwCxP0BfVtz/view?usp=sharing",
+    "(2025-10-28/追加のみ",
+    "https://drive.google.com/file/d/1RuFrqRoLm59iR81FGKKMYvouB_gPAgt7/view?usp=sharing",
+    ")",
+]
 
 [[entries]]
 no = "324"
@@ -3346,8 +3368,13 @@ no = "327"
 name = "えびです"
 team = "新神戸駅"
 title = "GRAYSCALE"
-size = "39504 KB"
-addr = ["https://drive.google.com/file/d/1jAa9HOXM6oYz2bzCfh92RxxrmkPpkmrY/view?usp=drive_link"]
+size = "39513 KB"
+addr = [
+    "BMSON（推奨）",
+    "https://drive.google.com/file/d/1bWZF3U7TxAkz6aRCIXTVYtxoyZh82YwO/view?usp=drive_link",
+    "BMS",
+    "https://drive.google.com/file/d/1EFkS575oZOPuVUrvGPTQ6vM-2o2eyrY-/view?usp=drive_link",
+]
 
 [[entries]]
 no = "328"
@@ -3743,8 +3770,14 @@ no = "368"
 name = "Flanez"
 team = "HereAster Forth"
 title = "天穹之泪"
-size = "27674 KB"
-addr = ["https://drive.google.com/file/d/1fPnUZgbQAiCu00OMm_0OJIMM8k1pzF4i/view?usp=sharing"]
+size = "51670 KB"
+addr = [
+    "[BMS]",
+    "https://drive.google.com/file/d/1fPnUZgbQAiCu00OMm_0OJIMM8k1pzF4i/view?usp=sharing",
+    "https://www.mediafire.com/file/iu2phdnk70snzs5/Tian_Qiong_Zhi_Lei_-_Flanez%255Bogg%255D.7z/file",
+    "[BGA 1920x1080, mp4]",
+    "https://drive.google.com/file/d/15xRyx9uSDlZuGWQSxb7qB5ti_skFgVV6/view?usp=sharing",
+]
 
 [[entries]]
 no = "369"
@@ -4390,8 +4423,13 @@ no = "431"
 name = "DJ momo"
 team = "シブかわ"
 title = "F.I.R.E (BMS Edit)"
-size = "100000 KB"
-addr = ["https://drive.google.com/file/d/1I8xOxxq2QHVNvdUhGlBi17qhK2zWY8wy/view?usp=sharing"]
+size = "15700 KB"
+addr = [
+    "[2025.10.29 complete updated！]",
+    "https://drive.google.com/file/d/1O0_Fel3CUPl8yyzbavPr3MEP-aj6t90e/view?usp=sharing",
+    "[7Normal Hyper Another差分だけ]",
+    "https://drive.google.com/file/d/1DHMBCfwBbe0CD01DSGVUdSoQchYs77dH/view?usp=sharing",
+]
 
 [[entries]]
 no = "432"
