@@ -2880,7 +2880,7 @@ name = "BASSKNIVES"
 team = "THE BASS GUARDIAN"
 title = "RAVEN FROM THE DEPTH DARK AND THE COLD"
 size = "34449 KB"
-addr = ["https://drive.google.com/file/d/1GfHuIlZAFOeHr10gldG_Nduob1Oxc5mE/view?usp=sharing"]
+addr = ["https://drive.google.com/file/d/1bnPAtGTYTiurQMiXusbdOUT6UaRzTn0E/view?usp=sharing"]
 
 [[entries]]
 no = "278"
@@ -3047,7 +3047,7 @@ no = "296"
 name = "uk."
 team = "Vector Tech"
 title = "Nobady Racer"
-size = "103516 KB"
+size = "103544 KB"
 addr = [
     "wav、ogg：",
     "https://drive.google.com/drive/u/1/folders/141dpSkRQBq1o6WjsOSV0lx0SavRaZzR0",
@@ -4062,8 +4062,11 @@ no = "396"
 name = "STO"
 team = "理系女子に恋して100万年(3年目)"
 title = "CAFFEINE"
-size = "59498 KB"
-addr = ["https://drive.google.com/file/d/1gl_KqrYWsaSZunAMXsljJcMSohdyIxkW/view?usp=sharing"]
+size = "212412 KB"
+addr = [
+    "20251029",
+    "https://drive.google.com/file/d/1B2UmuZDa8dHPRmu3amuQY1T1-zp7WSey/view?usp=sharing",
+]
 
 [[entries]]
 no = "397"
@@ -4184,8 +4187,13 @@ no = "407"
 name = "4983"
 team = "NEO sample FACTORY"
 title = "MacGuffin #25-3"
-size = "30045 KB"
-addr = ["https://drive.google.com/file/d/1mVVN8lkaWuXlHRP0elPl8NnSvftRIO0y/view"]
+size = "30028 KB"
+addr = [
+    "https://drive.google.com/file/d/10k28FzBHJI-XwigR-P1PIyzuiJjPpbZf/view?usp=drive_link",
+    "(wav)",
+    "https://drive.google.com/file/d/15Jp4wbfxBDWnr94j8jy1XX70EnJoigV3/view?usp=drive_link",
+    "(ogg)",
+]
 
 [[entries]]
 no = "408"
