@@ -403,7 +403,7 @@ addr = [
     "https://publish.soundpiercer.io/bms/2025/ESPITZ_IDENCY_WAV.zip",
     "[OGG]",
     "https://publish.soundpiercer.io/bms/2025/ESPITZ_IDENCY_OGG.zip",
-    "※10/31 0:00 LEGGENDARIA / DP / 9B追加予定 都合のため延期しました",
+    "※11/3 0:00 LEGGENDARIA / DP / 9B追加予定 都合のため遅延されております。大変申し訳ありません。",
 ]
 
 [[entries]]
@@ -540,12 +540,12 @@ team = "Zeropia"
 title = "流光の残響 ~The Echoes Of Flowing Light~"
 size = "103890 KB"
 addr = [
-    "(2025-10-12)",
-    "(Fix the problem of LR2 BGA and stagefile.)",
+    "(2025-10-31)",
+    "(Change the difficulty of the chart.)",
     "Google Drive:",
-    "https://drive.google.com/file/d/1wqiDVgcDGGaZjtgxrrmzSQd2xzfqD7KA/view?usp=drive_link",
+    "https://drive.google.com/file/d/1N9YylXMjezM_rJy535ih_47jEsj0us8i/view?usp=sharing",
     "cncncloud(For Chinese players):",
-    "https://cncncloud.com/s/Jr6t9",
+    "https://cncncloud.com/s/nnocv",
 ]
 
 [[entries]]
@@ -644,7 +644,12 @@ name = "Tiv"
 team = "前だけ見てろ"
 title = "Poppi'n Eater"
 size = "8727 KB"
-addr = ["https://drive.usercontent.google.com/u/0/uc?id=1ojzXTnqNtxT_LnqtFJ2D_EV5LmlPkG9K&export=download"]
+addr = [
+    "[ogg本体]",
+    "https://drive.usercontent.google.com/u/0/uc?id=1ojzXTnqNtxT_LnqtFJ2D_EV5LmlPkG9K&export=download",
+    "[2025/10/30 22:05以前にDLした方向け PMS3譜面LR2向け不具合修正差分]",
+    "https://drive.usercontent.google.com/u/0/uc?id=1P2OfxgZrD52a3HDj-uyQkyW0XZFdF5ze&export=download",
+]
 
 [[entries]]
 no = "66"
@@ -1594,8 +1599,15 @@ no = "158"
 name = "Yutopia Qremia + あずきどん。+ 灼熱紅蓮"
 team = "得上県製作委員会"
 title = "Shall We Fingersnap?"
-size = "119534 KB"
+size = "979641 KB"
 addr = [
+    "Ver.1.1(2025/10/31) 音量調整、NORMAL譜面を一部修正しました。",
+    "ogg(332434KB)",
+    "https://www.dropbox.com/scl/fi/h6pag7c22cz46x1tf814j/SWF_Ver.1.1_ogg.zip?rlkey=g9rce5bnl5onpkefl59fdyxbw&st=8d8eh1as&dl=1",
+    "wav(979641KB)",
+    "https://www.dropbox.com/scl/fi/mo5u1vkdh2qjipmyvfqoh/SWF_Ver.1.1_wav.zip?rlkey=7m6ijquil4ojhamjsyete5vdu&st=7aurw7gu&dl=1",
+    "※差分はbmsファイルからご自由にお作りください",
+    "Ver1.0(2025/10/11)",
     "ogg(119534KB)",
     "https://www.dropbox.com/scl/fi/fy2v152kj50clgp7vvfv7/Shall_We_Fingersnap_ogg.zip?rlkey=98j7ri035flyqnx9tdr7retnl&st=76owz2da&dl=1",
     "wav(380297KB)",
@@ -4118,7 +4130,7 @@ no = "401"
 name = "Davidsan"
 team = "大８大"
 title = "Choromnium"
-size = "95895 KB"
+size = "89949 KB"
 addr = ["https://drive.google.com/file/d/1lSAmU_KShbNOTvQMGbOxYEXa02iIulZC/view?usp=drive_link"]
 
 [[entries]]
