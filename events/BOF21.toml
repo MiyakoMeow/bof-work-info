@@ -4254,8 +4254,13 @@ no = "412"
 name = "Yutopia Qremia + デナー + はらもりよしな"
 team = "得上県製作委員会"
 title = "しななちゃのスーパー・ウルトラ・ハイパーな日常！"
-size = "455882 KB"
+size = "457112 KB"
 addr = [
+    "Ver.1.2(2025/10/31) HYPER譜面を追加しました。",
+    "ogg(100207KB)",
+    "https://www.dropbox.com/scl/fi/pve332sx5uvhld9c8yr52/Shinanacha_Ver.1.2.ogg.zip?rlkey=5ofh2s9n1bmgt7tghjvlihnul&st=ga6zqyx1&dl=1",
+    "wav(457112KB)",
+    "https://www.dropbox.com/scl/fi/u0qktmlhjj87uxtl24ji8/Shinanacha_Ver.1.2.wav.zip?rlkey=euzgjron67mhdzqiyqgoolozr&st=ccqnr2tj&dl=1",
     "Ver.1.1(2025/10/28) ANOTHER譜面を修正しました。",
     "ogg(131419KB)",
     "https://www.dropbox.com/scl/fi/7ia328l0n88nvp6q191d9/Shinanacha_ogg_Fixed.zip?rlkey=67iit5zmro03cpdq4cqdhaqai&st=cay6amvd&dl=1",
