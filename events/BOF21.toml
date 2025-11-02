@@ -1049,7 +1049,11 @@ name = "DJ Double G"
 team = "Memories of Her..."
 title = "-Falling Aurora- IX2"
 size = "132583 KB"
-addr = ["https://drive.google.com/file/d/19G0eznaJkeHjowamVbP7Xg0XWFsjXuCf/view?usp=drive_link"]
+addr = [
+    "https://drive.google.com/file/d/1OK9CqZpwowtXk6JmhalhKr5Dy3IQNs9z/view?usp=drive_link",
+    "APPEND CHART, Please download it if you have the original file before 2025/11/2:",
+    "https://drive.google.com/file/d/1kyWZ19y1dbxl-_UB-HVAoI8urBOHhP6L/view?usp=drive_link",
+]
 
 [[entries]]
 no = "104"
@@ -1283,6 +1287,8 @@ title = "CAN'T UNDO ME!!"
 size = "51471 KB"
 addr = [
     "https://www.mediafire.com/file/upbg0g90jdn3ico/%255BYANTS%255DCAN%2527T_UNDO_ME.rar/file",
+    "[譜面修正差分(2025/11/02より前にDLした方はこちらから)]",
+    "https://www.mediafire.com/file/mh32z7d6uku3496/cant_undo_me_Charts_fixed.rar/file",
     "[BGA修正差分(2025/10/22より前にDLした方はこちらから)]",
     "https://www.mediafire.com/file/oic4p2se13u31hh/cant_undo_me_BGA_fixed.rar/file",
 ]
@@ -1927,12 +1933,12 @@ no = "186"
 name = "Sanchia"
 team = "& Journey of Yinhe Huahai &"
 title = "Falling Kingdom"
-size = "30620 KB"
+size = "31232 KB"
 addr = [
     "百度网盘:",
-    "https://pan.baidu.com/s/1WJq7PORm3ocAwYCbDtFX7w?pwd=ivww",
+    "https://pan.baidu.com/s/1s-WZYZuV082bOXqbruCi6A?pwd=ordt",
     "谷歌网盘:",
-    "https://drive.google.com/file/d/1eEJisj1fqSGKWSf7kJtg97w45MXkD9kN/view?usp=sharing",
+    "https://drive.google.com/file/d/1vw7zL0L4FwMFYCshUCWYLiOTBy6Nhi0i/view?usp=drivesdk",
 ]
 
 [[entries]]
@@ -3542,8 +3548,14 @@ no = "342"
 name = "Integer"
 team = "New Moments"
 title = "Arcxivia"
-size = "13301 KB"
-addr = ["https://drive.google.com/file/d/1bOKqraNWF9irp8Hhly3m4wlHlb58L-E9/view?usp=sharing"]
+size = "57607 KB"
+addr = [
+    "(2025/11/02 Update)",
+    "https://drive.google.com/file/d/1INdtTXMwwxywFMQvD5Oo0qDUTAqNsKjz/view?usp=sharing",
+    "[BGA Version, 44306KB]",
+    "https://drive.google.com/file/d/1bOKqraNWF9irp8Hhly3m4wlHlb58L-E9/view?usp=sharing",
+    "[BGI Version, 13301KB]",
+]
 
 [[entries]]
 no = "343"
@@ -4319,9 +4331,9 @@ no = "417"
 name = "イニシャル・アール"
 team = "YOUろずばく"
 title = "Retroaction"
-size = "32254 KB"
+size = "32255 KB"
 addr = [
-    "↓2025.10.28 追加SPA差分：「SP Subject 4」↓",
+    "↓2025.11.2 追加SPA差分：「SP Subject 4」、一部のKeysoundがLR2で正常に再生されない問題を修正しました↓",
     "https://www.mediafire.com/file/bjatzfklz6qusr8/retroaction%255Bogg%255D.zip/file",
 ]
 
