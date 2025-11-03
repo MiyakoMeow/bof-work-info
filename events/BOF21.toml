@@ -273,6 +273,8 @@ size = "51200 KB"
 addr = [
     "OGG",
     "https://drive.google.com/file/d/1hh-VisYR_18eN7CF7fRC5IdSBotzFhAh/view?usp=sharing",
+    "update",
+    "ADDED [DP ANOTHER] chart by 四馬鉐屋, please re download since 3 November 2025",
 ]
 
 [[entries]]
@@ -403,7 +405,12 @@ addr = [
     "https://publish.soundpiercer.io/bms/2025/ESPITZ_IDENCY_WAV.zip",
     "[OGG]",
     "https://publish.soundpiercer.io/bms/2025/ESPITZ_IDENCY_OGG.zip",
-    "※11/3 0:00 LEGGENDARIA / DP / 9B追加予定 都合のため遅延されております。大変申し訳ありません。",
+    "★11/2 24:00 - SPL / DPB / DPN 追加。キック音の過度なバランスなど修正",
+    "★11/2 24:00以前にダウンロードしたかたのための差分パッケージ",
+    "https://publish.soundpiercer.io/bms/2025/ESPITZ_IDENCY_SABUN.zip",
+    "※11/3 24:00 DP HYPER/ANOTHER 追加予定",
+    "※11/4~8 9B追加予定",
+    "都合のため遅延されております。大変申し訳ありません。",
 ]
 
 [[entries]]
@@ -3232,6 +3239,8 @@ size = "51200 KB"
 addr = [
     "OGG",
     "https://drive.google.com/file/d/1wUj9ZF5SCShiF-bw7ZIIXojYfrE0bIrA/view?usp=sharing",
+    "update",
+    "ADDED BGA video by 佑木いずみ feat. Normal1zer & MKR, please re download since 3 November 2025",
 ]
 
 [[entries]]
@@ -3541,6 +3550,11 @@ addr = [
     "(61.3MB)",
     "https://drive.google.com/file/d/1ZVNZiiYD5Q7xp6O0nKO4h2iOxL9hFB5w/view?usp=drive_link",
     "(ミラー)",
+    "＜追加PMS譜面(9B UPPER☆50) by ●●●●●●＞ ※2025/11/3 3:00以降の上記リンクには含まれています。",
+    "https://1drv.ms/u/c/89e7b93bd71678f2/EaIz6MSmVlFMmUS2sd52AcAB7C9Gf8veNiA1hucfEPyKbw?e=mXJLkD",
+    "(13KB)",
+    "https://drive.google.com/file/d/146Z-OWmXNPpQq09M535YRLWg3AfA4FU_/view?usp=sharing",
+    "(ミラー)",
 ]
 
 [[entries]]
@@ -3613,14 +3627,16 @@ no = "348"
 name = "roop"
 team = "ATR"
 title = "Dancing on the Moon"
-size = "248295 KB"
+size = "249219 KB"
 addr = [
-    "ogg版(151,214KB)",
+    "ogg版(152,138KB)",
     "https://drive.google.com/file/d/1GrGzaWq2DtzFLqzGARHJn_UYrmjXwf84/view?usp=sharing",
-    "wave版(248,295KB)",
+    "wave版(249,219KB)",
     "https://drive.google.com/file/d/19Q7WoP6qx0mBiPqxqn9Sz_4kPs1kYc5t/view?usp=sharing",
-    "ogg＋低容量wmv版(55,092KB) ※25/10/21追加",
+    "ogg＋低容量wmv版(56,123KB) ※25/10/21追加",
     "https://drive.google.com/file/d/1bYfUDIgK4bNF3gQcc_U_Q5X889eZAZb3/view?usp=sharing",
+    "stage画像+banner画像追加差分(1,027KB) ※25/11/03追加",
+    "https://drive.google.com/file/d/1Eg9kIAszFa8Xx4xABPLkRUAq8jdvTxMt/view?usp=sharing",
 ]
 
 [[entries]]
