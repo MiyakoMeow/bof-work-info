@@ -1729,8 +1729,13 @@ no = "167"
 name = "Itz62iGD"
 team = "BOF_スターダスト"
 title = "AirPause"
-size = "32281 KB"
-addr = ["https://wwtm.lanzouq.com/iZ3g238i7syj"]
+size = "32208 KB"
+addr = [
+    "OLD：",
+    "https://wwtm.lanzouq.com/iZ3g238i7syj",
+    "NEW：",
+    "https://wwtm.lanzn.com/iHvBa3a8q0sb",
+]
 
 [[entries]]
 no = "168"
@@ -3999,7 +4004,11 @@ name = "RykSeb with Quint"
 team = "Amorphous"
 title = "Night Parade Zoetrope"
 size = "45762 KB"
-addr = ["https://www.dropbox.com/scl/fi/06ma39ow5eaft71rc74yr/amorphous-NPZ.zip?rlkey=l4ixb2i9spmorealm5zp7lifd&st=1rok57ut&dl=1"]
+addr = [
+    "https://www.dropbox.com/scl/fi/06ma39ow5eaft71rc74yr/amorphous-NPZ.zip?rlkey=l4ixb2i9spmorealm5zp7lifd&st=1rok57ut&dl=1",
+    "11/6 修正差分のみDL:",
+    "https://www.dropbox.com/scl/fi/oxk12dzkwj5n6v1hxbhkl/amorphous-NPZ_v2_fixpatch.zip?rlkey=3nl04lj1v43qj4mlvc7l9g56v&st=rtn28wh1&dl=1",
+]
 
 [[entries]]
 no = "387"
@@ -4244,7 +4253,10 @@ size = "25600 KB"
 addr = [
     "OGG",
     "https://drive.google.com/file/d/1qUSBJGm6_e3cHUAO1QiBhbHjytDrQR-0/view?usp=sharing",
-    "currently [SP HYPER] only, please stay tuned for [SP ANOTHER] chart",
+    "update",
+    "ADDED [SP NORMAL], [SP ANOTHER], [SP CHORD DREAM] by AZVW_2, please re download since 6 November 2025",
+    "get additional chart files only →",
+    "https://stellabms.xyz/upload/6640",
 ]
 
 [[entries]]
