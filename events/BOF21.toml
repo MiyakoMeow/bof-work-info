@@ -405,11 +405,10 @@ addr = [
     "https://publish.soundpiercer.io/bms/2025/ESPITZ_IDENCY_WAV.zip",
     "[OGG]",
     "https://publish.soundpiercer.io/bms/2025/ESPITZ_IDENCY_OGG.zip",
-    "★11/3 24:00 - SPL / DPB / DPN / DPH 追加。キック音の過度なバランスなど修正",
-    "★11/3 24:00以前にダウンロードしたかたのための差分パッケージ",
+    "★11/7 12:00 DPA/DPL 追加",
+    "★11/7 12:00以前にダウンロードしたかたのための差分パッケージ",
     "https://publish.soundpiercer.io/bms/2025/ESPITZ_IDENCY_SABUN.zip",
-    "※11/4 24:00 DP ANOTHER 追加予定",
-    "※11/5~8 9B追加予定",
+    "※11/8~9 9B追加予定",
     "都合のため遅延されております。大変申し訳ありません。",
 ]
 
@@ -1636,9 +1635,9 @@ size = "562368 KB"
 addr = [
     "Ver.1.1(2025/10/28)難易度INSANE,INSAMEIROを追加しました",
     "ogg(109289KB)",
-    "https://www.dropbox.com/scl/fi/w3282nwt0j802m08cgbd3/Ameiro_Promenade_ogg_Ver.1.1.zip?rlkey=j6zdo8f8kzefxw1nzewd7grrp&st=z0qdcjp2&dl=1",
+    "https://www.dropbox.com/scl/fi/smnoyu40rks1g9bqjr4zk/Ameiro_Ver.1.1_ogg.zip?rlkey=ckaqai6k500ks8z02di7n4c0o&st=bkcolb52&dl=1",
     "wav(562368KB)",
-    "https://www.dropbox.com/scl/fi/p2aqhzqn7qao9agpfkrf4/Ameiro_Promenade_wav_Ver.1.1.zip?rlkey=8gdq0itpeevpz1f7vobwa9qay&st=1vb547u9&dl=1",
+    "https://www.dropbox.com/scl/fi/izr59x1d25iypclrwi46j/Ameiro_Ver.1.1_wav.zip?rlkey=0yvfmrkopgd5lhhttbnywumi1&st=00593bb3&dl=1",
     "Ver.1.0(2025/10/11)",
     "ogg(109272KB)",
     "https://www.dropbox.com/scl/fi/6choxweg33nquevo9cmoi/Ameiro_Promenade_ogg.zip?rlkey=ta8bj4933d7q9n7joe5r8gqk8&st=g2zg3y1v&dl=1",
