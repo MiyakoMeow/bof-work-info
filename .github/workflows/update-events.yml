@@ -3,7 +3,7 @@ name: Update BMS Events
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 12 * * *'
+    - cron: "0 12 * * 5"
 
 permissions:
   contents: write
@@ -33,22 +33,22 @@ jobs:
             echo "events.toml not found at repo root" >&2
             exit 1
           fi
-          
+
           # 使用 Python 来解析 TOML 文件
           python3 << 'EOF'
           import toml
           import json
           import os
-          
+
           with open('events.toml', 'r', encoding='utf-8') as f:
               data = toml.load(f)
-          
+
           # 提取所有事件的 key
           keys = [event['key'] for event in data['events']]
-          
+
           # 提取所有事件的完整信息
           events = data['events']
-          
+
           # 将输出写入 GITHUB_OUTPUT
           with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
               f.write(f"keys={json.dumps(keys)}\n")
@@ -75,7 +75,7 @@ jobs:
           # 从 prepare-matrix 传递的事件信息中查找当前事件
           event_id=$(echo '${{ needs.prepare-matrix.outputs.events }}' | jq -r --arg KEY "${{ matrix.event_key }}" '.[] | select(.key==$KEY) | .event_id')
           url=$(echo '${{ needs.prepare-matrix.outputs.events }}' | jq -r --arg KEY "${{ matrix.event_key }}" '.[] | select(.key==$KEY) | .url')
-          
+
           if [ "$event_id" != "null" ] && [ -n "$event_id" ]; then
             # 使用 event_id 构建 URL
             url="https://manbow.nothing.sh/event/event.cgi?action=URLList&end=999&event=$event_id"
@@ -144,7 +144,7 @@ jobs:
 
   automerge-pr:
     name: Create and auto-merge PR for ${{ matrix.event_key }}
-    needs: 
+    needs:
       - prepare-matrix
       - update-event
     runs-on: ubuntu-latest
@@ -167,10 +167,10 @@ jobs:
               repo: context.repo.repo,
               run_id: context.runId,
             });
-            
+
             const artifactName = `git-diff-${{ matrix.event_key }}`;
             const artifact = artifacts.data.artifacts.find(a => a.name === artifactName);
-            
+
             if (artifact) {
               console.log(`Found artifact: ${artifactName}`);
               core.setOutput('exists', 'true');
@@ -230,4 +230,4 @@ jobs:
         with:
           token: ${{ secrets.AUTOMERGE_TOKEN }}
           pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
-          merge-method: merge
+          merge-method: squash
