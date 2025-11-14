@@ -371,7 +371,11 @@ name = "kdcysth → nothinbutafedupdude"
 team = "So?"
 title = "TOOTH DECAY FREESTYLE 2025"
 size = "69733 KB"
-addr = ["https://drive.google.com/file/d/1XiEoK7Xxkxnf-c7i8ZO4-U3TjGicjLIy/view?usp=drive_link"]
+addr = [
+    "https://drive.google.com/file/d/1XiEoK7Xxkxnf-c7i8ZO4-U3TjGicjLIy/view?usp=drive_link",
+    "add-on package:",
+    "https://drive.google.com/file/d/1DPUNM2re7lCFzq5CnykSH4OlhUa9g9eN/view?usp=drive_link",
+]
 
 [[entries]]
 no = "40"
@@ -979,9 +983,11 @@ team = "FUN Fighter"
 title = "Egoistential"
 size = "58399 KB"
 addr = [
-    "https://drive.google.com/file/d/1IZ2WBwQQbHGta2DQJamT1NACh_hRfRsi/view?usp=drive_link",
+    "https://drive.google.com/file/d/1F1QlR7WlihMzFRGy_KFGrqDeSoYwG-AT/view?usp=drive_link",
     "DP Pack:",
     "https://drive.google.com/file/d/1IBrF6csIKNFVQN0xia_QWHZfDH-15Zd6/view?usp=drive_link",
+    "Append chart - SP NORMAL_FIX:",
+    "https://stellabms.xyz/upload/6658",
 ]
 
 [[entries]]
@@ -2868,8 +2874,16 @@ no = "272"
 name = "Qyubey"
 team = "明日。"
 title = "Long Gone"
-size = "27941 KB"
-addr = ["https://drive.google.com/file/d/1fLqONAJLkTgH6w1f1RBAYnxiqm4GXUvH/view?usp=sharing"]
+size = "52176 KB"
+addr = [
+    "修正11/13：BGA追加。以下はmpgとmp4両方含むzipです。BGA以外のファイルは全部以前と全く同じものです。",
+    "https://drive.google.com/file/d/1fLqONAJLkTgH6w1f1RBAYnxiqm4GXUvH/view?usp=sharing",
+    'BGA単体。11/13以前にダウンロードした場合、"qyubey_longgone_ogg"フォルダーに入れ、楽しんでください！',
+    "LR2 (.mpg) 7.4MB :",
+    "https://drive.google.com/file/d/1sKb5PVAlBdyhz89790IlBhE4crLBqTOR/view?usp=sharing",
+    "beatoraja (.mp4) 18.7MB :",
+    "https://drive.google.com/file/d/1DtTjes1KJDiuU-nzK7ssUu8iWJef8Zm8/view?usp=sharing",
+]
 
 [[entries]]
 no = "273"
@@ -3095,12 +3109,18 @@ no = "298"
 name = "blobdash"
 team = "V For Vivace"
 title = "Parallax"
-size = "48925 KB"
+size = "79008 KB"
 addr = [
-    "wav :",
-    "https://drive.google.com/file/d/1443rBaNvpe3DVExsB0NZR7tFI23VFDGZ/view?usp=drive_link",
-    "ogg :",
-    "https://drive.google.com/file/d/1N7n5iKwaLJGaOSfgN6qX0yDg4oUfD8kT/view?usp=drive_link",
+    "wav+wmv:",
+    "https://drive.google.com/file/d/1DC27tjNC6YZpDny_A74jROnU0BhV5rmY/view?usp=drive_link",
+    "ogg+mp4:",
+    "https://drive.google.com/file/d/1F0Szpa1KNJyYQLort8Q0qjrL6MX_71-3/view?usp=drive_link",
+    "(09/11/2025) update package",
+    "bga, beginner chart, template fix",
+    "mp4, for beatoraja",
+    "https://drive.google.com/file/d/1AHMNDb6QG8FIs-8VjtJ6WQEFXcXum2pc/view?usp=drive_link",
+    "wmv, for lr2",
+    "https://drive.google.com/file/d/1A2lWE3i7CqisnaeGsDXDDYIsP8xueQTD/view?usp=drive_link",
 ]
 
 [[entries]]
@@ -3232,6 +3252,8 @@ size = "51200 KB"
 addr = [
     "OGG",
     "https://drive.google.com/file/d/1obq0sGqAW8keB0v2KWS0tqw5ePj0c_z4/view?usp=sharing",
+    "update",
+    "ADDED BGA video by 陸忻遊, please re download since 11 November 2025",
 ]
 
 [[entries]]
@@ -4023,7 +4045,16 @@ name = "RB.H × lixound × 薛南"
 team = "T-BMS Recording"
 title = "Lost Ember's Resonate"
 size = "271000 KB"
-addr = ["https://drive.google.com/file/d/1cF5IWtkKDb9QuXiZCWfnE8vOxUO2xTcr/view?usp=drive_link"]
+addr = [
+    "[After 2025/11/09]",
+    "BMS:",
+    "https://drive.google.com/file/d/1cF5IWtkKDb9QuXiZCWfnE8vOxUO2xTcr/view?usp=drive_link",
+    "[2025/11/09]",
+    "Add 1 PMS Pattern",
+    "Add Bga, BACKBMP STAGEFILE, Banner",
+    "Update Only",
+    "https://drive.google.com/file/d/1v_xgdIS5vtzQdRWPNfac4xLdvzd8vzBO/view?usp=sharing",
+]
 
 [[entries]]
 no = "389"
@@ -4422,8 +4453,8 @@ no = "424"
 name = "Kalse"
 team = "Spirits of Hardcore"
 title = "Dolor of Apocalypse"
-size = "321000 KB"
-addr = ["https://drive.google.com/file/d/1-NyhE474t0mzzAxI82vri-V0ApvR_F3B/view?usp=sharing"]
+size = "395000 KB"
+addr = ["https://drive.google.com/file/d/12g8kkMdJilJWPytmTU0mc6q5M668x6x3/view?usp=sharing"]
 
 [[entries]]
 no = "425"
@@ -4472,7 +4503,11 @@ name = "潮音きつね"
 team = "シブかわ"
 title = "夕凪にささやく"
 size = "100000 KB"
-addr = ["https://drive.google.com/file/d/11vRk0JFtlc-11I3SOnXOhzgjWam4C_Jv/view?usp=sharing"]
+addr = [
+    "https://drive.google.com/file/d/11vRk0JFtlc-11I3SOnXOhzgjWam4C_Jv/view?usp=sharing",
+    "DP譜面のみ:",
+    "https://drive.google.com/file/d/1ExbiOHD9X-WCvFSTYzn2uf1X7AmxdNeq/view?usp=sharing",
+]
 
 [[entries]]
 no = "430"
@@ -4508,5 +4543,5 @@ no = "433"
 name = "Nebulium__"
 team = "So?"
 title = "「 ⁠ ⁠ ⁠ ⁠ ⁠ ⁠ ⁠ ⁠ ⁠  ⁠ ⁠ ⁠ ⁠ 」"
-size = "71326 KB"
-addr = ["https://drive.google.com/file/d/1P7bAn8wFq7JNIOHl5zc1tM_R5c7HdjQr/view?usp=sharing"]
+size = "73364 KB"
+addr = ["https://drive.google.com/file/d/1P7bAn8wFq7JNIOHl5zc1tM_R5c7HdjQr/"]
