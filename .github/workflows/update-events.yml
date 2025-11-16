@@ -202,12 +202,19 @@ jobs:
             exit 1
           fi
 
+      - name: Generate GitHub App Token
+        id: gen-token
+        uses: tibdex/github-app-token@v2
+        with:
+          app_id: ${{ secrets.HELPER_BOT_APP_ID }}
+          private_key: ${{ secrets.HELPER_BOT_PRIVATE_KEY }}
+
       - name: Create Pull Request
         if: steps.check-artifact.outputs.exists == 'true'
-        id: cpr
+        id: create-pull-request
         uses: peter-evans/create-pull-request@v6
         with:
-          token: ${{ secrets.AUTOMERGE_TOKEN }}
+          token: ${{ steps.gen-token.outputs.token }}
           commit-message: "chore(events): update ${{ matrix.event_key }} data"
           branch: "chore/update-${{ matrix.event_key }}"
           title: "chore(events): update ${{ matrix.event_key }} data"
@@ -219,15 +226,17 @@ jobs:
           labels: |
             automated
             event:${{ matrix.event_key }}
-          delete-branch: true
-          signoff: false
-          committer: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
-          author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
 
-      - name: Enable auto-merge
-        if: steps.cpr.outputs.pull-request-number
-        uses: peter-evans/enable-pull-request-automerge@v3
-        with:
-          token: ${{ secrets.AUTOMERGE_TOKEN }}
-          pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
-          merge-method: squash
+      - name: Install GitHub CLI
+        run: |
+          sudo apt-get update
+          sudo apt-get install gh
+
+      - name: Enable Pull Request Automerge
+        if: steps.create-pull-request.outputs.pull-request-operation == 'created'
+        run: |
+          PR_NUMBER='${{ steps.create-pull-request.outputs.pull-request-number }}'
+          echo "启用 PR #$PR_NUMBER 的自动合并"
+          gh pr merge "$PR_NUMBER" --auto --squash
+        env:
+          GITHUB_TOKEN: ${{ steps.gen-token.outputs.token }}
