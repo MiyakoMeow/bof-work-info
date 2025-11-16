@@ -5,23 +5,23 @@ default-members = ["fetcher"]
 
 [workspace.dependencies]
 # HTTP客户端和异步运行时
-surf = "2.3"                    # HTTP客户端
-smol = "2.0"                    # 异步运行时
+surf = "2"                    # HTTP客户端
+smol = "2"                    # 异步运行时
 
 # HTML解析和文本处理
 scraper = "0.24"                # HTML解析器
-regex = "1.0"                   # 正则表达式
+regex = "1"                   # 正则表达式
 encoding_rs = "0.8"             # 字符编码检测和转换
 
 # 序列化和配置
-serde = { version = "1.0", features = ["derive"] }  # 序列化框架
-toml = "0.9.5"                  # TOML格式支持
+serde = { version = "1", features = ["derive"] }  # 序列化框架
+toml = "0.9"                  # TOML格式支持
 chrono = { version = "0.4", features = ["serde"] }  # 日期时间处理
 
 # 命令行和日志
-clap = { version = "4.5", features = ["derive"] }   # 命令行参数解析
+clap = { version = "4", features = ["derive"] }   # 命令行参数解析
 log = "0.4"                     # 日志接口
 env_logger = "0.11"             # 环境变量日志实现
 
 # 错误处理
-anyhow = "1.0"                  # 错误处理工具
+anyhow = "1"                  # 错误处理工具
