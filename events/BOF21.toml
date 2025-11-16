@@ -3898,11 +3898,16 @@ addr = ["https://drive.google.com/file/d/158bYMtyIMIkLhHXLyixEDzuIhox0ft8E/view?
 
 [[entries]]
 no = "374"
-name = "NASA"
+name = "NASA (vo.花隈千冬)"
 team = "#SHIBUYAMELTDOWN"
 title = "シトラス・チョコレイト"
-size = "28900 KB"
-addr = ["https://www.dropbox.com/scl/fi/j0h8dproqg1o7bvlq9ycg/NASA.zip?rlkey=hu5vmrmjwvz16fli5wrmz54kk&st=obv53mn7&dl=1"]
+size = "109000 KB"
+addr = [
+    "(本体)",
+    "https://www.dropbox.com/scl/fi/j0h8dproqg1o7bvlq9ycg/NASA.zip?rlkey=hu5vmrmjwvz16fli5wrmz54kk&st=1ueilkvf&dl=1",
+    "(2025/11/16以前にDLされた方向け)",
+    "https://www.dropbox.com/scl/fi/1sqvyuox5evh2tras6r0o/addpack.zip?rlkey=ht5agt624s14186gutctshbnb&st=3rntw5zr&dl=1",
+]
 
 [[entries]]
 no = "375"
