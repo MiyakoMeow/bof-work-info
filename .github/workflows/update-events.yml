@@ -18,7 +18,7 @@ jobs:
       events: ${{ steps.build-matrix.outputs.events }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Install Python dependencies
         run: |
@@ -65,7 +65,7 @@ jobs:
         event_key: ${{ fromJSON(needs.prepare-matrix.outputs.keys) }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Resolve event URL
         id: resolve
@@ -155,7 +155,7 @@ jobs:
         event_key: ${{ fromJSON(needs.prepare-matrix.outputs.keys) }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Check if git diff artifact exists
         id: check-artifact
