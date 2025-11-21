@@ -484,12 +484,12 @@ team = "家に帰りたい"
 title = "AfterMe"
 size = "148000 KB"
 addr = [
-    "Ogg_v1(修正版)",
-    "https://drive.google.com/file/d/13Q8pPkDAitHLCuxQZACK4SZiUX7Hn2AB/view?usp=sharing",
-    "★ファイルが欠損している問題を修正",
-    "Wav_v1",
-    "https://drive.google.com/file/d/12TsAoKAVC2J3Ory-gAIw14a6v180j_4y/view?usp=sharing",
-    "各N/H譜面等は後日まとめて追加します、イベントのルールに則って現状出せる2譜面のみで公開します。",
+    "Ogg_v2",
+    "https://drive.google.com/file/d/1r9IaBHnVtNWbxdAc34MX_AlGgYwRQbBd/view?usp=sharing",
+    "Wav_v2",
+    "https://drive.google.com/file/d/1MN_GGgkSKwp9lsf_lrCLlw4gYxfK8IlQ/view?usp=sharing",
+    "11/20",
+    "v2を公開しました。",
 ]
 
 [[entries]]
@@ -4466,8 +4466,11 @@ no = "425"
 name = "円湯(Maroyu)"
 team = "Vector Tech"
 title = "Isolated"
-size = "59147 KB"
-addr = ["https://drive.google.com/file/d/1GMeem7fRi0DVtXiG1IOaVcv73S1KVAYB/view?usp=sharing"]
+size = "59885 KB"
+addr = [
+    "https://drive.google.com/file/d/1GMeem7fRi0DVtXiG1IOaVcv73S1KVAYB/view?usp=sharing",
+    "(2025/11/20 ↑差分譜面を追加しました！)",
+]
 
 [[entries]]
 no = "426"
