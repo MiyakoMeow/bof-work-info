@@ -236,7 +236,7 @@ size = "83292 KB"
 addr = [
     "【本体】",
     "https://drive.google.com/file/d/1p5LVDW-W4phFH8P4d971aUEVjy2qBiG6/view?usp=sharing",
-    "【追加差分のみ】「SP ULTIMATE(★20)、PMS N(35)H(45)」",
+    "【追加差分のみ】「SP ULTIMATE(★20)、DP ［DP］ Tutorial world(★12 st2)、PMS N(35)H(45)」",
     "https://drive.google.com/file/d/15m_lokZJzw1W8fdg7wXl1T2gTdTqUmO9/view?usp=sharing",
 ]
 
@@ -2931,7 +2931,7 @@ name = "Pooh5821"
 team = "StoryTeller"
 title = "Upon Luna"
 size = "27400 KB"
-addr = ["https://mega.nz/file/DlYRUC7a#qoILLn1QS1k_9knhgE0_R411yJqECa0tRIVC-YNouow"]
+addr = ["https://mega.nz/file/z04RRBTJ#_M6biZorTZudYMAtzXDAwryVx0JcdnzbfeBN6WjO-5U"]
 
 [[entries]]
 no = "279"
@@ -3019,7 +3019,7 @@ name = "Medium"
 team = "StoryTeller"
 title = "Tenebris"
 size = "23900 KB"
-addr = ["https://mega.nz/file/WxJ1Vb7D#HduJjJcIF-kDiRtfznv2MY3YjvUJ7-M966JR1eMc8UU"]
+addr = ["https://mega.nz/file/ypIAmCjY#WCtpKt2bNGZVmjb3EJjL4YHsle5RAAiYbtJAy24pZIs"]
 
 [[entries]]
 no = "290"
@@ -3789,7 +3789,12 @@ name = "ルゼ feat. えみゅう。"
 team = "代打三兄弟"
 title = "深化論"
 size = "361000 KB"
-addr = ["https://www.luzeria.net/music/111_sinkaron_ogg.zip"]
+addr = [
+    "https://www.luzeria.net/music/111_sinkaron_ogg.zip",
+    "●11/23 追記（これから本体をダウンロードされる方は既に同梱済です）",
+    "-extra data / 9B HYPER & EX-",
+    "https://www.luzeria.net/music/111_sinkaron_9b.zip",
+]
 
 [[entries]]
 no = "363"
@@ -4314,6 +4319,8 @@ size = "25600 KB"
 addr = [
     "OGG",
     "https://drive.google.com/file/d/1UCgMV12zz5xym73JTzbHe3wGFTcZduFC/view?usp=sharing",
+    "update",
+    "ADDED BGA video by ハンサムな Chikanya. plaese re download since 23 November 2025",
 ]
 
 [[entries]]
@@ -4435,7 +4442,12 @@ name = "ILuvGemz"
 team = "From Root To Present"
 title = "One Hit Wonder"
 size = "19686 KB"
-addr = ["https://drive.google.com/file/d/15Y1SsYiyLKuz5Uo1owHgMmeObOHmTPGS/view?usp=drive_link"]
+addr = [
+    "2025/11/27譜面追加:",
+    "https://drive.google.com/file/d/1iUKeji3q27wfWKvaxfKTspZ7IbMCUfLE/view?usp=sharing",
+    "Full Archive:",
+    "https://drive.google.com/file/d/1WFB8xB_010u4Al-ZRUytT5qaVsuNhyL1/view?usp=sharing",
+]
 
 [[entries]]
 no = "422"
