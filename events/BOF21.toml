@@ -116,7 +116,12 @@ name = "Mister.Himi / BGA:YAN*TS (Tribute to SHIKI + Is-m)"
 team = "THE LUCKY TRIO"
 title = "Air -Revolutionary.Himix-"
 size = "79700 KB"
-addr = ["https://drive.google.com/file/d/1LxzzMJDvOqxNZXPgC2OzsL3HuLgeGHBQ/view?usp=drive_link"]
+addr = [
+    "https://drive.google.com/file/d/1LxzzMJDvOqxNZXPgC2OzsL3HuLgeGHBQ/view?usp=drive_link",
+    "(紹介)じょせさん作成ガチ押し差分",
+    "https://akaza2nd.github.io/FAIRjoy/",
+    "※偽あいあjoy差分まとめ⇒新しく作った譜面⇒FA3_air141_EXCEED.bml",
+]
 
 [[entries]]
 no = "14"
@@ -2987,7 +2992,7 @@ name = "DJ E_Pigeon"
 team = "超　狂乱木曜日のメガバスト　～我が力の本流に望むはフライドチキン也～"
 title = "untitled_project_01"
 size = "77161 KB"
-addr = ["https://drive.google.com/file/d/1vIb16gxaJpjE54-qJPH6teZYHebQwDrJ/view?usp=sharing"]
+addr = ["https://drive.google.com/file/d/1Lkrfds2D51NY_XVH1x3YFy5bwIqciA-k/view?usp=drive_link"]
 
 [[entries]]
 no = "286"
@@ -3028,6 +3033,16 @@ team = "#SHIBUYAMELTDOWN"
 title = "星空メルトダウン"
 size = "25458 KB"
 addr = [
+    "2025年12月3日更新分",
+    "[ogg+bga]",
+    "https://drive.google.com/file/d/1U1152mijUslTrK9yKAtlnZhtHPlriFnO/view?usp=sharing",
+    "[wav+bga]",
+    "https://drive.google.com/file/d/1bf-mF2xZrfUU2hXtsyk6vYtKGlXha3Wj/view?usp=sharing",
+    "[bga(mpg)]",
+    "https://drive.google.com/file/d/1lZqd2AJ9MVb9xAtnqvoeOFHDYKQQ9KMt/view?usp=sharing",
+    "[bga(mp4)]",
+    "https://drive.google.com/file/d/1bho_TiT8NrrgHmFHQr57H5JQjRQ96d9E/view?usp=sharing",
+    "-------------------------------------------------------------------------------------------------------------------",
     "[ogg]",
     "https://drive.google.com/uc?id=1qVAffwVSp3Dm5qpVHDuJ-CRWOP-Vb1Zo",
     "[wav]",
@@ -3218,8 +3233,8 @@ no = "309"
 name = "wbr"
 team = "Chicken Mirror"
 title = "Xerynth Zorok"
-size = "100741 KB"
-addr = ["https://drive.google.com/file/d/1jGmBiLIi1TdALKt7lqai6ib2GJiAqR_i/view?usp=sharing"]
+size = "492604 KB"
+addr = ["https://drive.google.com/file/d/1YZccWoeP5QyLOwyk6URhihsvd4_9LUW6/view?usp=sharing"]
 
 [[entries]]
 no = "310"
@@ -3646,7 +3661,7 @@ name = "かんざきしおんスペシャル"
 team = "★アソートアベニュー★"
 title = "ペガサス・ポラリス・ペルセウス！"
 size = "16707 KB"
-addr = ["https://drive.google.com/file/d/1g6Lvq4knUOofSaCUdlz_exslaC-b6ifJ/view?usp=sharing"]
+addr = ["https://drive.google.com/file/d/1wJaQV1k0qUmw9fzQQXYIOb6OBGDt8smg/view?usp=sharing"]
 
 [[entries]]
 no = "348"
@@ -3802,7 +3817,12 @@ name = "ニラ"
 team = "HereAster Forth"
 title = "Horizon"
 size = "53058 KB"
-addr = ["https://drive.google.com/file/d/1lOwnmw1tzGByeTpXEYFmVLz2TLS0d0RS/view?usp=sharing"]
+addr = [
+    "With BMP01",
+    "https://drive.google.com/file/d/1lOwnmw1tzGByeTpXEYFmVLz2TLS0d0RS/view?usp=sharing",
+    "Without BMP01(original, before 2025/12/4)",
+    "https://drive.google.com/file/d/1xidMiVo4xjSgPjRLcMtuJm9S9fEUt1Yq/view?usp=sharing",
+]
 
 [[entries]]
 no = "364"
@@ -4515,6 +4535,13 @@ addr = [
     "https://drive.google.com/file/d/1MnmiD9b80xHL9cnLOZeNYiqDlullY93Y/view?usp=sharing",
     "wav版",
     "https://drive.google.com/file/d/1t7mlNXbHgY12c48D0OO2J4KL5bYFsN4i/view?usp=sharing",
+    "【追記】",
+    "ogg版(#BM62表記削除版)",
+    "https://drive.google.com/file/d/1ZMOudiUT-PcpixbqQbxCEfxwctwNvsPB/view?usp=sharing",
+    "wav版(#BM62表記削除版)",
+    "https://drive.google.com/file/d/1WsPKC7w54Y09sWaxFZ8rEk4DEIEUF1wg/view?usp=sharing",
+    "意図せず62進数BMSとなっていたため解除版になります",
+    "キー音が正常に再生されない場合、お試しください(※ファイル名被りにお気を付けください)",
 ]
 
 [[entries]]
