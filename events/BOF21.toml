@@ -118,7 +118,10 @@ title = "Air -Revolutionary.Himix-"
 size = "79700 KB"
 addr = [
     "https://drive.google.com/file/d/1LxzzMJDvOqxNZXPgC2OzsL3HuLgeGHBQ/view?usp=drive_link",
-    "(紹介)じょせさん作成ガチ押し差分",
+    "(紹介)",
+    "米石さん作成[Respect for GOD]差分",
+    "https://www.youtube.com/watch?v=EXpqLgLTvjQ",
+    "じょせさん作成ガチ押し差分",
     "https://akaza2nd.github.io/FAIRjoy/",
     "※偽あいあjoy差分まとめ⇒新しく作った譜面⇒FA3_air141_EXCEED.bml",
 ]
@@ -267,7 +270,7 @@ name = "Sakamiya"
 team = "おさかなりょーり！"
 title = "Vacance of Love (SKMYrmx)"
 size = "101327 KB"
-addr = ["https://www.dropbox.com/scl/fi/uy72hc9xfy2v7ov16wyx0/bakans_Sakamiya_ogg.zip?rlkey=uarf3p2m1t9j8la2x0mb0zl6v&dl=1"]
+addr = ["公開終了、保管等はご自由に"]
 
 [[entries]]
 no = "29"
@@ -1085,8 +1088,13 @@ no = "105"
 name = "Sauxyr"
 team = "SKY NEXUS"
 title = "無位相時空英雄譚"
-size = "6932 KB"
-addr = ["https://drive.google.com/file/d/1xTWy6kyNkUWJ_IEfMYSI6pcjtojNAthp/view?usp=drive_link"]
+size = "26942 KB"
+addr = [
+    "https://drive.google.com/file/d/1b0IL8EbYocNPhnP25rJ5heazc7Bz_1ms/view?usp=sharing",
+    "ーーーーーーーーーー↓BGI版ーーーーーーーーBGA版↑ーーーーーーーーーー",
+    "https://drive.google.com/file/d/1xTWy6kyNkUWJ_IEfMYSI6pcjtojNAthp/view?usp=drive_link",
+    ": （BGI版）",
+]
 
 [[entries]]
 no = "106"
@@ -2404,7 +2412,7 @@ addr = ["https://drive.google.com/file/d/16vVnOP3DtWu9Yayc64_B5IIzuBZ1dVbp/view?
 
 [[entries]]
 no = "227"
-name = "orz2025sep19y"
+name = "also known as: foonone"
 team = "Nameless Flowers"
 title = "Senohikui_OrangeWa_ManNaka_Atari"
 size = "636000 KB"
@@ -3420,7 +3428,7 @@ addr = [
 
 [[entries]]
 no = "326"
-name = "パープルしぶがきマン"
+name = "川崎もっぺ"
 team = "Nameless Flowers"
 title = "PatchLighT"
 size = "26330 KB"
@@ -3481,8 +3489,15 @@ no = "332"
 name = "Zris feat. Sephid"
 team = "sounds pretty guy"
 title = "3000 Stars"
-size = "71753 KB"
-addr = ["https://drive.google.com/file/d/1UHaJUZ58j8gVrNlavAmvTvxnXrSXNE0l/view?usp=sharing"]
+size = "93882 KB"
+addr = [
+    "2025/12/7 音量バランス修正、stagefile & BGA追加",
+    "※以前にDLした方はお手数ですが、再DLをお願いします。",
+    "https://drive.google.com/file/d/13VPkGtZAdBPcxuf9yGJBNc6luVEo4Pu2/view?usp=sharing",
+    "(ogg+wmv, 92mb)",
+    "https://drive.google.com/file/d/1KLj6NrECoszLHB0s9-W9IwhseNg_hG6o/view?usp=sharing",
+    "(ogg+mp4, 288mb)",
+]
 
 [[entries]]
 no = "333"
