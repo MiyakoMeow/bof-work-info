@@ -136,7 +136,7 @@ jobs:
 
       - name: Upload git diff artifact
         if: steps.check-changes.outputs.has-changes == 'true'
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v6
         with:
           name: git-diff-${{ matrix.event_key }}
           path: diff/${{ matrix.event_key }}.*
@@ -182,7 +182,7 @@ jobs:
       - name: Download git diff artifact
         id: download
         if: steps.check-artifact.outputs.exists == 'true'
-        uses: actions/download-artifact@v6
+        uses: actions/download-artifact@v7
         with:
           name: git-diff-${{ matrix.event_key }}
           path: diff
