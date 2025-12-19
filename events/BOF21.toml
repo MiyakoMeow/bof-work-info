@@ -2157,7 +2157,7 @@ no = "204"
 name = "UANwork"
 team = "T-BMS Recording"
 title = "Until That Day Passes"
-size = "65625 KB"
+size = "107491 KB"
 addr = ["https://drive.google.com/file/d/1QInZI5pvWkafh4Eub2kwTr-53u5pODQr/view?usp=sharing"]
 
 [[entries]]
@@ -4438,8 +4438,9 @@ team = "YOUろずばく"
 title = "Retroaction"
 size = "32255 KB"
 addr = [
+    "↓2025.12.19 BGAを追加し、一部難易度の譜面でBGAが正常に再生されない状況を修正しました↓",
     "↓2025.11.2 追加SPA差分：「SP Subject 4」、一部のKeysoundがLR2で正常に再生されない問題を修正しました↓",
-    "https://www.mediafire.com/file/bjatzfklz6qusr8/retroaction%255Bogg%255D.zip/file",
+    "https://drive.google.com/file/d/1rVMuT5OxvIG8-LwYaFtd0pQgSEh0ljaU/view?usp=sharing",
 ]
 
 [[entries]]
