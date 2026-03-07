@@ -15,7 +15,7 @@ encoding_rs = "0.8"             # 字符编码检测和转换
 
 # 序列化和配置
 serde = { version = "1", features = ["derive"] }  # 序列化框架
-toml = "0.9"                  # TOML格式支持
+toml = "1.0"                  # TOML格式支持
 chrono = { version = "0.4", features = ["serde"] }  # 日期时间处理
 
 # 命令行和日志
